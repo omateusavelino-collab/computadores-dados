@@ -560,8 +560,8 @@ BA,Curaçá,2909901,ESPAÇO DO GRUPO DE JOVENS RAPADURA,11,nao,,5 x computadores
 BA,Cândido Sales,2906709,ESTAÇÃO DIGITAL DE CÂNDIDO SALES,11,nao,,5 x computadores,,,,55.0,ok
 BA,Dom Inocêncio,B|BA|DOM INOCENCIO,ASSOCIAÇÃO DE DESENVOLVIMENTO COMUNITÁRIO DA COMUNIDADE VAZANTE (ADECCOVA),5,nao,,5 x computadores,,,,25.0,ok
 BA,Dom Inocêncio,B|BA|DOM INOCENCIO,BIBLIOTECA MUNICIPAL DE DO INOCÊNCIO,10,nao,,5 x computadores,,,,50.0,ok
-BA,Dom Inocêncio,B|BA|DOM INOCENCIO,ESCOLA MUNICIPAL DE RIACHO SECO,10,nao,,5 x computadores,,,,50.0,ok
-BA,Dom Inocêncio,B|BA|DOM INOCENCIO,UNIDADE ESCOLAR MUNICIPAL DE DOM INOCENCIO,5,nao,,5 x computadores,,,,25.0,ok
+BA,Dom Inocêncio,B|BA|DOM INOCENCIO,ESCOLA MUNICIPAL DE RIACHO SECO,10,sim,48990000,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+BA,Dom Inocêncio,B|BA|DOM INOCENCIO,UNIDADE ESCOLAR MUNICIPAL DE DOM INOCENCIO,5,sim,22070877,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 BA,Entre Rios,2910503,ASSOCIAÇÃO DOS AGRICULTORES FAMILIARES REMANESCENTE DE QUILOMBO DO LIMOEIRO,2,nao,,5 x computadores,,,,10.0,ok
 BA,Esplanada,2910602,TELECENTRO DA PESCA MARÉ - ASS. DOS PSICULTORES E MARICULTORES DE BAIXIO,11,nao,,5 x computadores,,,,55.0,ok
 BA,Esplanada,2910602,TELECENTRO DA PESCA MARÉ ASSOCIAÇÃO DE MARISQUEIRAS PESCADORES,11,nao,,5 x computadores,,,,55.0,ok
@@ -1077,48 +1077,48 @@ CE,Fortaleza,2304400,COLETIVO OLHANDO PRA FRENTE,5,nao,,5 x computadores,,,,25.0
 CE,Fortaleza,2304400,COMITÊ PARA DEMOCRATIZAÇÃO DA INFORMÁTICA DO CEARÁ - RELOAD,387,nao,,5 x computadores,,,,1935.0,ok
 CE,Fortaleza,2304400,CONVIDA - CONSELHO NOVA VIDA,3,nao,,5 x computadores,,,,15.0,ok
 CE,Fortaleza,2304400,CRIEATIVIDADE GESTÃO ESPORTIVA,5,nao,,5 x computadores,,,,25.0,ok
-CE,Fortaleza,2304400,EEEP JOAQUIM MOREIRA DE SOUSA,11,nao,,5 x computadores,,,,55.0,ok
-CE,Fortaleza,2304400,EEEP MARVIN (ESCOLA ESTADUAL DE EDUCAÇÃO PROFISSIONAL),18,nao,,5 x computadores,,,,90.0,ok
-CE,Fortaleza,2304400,EEF SAO JOSE DO PICI DAS PEDREIRAS,7,nao,,5 x computadores,,,,35.0,ok
-CE,Fortaleza,2304400,EEFM - ESCOLA SÃO FRANCISCO DE ASSIS,3,nao,,5 x computadores,,,,15.0,ok
-CE,Fortaleza,2304400,EEFM - ESTADO DO MARANHÃO,14,nao,,5 x computadores,,,,70.0,ok
-CE,Fortaleza,2304400,EEFM ANTONIETA SIQUEIRA (INEP 23065494),12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEFM ANTONIO DIAS MACEDO,17,nao,,5 x computadores,,,,85.0,ok
-CE,Fortaleza,2304400,EEFM ANÍSIO TEIXEIRA,8,nao,,5 x computadores,,,,40.0,ok
-CE,Fortaleza,2304400,EEFM CENTRO EDUCACIONAL DOM HELIO CAMPOS,9,nao,,5 x computadores,,,,45.0,ok
-CE,Fortaleza,2304400,EEFM CLAUDIO MARTINS,12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEFM DEPUTADO FRANCISCO DE ALMEIDA MONTE,12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEFM DEPUTADO PAULINO ROCHA,10,nao,,5 x computadores,,,,50.0,ok
-CE,Fortaleza,2304400,EEFM DOM ANTONIO DE ALMEIDA LUSTOSA,6,nao,,5 x computadores,,,,30.0,ok
-CE,Fortaleza,2304400,EEFM DR CESAR CALS,19,nao,,5 x computadores,,,,95.0,ok
-CE,Fortaleza,2304400,EEFM ESTADO DO PARANA,11,nao,,5 x computadores,,,,55.0,ok
-CE,Fortaleza,2304400,EEFM FERNANDO CAVALCANTE MOTA,16,nao,,5 x computadores,,,,80.0,ok
-CE,Fortaleza,2304400,EEFM GENERAL EUDORO CORREA,12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEFM HERACLITO DE CASTRO E SILVA,8,nao,,5 x computadores,,,,40.0,ok
-CE,Fortaleza,2304400,EEFM JOAO MATTOS,9,nao,,5 x computadores,,,,45.0,ok
-CE,Fortaleza,2304400,EEFM JOSE DE ALENCAR,10,nao,,5 x computadores,,,,50.0,ok
-CE,Fortaleza,2304400,EEFM MARECHAL HUMBERTO DE ALENCAR CASTELO BRANCO,10,nao,,5 x computadores,,,,50.0,ok
-CE,Fortaleza,2304400,EEFM MARIA MENEZES DE SERPA,14,nao,,5 x computadores,,,,70.0,ok
-CE,Fortaleza,2304400,EEFM MARIA THOMASIA,10,nao,,5 x computadores,,,,50.0,ok
-CE,Fortaleza,2304400,EEFM MICHELSON DE NOBRE DA SILVA,1,nao,,5 x computadores,,,,5.0,ok
-CE,Fortaleza,2304400,EEFM PADRE MARCELINO CHAMPAGNAT,9,nao,,5 x computadores,,,,45.0,ok
-CE,Fortaleza,2304400,EEFM PATRONATO DA SAGRADA FAMILIA,15,nao,,5 x computadores,,,,75.0,ok
-CE,Fortaleza,2304400,EEFM PROFESSOR ALOYSIO BARROS LEAL,3,nao,,5 x computadores,,,,15.0,ok
-CE,Fortaleza,2304400,EEFM PROFESSORA MARIA GONÇALVES,12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEFM PROFª ADALGISA BONFIM SOARES,7,nao,,5 x computadores,,,,35.0,ok
-CE,Fortaleza,2304400,EEFM SALES CAMPOS,13,nao,,5 x computadores,,,,65.0,ok
-CE,Fortaleza,2304400,EEFM SÃO JOSÉ DOS ARPOADORES,6,nao,,5 x computadores,,,,30.0,ok
-CE,Fortaleza,2304400,EEFM. PROFESSORA MARIA MARGARIDA DE CASTRO ALMEIDA,5,nao,,5 x computadores,,,,25.0,ok
-CE,Fortaleza,2304400,EEM LICEU DE MESSEJANA,30,nao,,5 x computadores,,,,150.0,ok
-CE,Fortaleza,2304400,EEM LICEU ESTADUAL PROFESSOR DOMINGOS BRASILEIRO,7,nao,,5 x computadores,,,,35.0,ok
-CE,Fortaleza,2304400,EEM MARIANO MARTINS,17,nao,,5 x computadores,,,,85.0,ok
-CE,Fortaleza,2304400,EEM PROFESSORA EUDES VERAS,35,nao,,5 x computadores,,,,175.0,ok
-CE,Fortaleza,2304400,EEMTI AYRTON SENNA DA SILVA,15,nao,,5 x computadores,,,,75.0,ok
-CE,Fortaleza,2304400,EEMTI DA VILA VELHA,17,nao,,5 x computadores,,,,85.0,ok
-CE,Fortaleza,2304400,EEMTI IRACEMA,6,nao,,5 x computadores,,,,30.0,ok
-CE,Fortaleza,2304400,EEMTI JOSÉ VALDO RIBEIRO RAMOS (ESCOLA DE ENSINO MÉDIO EM TEMPO INTEGRAL),16,nao,,5 x computadores,,,,80.0,ok
-CE,Fortaleza,2304400,EEMTI PRESIDENTE CASTELO BRANCO,12,nao,,5 x computadores,,,,60.0,ok
-CE,Fortaleza,2304400,EEMTI VALDEMAR FALCÃO,20,nao,,5 x computadores,,,,100.0,ok
+CE,Fortaleza,2304400,EEEP JOAQUIM MOREIRA DE SOUSA,11,sim,23068884,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEEP MARVIN (ESCOLA ESTADUAL DE EDUCAÇÃO PROFISSIONAL),18,sim,23074159,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEF SAO JOSE DO PICI DAS PEDREIRAS,7,sim,23227877,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM - ESCOLA SÃO FRANCISCO DE ASSIS,3,sim,23233168,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM - ESTADO DO MARANHÃO,14,sim,23068825,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM ANTONIETA SIQUEIRA (INEP 23065494),12,sim,23065494,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM ANTONIO DIAS MACEDO,17,sim,23187735,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM ANÍSIO TEIXEIRA,8,sim,23065206,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM CENTRO EDUCACIONAL DOM HELIO CAMPOS,9,sim,23070900,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM CLAUDIO MARTINS,12,sim,23075155,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM DEPUTADO FRANCISCO DE ALMEIDA MONTE,12,sim,23069961,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM DEPUTADO PAULINO ROCHA,10,sim,23068710,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM DOM ANTONIO DE ALMEIDA LUSTOSA,6,sim,23065265,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM DR CESAR CALS,19,sim,23186488,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM ESTADO DO PARANA,11,sim,23068841,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM FERNANDO CAVALCANTE MOTA,16,sim,23070218,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM GENERAL EUDORO CORREA,12,sim,23069767,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM HERACLITO DE CASTRO E SILVA,8,sim,23070978,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM JOAO MATTOS,9,sim,23069260,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM JOSE DE ALENCAR,10,sim,23072270,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM MARECHAL HUMBERTO DE ALENCAR CASTELO BRANCO,10,sim,23071095,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM MARIA MENEZES DE SERPA,14,sim,23073721,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM MARIA THOMASIA,10,sim,23078669,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM MICHELSON DE NOBRE DA SILVA,1,sim,23233893,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM PADRE MARCELINO CHAMPAGNAT,9,sim,23078707,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM PATRONATO DA SAGRADA FAMILIA,15,sim,23075686,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM PROFESSOR ALOYSIO BARROS LEAL,3,sim,23069023,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM PROFESSORA MARIA GONÇALVES,12,sim,23069457,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM PROFª ADALGISA BONFIM SOARES,7,sim,23064676,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM SALES CAMPOS,13,sim,23077387,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM SÃO JOSÉ DOS ARPOADORES,6,sim,23072377,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEFM. PROFESSORA MARIA MARGARIDA DE CASTRO ALMEIDA,5,sim,23073713,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEM LICEU DE MESSEJANA,30,sim,23221160,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEM LICEU ESTADUAL PROFESSOR DOMINGOS BRASILEIRO,7,sim,23272058,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEM MARIANO MARTINS,17,sim,23074060,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEM PROFESSORA EUDES VERAS,35,sim,23241314,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI AYRTON SENNA DA SILVA,15,sim,23188774,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI DA VILA VELHA,17,sim,23225408,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI IRACEMA,6,sim,23071354,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI JOSÉ VALDO RIBEIRO RAMOS (ESCOLA DE ENSINO MÉDIO EM TEMPO INTEGRAL),16,sim,23072571,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI PRESIDENTE CASTELO BRANCO,12,sim,23071087,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Fortaleza,2304400,EEMTI VALDEMAR FALCÃO,20,sim,23078561,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Fortaleza,2304400,EMAÚS - AMOR E JUSTIÇA,300,nao,,5 x computadores,,,,1500.0,ok
 CE,Fortaleza,2304400,ESCOLA DE ENSINO FUNDAMENTAL DE TEMPO INTEGRAL MARIA JOSÉ SANTOS FERREIRA GOMES,20,sim,23188545,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Fortaleza,2304400,ESCOLA DE ENSINO FUNDAMENTAL MANOEL PEREIRA DE BRITO,10,sim,25028332,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -1169,7 +1169,7 @@ CE,Fortaleza,2304400,"NEGRURAS PRODUÇÕES, PESQUISA E CULTURA LTDA",10,nao,,5 x
 CE,Fortaleza,2304400,NÚCLEO DE TRATAMENTOE ESTIMULAÇÃO PRECOCE-NUTEP,5,nao,,5 x computadores,,,,25.0,ok
 CE,Fortaleza,2304400,POLIVALENTE MODELO,18,sim,23070382,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Fortaleza,2304400,PONTO DE CULTURA UKILOMBO CAPOEIRA - CALDEIRÃO DAS ARTES PRODUÇÕES ARTÍSTICAS LTDA-ME,5,nao,,5 x computadores,,,,25.0,ok
-CE,Fortaleza,2304400,PROFESSORA MARIA DA CONCEIÇÃO PORFIRIO TELES,2,nao,,5 x computadores,,,,10.0,ok
+CE,Fortaleza,2304400,PROFESSORA MARIA DA CONCEIÇÃO PORFIRIO TELES,2,sim,23073527,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Fortaleza,2304400,PROJETO SEMEAR - PRESBITÉRIO LESTE SOCIAL,10,nao,,5 x computadores,,,,50.0,ok
 CE,Fortaleza,2304400,SECRETARIA DO DESENVOLVIMENTO AGRARIOP,50,nao,,5 x computadores,,,,250.0,ok
 CE,Fortaleza,2304400,SECRETARIA DOS DIREITOS HUMANOS E ASSISTENCIA SOCIAL - CASA DE IGUALDADE RACIAL,15,nao,,5 x computadores,,,,75.0,ok
@@ -1189,9 +1189,9 @@ CE,Guaramiranga,2305100,CFEI NEUZA BEZERRA (PREFEITURA MUNICIPAL DE GUARAMIRANGA
 CE,Guaramiranga,2305100,CFEI RITA CELIA DE MATTOS BRITO,16,sim,23274443,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Guaramiranga,2305100,CFEI SENHOR DO BOMFIM,16,nao,,5 x computadores,,,,80.0,ok
 CE,Guaramiranga,2305100,CFEI SÃO LUIS,16,nao,,5 x computadores,,,,80.0,ok
-CE,Guaramiranga,2305100,EMEF PROFESSOR JÚLIO HOLANDA (PREFEITURA MUNICIPAL DE GUARAMIRANGA),40,nao,,5 x computadores,,,,200.0,ok
-CE,Guaramiranga,2305100,EMEF RODRIGO DE ARGOLO CARACAS (PREFEITURA MUNICIPAL DE GUARAMIRANGA),40,nao,,5 x computadores,,,,200.0,ok
-CE,Guaramiranga,2305100,EMEIEF LINHA DA SERRA (PREFEITURA MUNICIPAL DE GUARAMIRANGA),30,nao,,5 x computadores,,,,150.0,ok
+CE,Guaramiranga,2305100,EMEF PROFESSOR JÚLIO HOLANDA (PREFEITURA MUNICIPAL DE GUARAMIRANGA),40,sim,23054450,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Guaramiranga,2305100,EMEF RODRIGO DE ARGOLO CARACAS (PREFEITURA MUNICIPAL DE GUARAMIRANGA),40,sim,23211113,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Guaramiranga,2305100,EMEIEF LINHA DA SERRA (PREFEITURA MUNICIPAL DE GUARAMIRANGA),30,sim,23054603,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Horizonte,2305233,ASSOCIAÇÃO CULTURAL AFRO-BRASILEIRA DOS POVOS DE TERREIRO DE HORIZONTE - ACAFRO,3,nao,,5 x computadores,,,,15.0,ok
 CE,Icó,2305407,COLÉGIO SENHOR DO BONFIM,22,sim,23140283,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Iguatu,2305506,ASSOCIAÇÃO DE PAIS E AMIGOS DOS EXCEPCIONAIS DE IGUATU- APAE,10,nao,,5 x computadores,,,,50.0,ok
@@ -1235,25 +1235,25 @@ CE,Maracanaú,2307650,CRAS ACARACUZINHO,11,nao,,5 x computadores,,,,55.0,ok
 CE,Maracanaú,2307650,CRAS JEREISATI,11,nao,,5 x computadores,,,,55.0,ok
 CE,Maracanaú,2307650,CRAS PAJUÇARA,11,nao,,5 x computadores,,,,55.0,ok
 CE,Maracanaú,2307650,DEPARTAMENTO DE TREINAMENTO - DETRE,3,nao,,5 x computadores,,,,15.0,ok
-CE,Maracanaú,2307650,EEEM PROFESSOR EDMILSON PINHEIRO,3,nao,,5 x computadores,,,,15.0,ok
-CE,Maracanaú,2307650,EEEP MARIA CARMEM VIEIRA MOREIRA,29,nao,,5 x computadores,,,,145.0,ok
-CE,Maracanaú,2307650,EEFM ADAHIL BARRETO CAVALCANTE,14,nao,,5 x computadores,,,,70.0,ok
-CE,Maracanaú,2307650,EEFM CARNEIRO DE MENDONÇA (07.954.514/0211-22),15,nao,,5 x computadores,,,,75.0,ok
-CE,Maracanaú,2307650,EEM JOSE MILTON DE VASCONCELOS DIAS,12,nao,,5 x computadores,,,,60.0,ok
-CE,Maracanaú,2307650,EEM PROFESSOR ANTÔNIO MARTINS FILHO,12,nao,,5 x computadores,,,,60.0,ok
-CE,Maracanaú,2307650,EEMTI ALBANIZA ROCHA SARASATE,12,nao,,5 x computadores,,,,60.0,ok
-CE,Maracanaú,2307650,EEMTI JOSE DE BORBA VASCONCELOS - LABORATÓRIO DE INFORMATICA,8,nao,,5 x computadores,,,,40.0,ok
-CE,Maracanaú,2307650,EEMTI PROFESSOR CLODOALDO PINTO,8,nao,,5 x computadores,,,,40.0,ok
-CE,Maracanaú,2307650,EMEF - RODOLFO TEÓFILO,2,nao,,5 x computadores,,,,10.0,ok
-CE,Maracanaú,2307650,EMEF GECIANO GUERREIRO DE BRITO,15,nao,,5 x computadores,,,,75.0,ok
+CE,Maracanaú,2307650,EEEM PROFESSOR EDMILSON PINHEIRO,3,sim,23080132,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEEP MARIA CARMEM VIEIRA MOREIRA,29,sim,23564059,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEFM ADAHIL BARRETO CAVALCANTE,14,sim,23079495,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEFM CARNEIRO DE MENDONÇA (07.954.514/0211-22),15,sim,23079851,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEM JOSE MILTON DE VASCONCELOS DIAS,12,sim,23080710,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEM PROFESSOR ANTÔNIO MARTINS FILHO,12,sim,23079649,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEMTI ALBANIZA ROCHA SARASATE,12,sim,23079533,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEMTI JOSE DE BORBA VASCONCELOS - LABORATÓRIO DE INFORMATICA,8,sim,23081830,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EEMTI PROFESSOR CLODOALDO PINTO,8,sim,23079959,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EMEF - RODOLFO TEÓFILO,2,sim,23081473,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EMEF GECIANO GUERREIRO DE BRITO,15,sim,23080426,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Maracanaú,2307650,EMEF LUIZ GONZAGA DOS SANTOS,6,nao,,5 x computadores,,,,30.0,ok
-CE,Maracanaú,2307650,EMEF PROFESSORA MARIA DE LOURDES SILVA,6,nao,,5 x computadores,,,,30.0,ok
-CE,Maracanaú,2307650,EMEIEF CONSTRUINDO O SABER,10,nao,,5 x computadores,,,,50.0,ok
+CE,Maracanaú,2307650,EMEF PROFESSORA MARIA DE LOURDES SILVA,6,sim,23176962,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EMEIEF CONSTRUINDO O SABER,10,sim,23197510,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Maracanaú,2307650,EMEIEF DEPUTADO JOSÉ MARTINS RODRIGUES,2,nao,,5 x computadores,,,,10.0,ok
-CE,Maracanaú,2307650,EMEIEF JOÃO MAGALHÃES DE OLIVEIRA,3,nao,,5 x computadores,,,,15.0,ok
-CE,Maracanaú,2307650,EMEIEF PRESIDENTE TRANCREDO NEVES,10,nao,,5 x computadores,,,,50.0,ok
+CE,Maracanaú,2307650,EMEIEF JOÃO MAGALHÃES DE OLIVEIRA,3,sim,23206187,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maracanaú,2307650,EMEIEF PRESIDENTE TRANCREDO NEVES,10,sim,,escola sem codigo INEP na lista [via planilha de pares],,,,,pendente
 CE,Maracanaú,2307650,EMEIEF PROFESSORA FRANCISCA FLORÊNCIA DA SILVA,4,nao,,5 x computadores,,,,20.0,ok
-CE,Maracanaú,2307650,EMEIEF SENADOR CARLOS JEEISSATI,15,nao,,5 x computadores,,,,75.0,ok
+CE,Maracanaú,2307650,EMEIEF SENADOR CARLOS JEEISSATI,15,sim,23079835,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Maracanaú,2307650,ESCOLA DE ENSINO FUNDAMENTAL DE TEMPO INTEGRAL PARQUE MARIA BERNADO DE CASTRO,17,sim,23246618,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Maracanaú,2307650,ESCOLA DE ENSINO PÚBLICO ALICE MOREIRA DE OLIVEIRA,19,sim,23462345,matricula ainda nao confirmada no QEdu,,,,,pendente
 CE,Maracanaú,2307650,ESCOLA DE ENSINO PÚBLICO DEP. FAUSTO AGUIAR ARRUDA,15,sim,23083549,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -1285,12 +1285,12 @@ CE,Maracanaú,2307650,LICEU ESTADUAL DE MARACANAÚ,19,nao,,5 x computadores,,,,9
 CE,Maracanaú,2307650,ONG AÇÃO VIVER,11,nao,,5 x computadores,,,,55.0,ok
 CE,Maracanaú,2307650,SECRETARIA DE ASSISTÊNCIA SOCIAL E CIDADANIA,3,nao,,5 x computadores,,,,15.0,ok
 CE,Maracanaú,2307650,SINE MUNICIPAL,6,nao,,5 x computadores,,,,30.0,ok
-CE,Maranguape,2307700,EEFM CAIC SENADOR CARLOS JEREISSATI,18,nao,,5 x computadores,,,,90.0,ok
-CE,Maranguape,2307700,EEFM EUNICE WEAVER,14,nao,,5 x computadores,,,,70.0,ok
-CE,Maranguape,2307700,EEFM LUIZ GIRAO,18,nao,,5 x computadores,,,,90.0,ok
-CE,Maranguape,2307700,EEMTI ANCHIETA,25,nao,,5 x computadores,,,,125.0,ok
+CE,Maranguape,2307700,EEFM CAIC SENADOR CARLOS JEREISSATI,18,sim,23185112,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maranguape,2307700,EEFM EUNICE WEAVER,14,sim,23082160,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maranguape,2307700,EEFM LUIZ GIRAO,18,sim,23083255,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+CE,Maranguape,2307700,EEMTI ANCHIETA,25,sim,23081945,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Massapê,2308005,ASSOCIAÇÃO CULTURAL VEREADOR FRANCISCO WALTER PONTES,4,nao,,5 x computadores,,,,20.0,ok
-CE,Meruoca,2308203,EEF RAIMUNDO RODRIGUES DE ARAÚJO,20,nao,,5 x computadores,,,,100.0,ok
+CE,Meruoca,2308203,EEF RAIMUNDO RODRIGUES DE ARAÚJO,20,sim,23017635,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,Meruoca,2308203,UNIVERSIDADE ABERTA DO BRASIL - UAB POLO MERUOCA - CEARÁ,10,sim,,escola sem codigo INEP na lista,,,,,pendente
 CE,Meruoca,2308203,UNIVERSIDADE ABERTA DO BRASIL - UAB POLO MERUOCA - CEARÁ - TERMO 28,20,sim,,escola sem codigo INEP na lista,,,,,pendente
 CE,Morrinhos,2308906,PREFEITURA MUNICIPAL DE MORRINHOS,11,nao,,5 x computadores,,,,55.0,ok
@@ -1306,7 +1306,7 @@ CE,Santa Quitéria,2312205,ASSOCIAÇÃO COMUNITARIA HIGINO DE PAIVA RODRIGO DE P
 CE,Santa Quitéria,2312205,ASSOCIAÇÃO COMUNITÁRIA LUIZ ELMIRO DE CASTRO,21,nao,,5 x computadores,,,,105.0,ok
 CE,Santana do Cariri,2312106,ASSOCIAÇÃO COMUNITÁRIA DE AGRICULTORES DO SITIO LATÃO E ADJACENCIAS,5,nao,,5 x computadores,,,,25.0,ok
 CE,Sobral,2312908,CENTRO DE REFERÊNCIA DA MULHER ANA SORAIA SILVA GALDINO SOBRAL,10,nao,,5 x computadores,,,,50.0,ok
-CE,Sobral,2312908,PID DR. JOSÉ EUCLIDES FERREIRA GOMES,10,nao,,5 x computadores,,,,50.0,ok
+CE,Sobral,2312908,PID DR. JOSÉ EUCLIDES FERREIRA GOMES,10,sim,23264101,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 CE,São Gonçalo do Amarante,2312403,EEF PROFESSORA JESSICA DEBORA DE MELO BEZERRA,10,nao,,5 x computadores,,,,50.0,ok
 CE,São Gonçalo do Amarante,2312403,PREFEITURA MUNICIPAL DE SÃO GONÇALO DO AMARANTE - TELECENTRO 1,6,nao,,5 x computadores,,,,30.0,ok
 CE,São Gonçalo do Amarante,2312403,PREFEITURA MUNICIPAL DE SÃO GONÇALO DO AMARANTE - TELECENTRO 2,6,nao,,5 x computadores,,,,30.0,ok
@@ -1314,7 +1314,7 @@ CE,Tabuleiro do Norte,2313104,ASSOCIAÇÃO DOS EDUCADORES POPULARES - MOVIMENTO 
 CE,Tabuleiro do Norte,2313104,INSTITUTO DE DESENVOLVIMENTO CIDADÃO MARIA DO SOCORRO - ACREDITE,5,nao,,5 x computadores,,,,25.0,ok
 CE,Tabuleiro do Norte,2313104,INSTITUTO MÃOS SOLIDARIAS,11,nao,,5 x computadores,,,,55.0,ok
 CE,Tauá,2313302,FUNDAÇÃO ESCOLA DE GESTÃO PÚBLICA E QUALIFICAÇÃO DE PESSOAS,10,nao,,5 x computadores,,,,50.0,ok
-CE,Viçosa do Ceará,2314102,EEF FRANCISCO SALES RODRIGUES,15,nao,,5 x computadores,,,,75.0,ok
+CE,Viçosa do Ceará,2314102,EEF FRANCISCO SALES RODRIGUES,15,sim,23014024,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 DF,Brasília,5300108,A VIDA NO CERRADO,6,nao,,5 x computadores,,,,30.0,ok
 DF,Brasília,5300108,ABRIGO DO MARINHEIRO - VOLUNTARIAS CISNE BRANCO,45,nao,,5 x computadores,,,,225.0,ok
 DF,Brasília,5300108,ADC MOCIDADE DO GAMA,22,nao,,5 x computadores,,,,110.0,ok
@@ -1471,7 +1471,7 @@ DF,Brasília,5300108,CEI 01 DO PARANÁ,2,sim,53012500,matricula ainda nao confir
 DF,Brasília,5300108,CEI SUSSUARANA,2,sim,53006925,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CEM 01 DO GUARÁ,10,sim,53008464,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CEM 01 DO PARANOA,2,sim,53006739,matricula ainda nao confirmada no QEdu,,,,,pendente
-DF,Brasília,5300108,CEM 103 SANTA MARIA,5,nao,,5 x computadores,,,,25.0,ok
+DF,Brasília,5300108,CEM 103 SANTA MARIA,5,sim,53012593,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 DF,Brasília,5300108,CEM ELEFANTE BRANCO,15,sim,53001036,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CENTRO ASSISTENCIAL MARIA CARMEM COLERA,10,nao,,5 x computadores,,,,50.0,ok
 DF,Brasília,5300108,CENTRO COMUNITÁRIO SÃO LUCAS,50,nao,,5 x computadores,,,,250.0,ok
@@ -1480,7 +1480,7 @@ DF,Brasília,5300108,CENTRO DE EDUCAÇÃO GISNO,5,sim,53001044,matricula ainda n
 DF,Brasília,5300108,CENTRO DE EDUCAÇÃO INFANTIL 01 DE SÃO SEBASTIÃO,4,sim,53012488,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CENTRO DE EDUCAÇÃO PAULO FREIRE DE CEILÂNDIA,3,nao,,5 x computadores,,,,15.0,ok
 DF,Brasília,5300108,CENTRO DE EDUCAÇÃO PROFISSIONAl ESCOLA TÉCNICA DE SANTA MARIA,45,sim,,escola sem codigo INEP na lista,,,,,pendente
-DF,Brasília,5300108,CENTRO DE ENS. 08 DE SOBRADINHO,20,nao,,5 x computadores,,,,100.0,ok
+DF,Brasília,5300108,CENTRO DE ENS. 08 DE SOBRADINHO,20,sim,53013522,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 DF,Brasília,5300108,CENTRO DE ENSINO 01 DO RIACHO FUNDO I,17,sim,53006984,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CENTRO DE ENSINO 414 DE SAMAMBAIA,17,sim,53011996,matricula ainda nao confirmada no QEdu,,,,,pendente
 DF,Brasília,5300108,CENTRO DE ENSINO ESPECIAL 01 DE SAMAMBAIA,5,sim,53012780,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -1816,7 +1816,7 @@ ES,Divino de São Lourenço,3201803,ASSOCIAÇÃO PESTALOZZI DE DIVINO DE SÃO LO
 ES,Divino de São Lourenço,3201803,PREFEITURA MUNICIPAL DE DIVINO DE SÃO LOURENÇO,16,nao,,5 x computadores,,,,80.0,ok
 ES,Guaçuí,3202306,CENTRO ESPÍRITA SÃO JORGE E SANTA BARBARA,3,nao,,5 x computadores,,,,15.0,ok
 ES,Ibiraçu,3202504,ASSOCIAÇÃO AMIGOS DA JUSTIÇA,5,nao,,5 x computadores,,,,25.0,ok
-ES,Ibitirama,3202553,EMEIEF ELIZA PACHECO ALVES,27,nao,,5 x computadores,,,,135.0,ok
+ES,Ibitirama,3202553,EMEIEF ELIZA PACHECO ALVES,27,sim,32074360,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 ES,Jerônimo Monteiro,3203106,SECRETARIA MUNICIPAL DE EDUCAÇÃO,11,nao,,5 x computadores,,,,55.0,ok
 ES,Linhares,3203205,FUNDAÇÃO FACELI - FUNDAÇÃO FACULDADES INTEGRADAS DO ENSINO SUPERIOR,10,sim,622,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv,,,,,pendente
 ES,Marataízes,3203320,COLÔNIA DE PESCADORES Z 8 - N. S. DOS NAVEGADORES,2,nao,,5 x computadores,,,,10.0,ok
@@ -1997,7 +1997,7 @@ GO,Goiânia,5208707,CASA TALITHA KUM,6,nao,,5 x computadores,,,,30.0,ok
 GO,Goiânia,5208707,CECOM DE MENINAS E MENINOS,10,nao,,5 x computadores,,,,50.0,ok
 GO,Goiânia,5208707,CENTRO DE EDUCAÇÃO COMUNITÁRIA DE MENINOS E MENINAS (CEC),10,nao,,5 x computadores,,,,50.0,ok
 GO,Goiânia,5208707,CENTRO DE VAIORIZAÇÃO DA MULHER - CEVAM,6,nao,,5 x computadores,,,,30.0,ok
-GO,Goiânia,5208707,CEPI SEVERIANO DE ARAÚJO,40,nao,,5 x computadores,,,,200.0,ok
+GO,Goiânia,5208707,CEPI SEVERIANO DE ARAÚJO,40,sim,52035573,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 GO,Goiânia,5208707,COLEGIO ESTADUAL DO SETOR PALMITO,20,sim,52069915,matricula ainda nao confirmada no QEdu,,,,,pendente
 GO,Goiânia,5208707,COLEGIO ESTADUAL JORNALISTA GONZAGA CONTART,4,sim,52091627,matricula ainda nao confirmada no QEdu,,,,,pendente
 GO,Goiânia,5208707,COLÉGIO ESTADUAL DA POLICIA MILITAR DO SETOR PALMITO,30,sim,52069915,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -2257,7 +2257,7 @@ GO,Águas Lindas de Goiás,5200258,CAIXA ESCOLA JARDIM DA BARRAGEM IV,20,sim,522
 GO,Águas Lindas de Goiás,5200258,CAIXA ESCOLAR AGUAS LINDAS II,20,nao,,5 x computadores,,,,100.0,ok
 GO,Águas Lindas de Goiás,5200258,CONSELHO DA SUBSECRETARIA REGIONAL DE EDUCAÇÃO DE AGUAS LINDAS,15,nao,,5 x computadores,,,,75.0,ok
 GO,Águas Lindas de Goiás,5200258,CONSELHO ESCOLAR DA ESCOLA MUNICIPAL ACELINA ALVES DE ARAUJO,20,sim,52095070,matricula ainda nao confirmada no QEdu,,,,,pendente
-GO,Águas Lindas de Goiás,5200258,E. M.  ACELINA ALVES ARAUJO,20,nao,,5 x computadores,,,,100.0,ok
+GO,Águas Lindas de Goiás,5200258,E. M.  ACELINA ALVES ARAUJO,20,sim,52095070,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 GO,Águas Lindas de Goiás,5200258,ESCOLA MUNICIPAL ANA LÚCIA OLIVEIRA DA SILVA,5,sim,52095061,matricula ainda nao confirmada no QEdu,,,,,pendente
 GO,Águas Lindas de Goiás,5200258,ESCOLA MUNICIPAL ANTÔNIO CÍCERO ARAÚJO DA COSTA,10,sim,52286355,matricula ainda nao confirmada no QEdu,,,,,pendente
 GO,Águas Lindas de Goiás,5200258,ESCOLA MUNICIPAL CAMARGO II,2,sim,52051285,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -2313,7 +2313,7 @@ MA,Arame,2100956,ESCOLA MUNICIPAL BOA UNIÃO,20,sim,21112479,matricula ainda nao
 MA,Arame,2100956,ESCOLA MUNICIPAL PROFª MARLENE SOARES DA SILVA,20,sim,21292876,matricula ainda nao confirmada no QEdu,,,,,pendente
 MA,Arame,2100956,ESCOLA MUNICÍPAL IMPERIAL,20,sim,,escola sem codigo INEP na lista,,,,,pendente
 MA,Arame,2100956,SECRETÁRIA MUNICIPAL DE SAÚDE - UNIDADES BÁSICAS DE SAÚDE,50,nao,,5 x computadores,,,,250.0,ok
-MA,Arame,2100956,U.I. ED. EMILIANO GUAJAJARA,10,nao,,5 x computadores,,,,50.0,ok
+MA,Arame,2100956,U.I. ED. EMILIANO GUAJAJARA,10,sim,21234442,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MA,Arari,2101004,ASSOCIAÇÃO CRISTÃ BENEFICIENTE,25,nao,,5 x computadores,,,,125.0,ok
 MA,Arari,2101004,ASSOCIAÇÃO PROJETO NOVA ESPERANÇA ARARI,25,nao,,5 x computadores,,,,125.0,ok
 MA,Arari,2101004,CENTRO DE ENSINO ARIMATEA CISNE,2,sim,21037620,matriculas (QEdu),324,2025,https://qedu.org.br/escola/21037620-centro-de-ensino-arimatea-cisne,324.0,ok
@@ -3435,7 +3435,7 @@ MG,Belo Horizonte,3106200,CRPI - CENTRO DE REFERÊNCIA DA PESSOA IDOSA,1,nao,,5 
 MG,Belo Horizonte,3106200,CTA - COMUNIDADE TODOS EM AÇÃO,9,nao,,5 x computadores,,,,45.0,ok
 MG,Belo Horizonte,3106200,DIRETORIA REGIONAL DE ASSISTÊNCIA SOCIAL PAMPULHA ,9,nao,,5 x computadores,,,,45.0,ok
 MG,Belo Horizonte,3106200,DIRETORIA REGIPONAL DE ASSISTÊNCIA SOCIAL,1,nao,,5 x computadores,,,,5.0,ok
-MG,Belo Horizonte,3106200,E. M. DULCE MARIA HOMEM (CENTRO PSICOPEDAGÓGICO),15,nao,,5 x computadores,,,,75.0,ok
+MG,Belo Horizonte,3106200,E. M. DULCE MARIA HOMEM (CENTRO PSICOPEDAGÓGICO),15,sim,31212776,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MG,Belo Horizonte,3106200,EBHC HAVAI / VENTOSA,1,nao,,5 x computadores,,,,5.0,ok
 MG,Belo Horizonte,3106200,EPRE - EDUCANDÁRIO PRESBITERIANO RENOVADO,15,sim,31281859,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Belo Horizonte,3106200,ESCOLA E CRECHE SANTO TOMAZ DE AQUINO,7,sim,31281581,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -3453,7 +3453,7 @@ MG,Belo Horizonte,3106200,ESCOLA MUNICIPAL SOLAR RUBI,20,sim,31358614,matricula 
 MG,Belo Horizonte,3106200,ESCOLA MUNICIPAL TRISTÃO DA CUNHA,5,sim,31003808,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Belo Horizonte,3106200,ESCOLA MUNICIPAL VICENTE GUIMARÃES,40,sim,31003816,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Belo Horizonte,3106200,ESCOLA MUNICIPAL WLADIMIR DE PAULA GOMES - EMWPG,5,sim,31003433,matricula ainda nao confirmada no QEdu,,,,,pendente
-MG,Belo Horizonte,3106200,ESCOLA MUNICIÁL AURÉLIO BUARQUE DE HOLANDA,12,nao,,5 x computadores,,,,60.0,ok
+MG,Belo Horizonte,3106200,ESCOLA MUNICIÁL AURÉLIO BUARQUE DE HOLANDA,12,sim,31217786,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MG,Belo Horizonte,3106200,ESCOLA PROFISSINALIZANTE RAIMUNDA DA SILVA SOARES,2,nao,,5 x computadores,,,,10.0,ok
 MG,Belo Horizonte,3106200,ESCOLA PROFISSIONALIZANTE RAIMUNDA DA SILVA SOARES,29,nao,,5 x computadores,,,,145.0,ok
 MG,Belo Horizonte,3106200,ESCOLA PROFISSIONALIZANTE RAIMUNDA SILVA SOARES,19,sim,,escola sem codigo INEP na lista,,,,,pendente
@@ -3741,7 +3741,7 @@ MG,Esmeraldas,3124104,ASSOCIAÇÃO BEZERRA DE MENEZES - ASBEM,11,nao,,5 x comput
 MG,Esmeraldas,3124104,ESCOLA MUNICIPAL MÁRCIO ALVES GARCIA,5,sim,31012173,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Esmeraldas,3124104,ESCOLA MUNICIPAL SADI ALVES VIEIRA,5,sim,31222879,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Ferros,3125903,CESEC PROF. JÚLIO DE CARVALHO SOARES,16,sim,31102971,matricula ainda nao confirmada no QEdu,,,,,pendente
-MG,Ferros,3125903,E.E. PROF. ALCIDES FERNANDES DE ASSUNÇÃO,21,nao,,5 x computadores,,,,105.0,ok
+MG,Ferros,3125903,E.E. PROF. ALCIDES FERNANDES DE ASSUNÇÃO,21,sim,31102911,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MG,Ferros,3125903,ESCOLA ESTADUAL ENIR NATELIA LEITE RIBEIRO,24,nao,,5 x computadores,,,,120.0,ok
 MG,Ferros,3125903,ESCOLA ESTADUAL LEOPOLDINA BARROS DRUMOND,21,sim,31103021,matricula ainda nao confirmada no QEdu,,,,,pendente
 MG,Ferros,3125903,ESCOLA ESTADUAL PONCIANO PEREIRA DA COSTA,22,sim,31103012,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -3950,8 +3950,8 @@ MS,Amambai,5000609,POSTO DE SAUDE INDIGENA MBO'ERENDA TUPÃ I ÑANDEVA,1,nao,,5 
 MS,Amambai,5000609,RETOMADA ATY JOVEM GUARANI KAIOWA E NHADEVA,10,nao,,5 x computadores,,,,50.0,ok
 MS,Anastácio,5000708,ESCOLA ESTADUAL INDÍGENA GUILHERMINA DA SILVA,15,sim,50029819,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Antônio João,5000906,ALDEIA NHADERU MARANGATU - ESCOLA MUNICIPAL MBO'EROY TUPÃ I ARANDU RENOI,10,sim,50024655,matricula ainda nao confirmada no QEdu,,,,,pendente
-MS,Antônio João,5000906,EM MBO'EROY TUPA I ARANDU RENOI,20,nao,,5 x computadores,,,,100.0,ok
-MS,Antônio João,5000906,EMPEPG MAIKA SANABRIA PINHEIRO,20,nao,,5 x computadores,,,,100.0,ok
+MS,Antônio João,5000906,EM MBO'EROY TUPA I ARANDU RENOI,20,sim,50024655,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+MS,Antônio João,5000906,EMPEPG MAIKA SANABRIA PINHEIRO,20,sim,50015311,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Aparecida do Taboado,5001003,PREFEITURA MUNICIPAL DE APARECIDA DO TABOADO,20,nao,,5 x computadores,,,,100.0,ok
 MS,Aquidauana,5001102,ASSOCIAÇÃO IGUALDADE PARA TODOS,10,nao,,5 x computadores,,,,50.0,ok
 MS,Aquidauana,5001102,ASSOCIAÇÃO TXANÉ TERENA DE AQUIDAUANA MS,10,nao,,5 x computadores,,,,50.0,ok
@@ -3988,13 +3988,13 @@ MS,Aquidauana,5001102,RÁDIO TERENA FM,2,nao,,5 x computadores,,,,10.0,ok
 MS,Aquidauana,5001102, POLO SAÚDE INDÍGENA DE AQUIDAUANA (ALDEIA LAGOINHA),1,nao,,5 x computadores,,,,5.0,ok
 MS,Aral Moreira,5001243,"ALDEIA GUASUTY - ESCOLA POLO MUNICIPAL INDÍGENA, GUASUTI",10,sim,50029789,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Aral Moreira,5001243,ALDEIA GUAVIRY - ESCOLA EXTENSÃO CHE RU APYKA RENDY TEKOHA GUAIVIRY,10,sim,50029789,matricula ainda nao confirmada no QEdu,,,,,pendente
-MS,Aral Moreira,5001243,EM INDIGENA ARANDU RENDA GUARANI/KAIOWA,5,nao,,5 x computadores,,,,25.0,ok
+MS,Aral Moreira,5001243,EM INDIGENA ARANDU RENDA GUARANI/KAIOWA,5,sim,50029789,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Aral Moreira,5001243,ESCOLA EXTENSÃO CHERU APYCA RENDY,5,sim,50029789,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Bela Vista,5002100,ALDEIA PIRAKUA - ESCOLA MUNICIPAL INDÍGENA PIRAKUA,10,sim,50024213,matricula ainda nao confirmada no QEdu,,,,,pendente
-MS,Bela Vista,5002100,EM SONETE LEITE LINO,5,nao,,5 x computadores,,,,25.0,ok
-MS,Bela Vista,5002100,EM SÃO GERALDO,5,nao,,5 x computadores,,,,25.0,ok
+MS,Bela Vista,5002100,EM SONETE LEITE LINO,5,sim,50013998,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+MS,Bela Vista,5002100,EM SÃO GERALDO,5,sim,50033522,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Bodoquena,5002159,ASSOCIACAO DAS COMUNIDADES INDIGENAS DA RESERVA KAADIWEU,25,nao,,5 x computadores,,,,125.0,ok
-MS,Bodoquena,5002159,EM JOÃO BATISTA PACHECO,10,nao,,5 x computadores,,,,50.0,ok
+MS,Bodoquena,5002159,EM JOÃO BATISTA PACHECO,10,sim,50026879,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Bonito,5002209,ESCOLA MUNICIPAL JOÃO ALVES DA NOBREGA,2,sim,50014226,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Bonito,5002209,ESCOLA MUNICIPAL PROFº DURVALINA DORNELLES TEIXEIRA,3,sim,50014218,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Bonito,5002209,ESCOLA MUNICIPAL PROFº IZAURA PINTO GUIMARÃES,3,sim,50027018,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -4024,7 +4024,7 @@ MS,Campo Grande,5002704,MOVIMENTO DE APOIO SOCIAL,1,nao,,5 x computadores,,,,5.0
 MS,Campo Grande,5002704,PROJETO SIMÃO,1,nao,,5 x computadores,,,,5.0,ok
 MS,Campo Grande,5002704,SECRETARIA DE ESTADO DE GOVERNO E GESTÃO ESTRATEGICA (BIOPARQUE PANTANAL),60,nao,,5 x computadores,,,,300.0,ok
 MS,Campo Grande,5002704,TEATRAL GRUPO DE RISCO,3,nao,,5 x computadores,,,,15.0,ok
-MS,Caracol,5002803,EM JÃO JOSÉ LEITE DA SILVA,10,nao,,5 x computadores,,,,50.0,ok
+MS,Caracol,5002803,EM JÃO JOSÉ LEITE DA SILVA,10,sim,50014374,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Chapadão do Sul,5002951,PREFEITURA DE CHAPADÃO DO SUL,30,nao,,5 x computadores,,,,150.0,ok
 MS,Coronel Sapucaia,5003157,ALDEIAS INDÍGENAS GUARANI KAIOWÁ - TAQUAPERY,10,nao,,5 x computadores,,,,50.0,ok
 MS,Corumbá,5003207,CEMI/SEMED,17,nao,,5 x computadores,,,,85.0,ok
@@ -4051,14 +4051,14 @@ MS,Dourados,5003702,POLO BASE DE SAÚDE INDÍGENA DE DOURADOS,10,nao,,5 x comput
 MS,Dourados,5003702,PREFEITURA MUNICIPAL DE DOURADOS,148,nao,,5 x computadores,,,,740.0,ok
 MS,Eldorado,5003751,ALDEIA CERRITO - ESCOLA MUNICIPAL INDÍGENS MBO'ERRO TAVA OKARA RENDY,10,sim,50029886,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Eldorado,5003751,CENTRO EDUCAÇÃO INFANTIL PINGO DE GENTE,10,sim,50020307,matricula ainda nao confirmada no QEdu,,,,,pendente
-MS,Eldorado,5003751,EM SEBASTIÃO DE PAULA,10,nao,,5 x computadores,,,,50.0,ok
+MS,Eldorado,5003751,EM SEBASTIÃO DE PAULA,10,sim,50022210,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Eldorado,5003751,FUNDAÇÃO HOSPITALAR DE ELDORADO,16,nao,,5 x computadores,,,,80.0,ok
 MS,Inocência,5004403,ESCOLA CEI PROF. OLIVATO ELIAS DA SILVA,10,sim,50011243,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Itaporã,5004502,ESCOLA MUNICIPAL SALVADOR FERREIRA DE AGUIAR - ITAPORÃ,20,sim,50024906,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Japorã,5004809,ALDEIAS INDÍGENAS GUARANI KAIOWÁ - PORTO LINDO,10,nao,,5 x computadores,,,,50.0,ok
-MS,Japorã,5004809,EEMIF JOSÉ DE ALENCAR,15,nao,,5 x computadores,,,,75.0,ok
-MS,Japorã,5004809,EEMIF MBO’EHAO TEKOHA GUARANI POLO,15,nao,,5 x computadores,,,,75.0,ok
-MS,Japorã,5004809,EEMIF MBO’EHAO TEKOHA GUARANI POLO - EXTENSÃO,10,nao,,5 x computadores,,,,50.0,ok
+MS,Japorã,5004809,EEMIF JOSÉ DE ALENCAR,15,sim,50021036,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+MS,Japorã,5004809,EEMIF MBO’EHAO TEKOHA GUARANI POLO,15,sim,50029460,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+MS,Japorã,5004809,EEMIF MBO’EHAO TEKOHA GUARANI POLO - EXTENSÃO,10,sim,50029460,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Japorã,5004809,MUNICIPIO DE JAPORA,10,nao,,5 x computadores,,,,50.0,ok
 MS,Juti,5005152,ESCOLA DORACI DE FREITAS FERNANDES,10,sim,50017802,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Ladário,5005202,ASSOCIAÇÃO RAMUNHEH,5,nao,,5 x computadores,,,,25.0,ok
@@ -4072,18 +4072,18 @@ MS,Paranhos,5006358,ALDEIA POTRERO - ESCOLA MUNICIPAL INDÍGENA GIL PIRES,10,sim
 MS,Paranhos,5006358,ALDEIA YPO'I - ESCOLA ARANDU POTY RENDA (EXTENSÃO DA ESCOLA M.I. PANCHO ROMERO,10,sim,50022636,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Ponta Porã,5006606,ALDEIA LIMA CAMPO - ESCOLA MUNICIPAL AGEMIR FREITAS,10,sim,,escola sem codigo INEP na lista,,,,,pendente
 MS,Ponta Porã,5006606,ASSOCIAÇÃO AGRICULTURA FAMILIAR DO ASSENTAMENTO ABA DA SERRA,10,nao,,5 x computadores,,,,50.0,ok
-MS,Ponta Porã,5006606,EE JOÃO BREMBATTI CALVOSO,10,nao,,5 x computadores,,,,50.0,ok
+MS,Ponta Porã,5006606,EE JOÃO BREMBATTI CALVOSO,10,sim,50018388,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Ponta Porã,5006606,ESCOLA ESTADUAL PROFESSOR JOSÉ EDSON DOMINGOS DOS SANTOS,20,sim,50028456,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Ponta Porã,5006606,ESCOLA MUNICIPAL GRAÇA DE DEUS,25,sim,50019040,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Ponta Porã,5006606,ESCOLA MUNICIPAL OSVALDO DE ALMEIDA MATOS,25,sim,50018949,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Sete Quedas,5007703,ESCOLA ESTADUAL GUIMARÃES ROSA,35,sim,50021710,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Sidrolândia,5007901,CENTRO DE CAPACITAÇÃO E PESQUISA GERALDO GARCIA,10,nao,,5 x computadores,,,,50.0,ok
-MS,Sidrolândia,5007901,EM OLINDA BRITO DE SOUZA,30,nao,,5 x computadores,,,,150.0,ok
-MS,Sidrolândia,5007901,EM PEDRO ALEIXO,30,nao,,5 x computadores,,,,150.0,ok
+MS,Sidrolândia,5007901,EM OLINDA BRITO DE SOUZA,30,sim,50009923,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+MS,Sidrolândia,5007901,EM PEDRO ALEIXO,30,sim,50009877,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Sonora,5007935,COMUNIDADE FAMÍLIA BISPO,3,nao,,5 x computadores,,,,15.0,ok
 MS,São Gabriel do Oeste,5007695,PREFEITURA MUNICIPAL DE SÂO GABRIEL DO OESTE,6,nao,,5 x computadores,,,,30.0,ok
 MS,Tacuru,5007950,ALDEIA JAGUAPIRE - ESCOLA MUNICIPAL INDÍGENA TOMASIA DE VARGAS,10,sim,50033050,matricula ainda nao confirmada no QEdu,,,,,pendente
-MS,Taquarussu,5007976,EM IRENE LINDA ZIOLI CRIVELLI,10,nao,,5 x computadores,,,,50.0,ok
+MS,Taquarussu,5007976,EM IRENE LINDA ZIOLI CRIVELLI,10,sim,50029541,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 MS,Terenos,5008008,ESCOLA MUNICIPAL ASSENTAMENTO CAMPO VERDE,10,sim,50010069,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Terenos,5008008,ESCOLA MUNICIPAL JAMIC POLO,10,sim,50010077,matricula ainda nao confirmada no QEdu,,,,,pendente
 MS,Terenos,5008008,ESCOLA MUNICIPAL PROFESSORA VILMA FATIMA DE ASSIS BARRETO,10,sim,50032151,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -4599,7 +4599,7 @@ PA,Melgaço,1504505,ASSOCIAÇÃO DE TRABALHADORES PARA INTEGRAÇÃO SOCIAL DE ME
 PA,Melgaço,1504505,CONSELHO MUNICIPAL DA CRIANÇA E DO ADOLESCENTE,2,nao,,5 x computadores,,,,10.0,ok
 PA,Melgaço,1504505,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOSÉ MARIA RODRIGUES VIEGAS JUNIOR,10,sim,15225003,matriculas (QEdu),1289,2025,https://qedu.org.br/escola/15225003-escola-municipal-de-ensino-fundamental-jose-maria-rodrigues-viegas-junior,1289.0,ok
 PA,Melgaço,1504505,PREFEITURA MUNICIPAL DE MELGAÇO,29,nao,,5 x computadores,,,,145.0,ok
-PA,Mocajuba,1504604,ESCOLA MUNICIPAL DINIZ DE SOUZA COLEHO,10,nao,,5 x computadores,,,,50.0,ok
+PA,Mocajuba,1504604,ESCOLA MUNICIPAL DINIZ DE SOUZA COLEHO,10,sim,15076784,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PA,Moju,1504703,ASSOCIACAO REMANESCENTE DE QUILOMBO CONGO DA VILA TRAQUATEUA,10,nao,,5 x computadores,,,,50.0,ok
 PA,Moju,1504703,ASSOCIAÇÃO QUILOMBOLA DO BAIXO CAETÉ,10,nao,,5 x computadores,,,,50.0,ok
 PA,Moju,1504703,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL CONGREGAÇÃO,10,sim,15082709,matriculas (QEdu),42,2025,https://qedu.org.br/escola/15082709-escola-municipal-de-educacao-infantil-e-fundamental-congregacao,42.0,ok
@@ -4693,8 +4693,8 @@ PA,Salvaterra,1506302,ASSOCIAÇÃO DE MÃES E AGRICULTORES REMANESCENTES DE QUIL
 PA,Salvaterra,1506302,ASSOCIAÇÃO REMANESCENTE DE QUILOMBOS DE SÃO BENEDITO,3,nao,,5 x computadores,,,,15.0,ok
 PA,Salvaterra,1506302,ASSOCIAÇÃO REMANESCENTES DE QUILOMBO DE BACABAL,3,nao,,5 x computadores,,,,15.0,ok
 PA,Salvaterra,1506302,CMDCA DE SALVATERRA,2,nao,,5 x computadores,,,,10.0,ok
-PA,Salvaterra,1506302,E.E.F QUILOMBOLA MARIA LUCIA,4,nao,,5 x computadores,,,,20.0,ok
-PA,Salvaterra,1506302,E.M.E.F. CONDEIXA,6,nao,,5 x computadores,,,,30.0,ok
+PA,Salvaterra,1506302,E.E.F QUILOMBOLA MARIA LUCIA,4,sim,15156818,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+PA,Salvaterra,1506302,E.M.E.F. CONDEIXA,6,sim,15033058,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PA,Salvaterra,1506302,ESCOLA ESTADUAL PROF. ADEMAR NUNES VASCONCELOS,25,sim,15032744,matriculas (QEdu),141,2025,https://qedu.org.br/escola/15032744-escola-estadual-prof-ademar-nunes-vasconcelos,141.0,ok
 PA,Salvaterra,1506302,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL BAHÁÍ OLAVA,25,sim,15032990,matriculas (QEdu),576,2025,https://qedu.org.br/escola/15032990-escola-municipal-de-ensino-infantil-e-fundamental-bahai-olava,576.0,ok
 PA,Salvaterra,1506302,GRUPO DE MULHERES SEMENTES DO QUILOMBO,10,nao,,5 x computadores,,,,50.0,ok
@@ -4900,8 +4900,8 @@ PA,Santarém Novo,1506906,PREFEITURA MUNICIPAL SANTARÉM NOVO,10,nao,,5 x comput
 PA,Senador José Porfírio,1507805,CAMPO DAS ASSEMBLEIAS DE DEUS DO ASSURINI,10,nao,,5 x computadores,,,,50.0,ok
 PA,Senador José Porfírio,1507805,PREFEITURA MUNICIPAL JOSÉ PORTFÓLIO,10,nao,,5 x computadores,,,,50.0,ok
 PA,Soure,1507904,ASSOCIAÇÃO PADRE JÚLIO NEGRIZZOLO - CASA DE MISSÃO MADRE TERESA DE CALCUTA,10,nao,,5 x computadores,,,,50.0,ok
-PA,Soure,1507904,EMEIF DAGMAR GONÇALVES,37,nao,,5 x computadores,,,,185.0,ok
-PA,Soure,1507904,EMEIF.CEL.ALBERTO ENGELHARD,35,nao,,5 x computadores,,,,175.0,ok
+PA,Soure,1507904,EMEIF DAGMAR GONÇALVES,37,sim,15033775,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+PA,Soure,1507904,EMEIF.CEL.ALBERTO ENGELHARD,35,sim,15033989,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PA,Soure,1507904,ESCOLA ESTADUAL PROFESSORA EDDA DE SOUZA GONÇALVES,25,sim,15033724,matriculas (QEdu),163,2025,https://qedu.org.br/escola/15033724-escola-estadual-professora-edda-de-souza-goncalves,163.0,ok
 PA,Soure,1507904,PREFEITURA MUNICIPAL DE SOURE,19,nao,,5 x computadores,,,,95.0,ok
 PA,São Caetano de Odivelas,1507102,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROFESSORA LUCIANA SARAIVA MACEDO - (SECRETARIA DE EDUCAÇÃO),10,sim,15179591,matriculas (QEdu),338,2025,https://qedu.org.br/escola/15179591-escola-municipal-de-ensino-fundamental-professora-luciana-saraiva-macedo-secreta,338.0,ok
@@ -5050,7 +5050,7 @@ PB,João Pessoa,2507507,LÊ AXÉ OMIM OJÚ FUNFUM OXULUFAN EWÊ,3,nao,,5 x compu
 PB,João Pessoa,2507507,MIXTO ESPORTE CLUBE,10,nao,,5 x computadores,,,,50.0,ok
 PB,João Pessoa,2507507,MOVIMENTO DO ESPÍRITO LILÁS (MEL),3,nao,,5 x computadores,,,,15.0,ok
 PB,João Pessoa,2507507,MOVIMENTO E TRABALHADORAS POR DIREITO,3,nao,,5 x computadores,,,,15.0,ok
-PB,João Pessoa,2507507,NAYARA KATY MEDEIROS DA SILVA,10,nao,,5 x computadores,,,,50.0,ok
+PB,João Pessoa,2507507,NAYARA KATY MEDEIROS DA SILVA,10,sim,,escola sem codigo INEP na lista [via planilha de pares],,,,,pendente
 PB,João Pessoa,2507507,PRIMEIRA IGREJA BATISTA DO CRISTO REDENTOR,10,nao,,5 x computadores,,,,50.0,ok
 PB,João Pessoa,2507507,PROJETO BEIRA DA LINHA,3,nao,,5 x computadores,,,,15.0,ok
 PB,João Pessoa,2507507,SECRETARIA DE EDUCAÇÃO E CULTURA DO MUNICIPIO DE JOÃO PESSOA (SEDEC) (CEMAPI),10,nao,,5 x computadores,,,,50.0,ok
@@ -5127,7 +5127,7 @@ PB,São João do Cariri,2514008,CRECHE ROSÂNGELA DE FÁRIMA MEDEIROS,1,sim,2520
 PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL I DEP. TERTULIANO DE BRITO,2,sim,25054163,matricula ainda nao confirmada no QEdu,,,,,pendente
 PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL I ETELVIANA MARIA BATISTA,1,sim,25054341,matricula ainda nao confirmada no QEdu,,,,,pendente
 PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL II NOSSA SENHORA DOS MILAGRES,2,sim,25054414,matricula ainda nao confirmada no QEdu,,,,,pendente
-PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL I HILDA MARIA DE SOUZ BRITO,1,nao,,5 x computadores,,,,5.0,ok
+PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL I HILDA MARIA DE SOUZ BRITO,1,sim,25054406,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PB,São João do Cariri,2514008,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL I JOSEFA RAMOS,1,sim,,escola sem codigo INEP na lista,,,,,pendente
 PB,São João do Cariri,2514008,"ESCOLA MUNICIPAL DE ENSINO INFANTIL, FUNDAMENTAL I E II CONSTANTINO DE FARIAS CASTRO",1,sim,25054295,matricula ainda nao confirmada no QEdu,,,,,pendente
 PB,São João do Cariri,2514008,ESCOLA TERTULIANO DE BRITO,20,sim,25054163,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -5580,7 +5580,7 @@ PI,Caraúbas do Piauí,2202539,ESCOLA MUNICIPAL ADRIÃO PORTELA,10,sim,22012427,
 PI,Castelo do Piauí,2202604,ESCOLA ANTÔNIO ALVES LIMA,10,sim,22140255,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,Caxingó,2202653,ESCOLA MUNICIPAL ALMIRANTE GERVÁSIO SAMPAIO,10,sim,22012435,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,Cocal de Telha,2202711,CCLÔNIA DE PESCADORES Z-39,11,nao,,5 x computadores,,,,55.0,ok
-PI,Colônia do Gurguéia,2202752,NIDADE ESCOLAR ALIANÇA DO GURGUEIA,10,nao,,5 x computadores,,,,50.0,ok
+PI,Colônia do Gurguéia,2202752,NIDADE ESCOLAR ALIANÇA DO GURGUEIA,10,sim,22054995,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PI,Colônia do Piauí,2202778,ESCOLA MUNICÍPIO DE COLÔNIA DO PIAUI,10,sim,22078037,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,Cristalândia do Piauí,2203008,ASSOCIAÇÃO CAMINHOS DA ESPERANÇA,2,nao,,5 x computadores,,,,10.0,ok
 PI,Cristino Castro,2203107,ESCOLA FAMÍLIA AGRÍCOLA VALE DO GURGUEIA - EFAVAG,10,sim,22163603,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -5603,7 +5603,7 @@ PI,Jatobá do Piauí,2205276,ESCOLA MUNICIPAL OSCAR GIL CASTELO BRANCO,10,sim,22
 PI,José de Freitas,2205508,ESCOLA MUNICIPAL AGRIPINA PORTELA,20,sim,22020900,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,José de Freitas,2205508,ESCOLA MUNICIPAL MONS.DEUSDEDIT CRAVEIRO DE MELO,20,sim,22110801,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,Júlio Borges,2205524,UNIDADE ESCOLAR ALEXANDRINA BRITO,10,sim,22146806,matricula ainda nao confirmada no QEdu,,,,,pendente
-PI,Lagoa do Piauí,2205581,MARIA DE JESUS CARVALHO LIMA OLIVEIRA,10,nao,,5 x computadores,,,,50.0,ok
+PI,Lagoa do Piauí,2205581,MARIA DE JESUS CARVALHO LIMA OLIVEIRA,10,sim,22019529,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 PI,Lagoa do Sítio,2205599,UNIDADE ESCOLAR HELVÍDIO NUNES,10,nao,,5 x computadores,,,,50.0,ok
 PI,Miguel Leão,2206308,UNIDADE ESCOLAR MIGUEL MENDES MONTEIRO,10,sim,22137122,matricula ainda nao confirmada no QEdu,,,,,pendente
 PI,Morro Cabeça no Tempo,2206654,UNIDADE ESCOLAR CRUZ,10,sim,22073787,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6194,13 +6194,13 @@ RJ,Maricá,3302700,ASSOCIAÇÃO DOS PESCADORES DE PONTA NEGRA E ADJACÊNCIAS,5,n
 RJ,Maricá,3302700,ASSOCIAÇÃO DOS QUILOMBOLAS DA MACAMBIRA,5,nao,,5 x computadores,,,,25.0,ok
 RJ,Maricá,3302700,ASSOCIAÇÃO QUILOMBOLA DA COMUNIDADE DO SÍTIO ARROJADO,5,nao,,5 x computadores,,,,25.0,ok
 RJ,Maricá,3302700,ASSOCIAÇÃO QUILOMBOLA DO SÍTIO PÊGA,5,nao,,5 x computadores,,,,25.0,ok
-RJ,Maricá,3302700,CE CAIO FRANCISCO DE FIGUEIREDO,5,nao,,5 x computadores,,,,25.0,ok
-RJ,Maricá,3302700,CE DOMÍCIO DA GAMA,5,nao,,5 x computadores,,,,25.0,ok
-RJ,Maricá,3302700,CE DR. JOÃO GOMES DE MATTOS SOBRINHO,5,nao,,5 x computadores,,,,25.0,ok
-RJ,Maricá,3302700,CE ELISIÁRIO MATTA,10,nao,,5 x computadores,,,,50.0,ok
+RJ,Maricá,3302700,CE CAIO FRANCISCO DE FIGUEIREDO,5,sim,33054185,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RJ,Maricá,3302700,CE DOMÍCIO DA GAMA,5,sim,33053952,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RJ,Maricá,3302700,CE DR. JOÃO GOMES DE MATTOS SOBRINHO,5,sim,33054177,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RJ,Maricá,3302700,CE ELISIÁRIO MATTA,10,sim,33053910,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RJ,Maricá,3302700,CE EUCLYDES PAULO DA SILVA,5,nao,,5 x computadores,,,,25.0,ok
 RJ,Maricá,3302700,CE FRANCISCO JOSÉ DO NASCIMENTO,5,nao,,5 x computadores,,,,25.0,ok
-RJ,Maricá,3302700,CE PROFESSOR DARCI RIBEIRO,10,nao,,5 x computadores,,,,50.0,ok
+RJ,Maricá,3302700,CE PROFESSOR DARCI RIBEIRO,10,sim,33143153,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RJ,Maricá,3302700,CENTRO DE ENSINO EUCLYDES PAULO DA SILVA,5,sim,33054215,matricula ainda nao confirmada no QEdu,,,,,pendente
 RJ,Maricá,3302700,CENTRO DE ENSINO FRANCISCO JOSÉ DO NASCIMENTO,5,sim,33054339,matricula ainda nao confirmada no QEdu,,,,,pendente
 RJ,Maricá,3302700,CENTRO DE ENSINO PROFESSOR DARCY RIBEIRO,5,sim,33183562,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6460,7 +6460,7 @@ RN,Areia Branca,2401107,ESCOLA MUNICIPAL DE 1º GRAU SANTO EXPEDITO,10,sim,24000
 RN,Areia Branca,2401107,PREFEITURA MUNICIPAL DE AREIA BRANCA,10,nao,,5 x computadores,,,,50.0,ok
 RN,Açu,B|RN|ACU,ESCOLA MUNICIPAL MARIA NEUDA BEZERRA,10,sim,24284343,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Baraúna,2401453,ASSOCIAÇÃO PROJETO DE ASSENTAMENTO REFORMA AGRÁRIA MAISA VILA NOVA I,1,nao,,5 x computadores,,,,5.0,ok
-RN,Baraúna,2401453,ESCOLA MUNICAIPAL DE 1º GRAU AMAURI DA SILVA,10,nao,,5 x computadores,,,,50.0,ok
+RN,Baraúna,2401453,ESCOLA MUNICAIPAL DE 1º GRAU AMAURI DA SILVA,10,sim,24000728,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,Barcelona,2401503,ESCOLA MUNICIPAL PEDRO DE AZEVEDO MAIA,10,sim,24039535,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Bodó,2401651,TELECENTRO COMUNITÁRIO DA UNIDADE VII ANTÔNIO MIRANDA DE ASSUNÇÃO,20,nao,,5 x computadores,,,,100.0,ok
 RN,Caicó,2402006,ESCOLA MUNICIPAL PROFESSOR MATEUS VIANA,15,sim,24032239,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6477,7 +6477,7 @@ RN,Ceará-Mirim,2402600,ESCOLA MUNICIPAL PROFESSORA MARIA ESTER,10,sim,24052353,
 RN,Ceará-Mirim,2402600,ESTATUTO DA CAIXA ESCOLA MUNICIPAL VIRGILIO LUIZ,10,sim,24052671,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Ceará-Mirim,2402600,UNIVERSIDADE PATATIVA DO ASSARÉ,10,nao,,5 x computadores,,,,50.0,ok
 RN,Doutor Severiano,2403202,ESCOLA MUNICIPAL JOSÉ NERI DE OLIVEIRA,30,sim,24099805,matricula ainda nao confirmada no QEdu,,,,,pendente
-RN,Encanto,2403301,ESCOLA MUNICAIPAL MARIA PEREIRA LEITE,10,nao,,5 x computadores,,,,50.0,ok
+RN,Encanto,2403301,ESCOLA MUNICAIPAL MARIA PEREIRA LEITE,10,sim,24073490,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,Equador,2403400,ESCOLA MUNICIPAL PRESIDENTE COSTA E SILVA,10,sim,24036307,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Espírito Santo,2403509,ESCOLA MUNICIPAL LENIRA GOMES TEIXEIRA,10,sim,24061719,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Extremoz,2403608,COMUNIDADE TERAPÊUTICA MANANCIAL DE VIDA,20,nao,,5 x computadores,,,,100.0,ok
@@ -6502,7 +6502,7 @@ RN,Maxaranguape,2407500,ESCOLA MUNICIPAL PROFESSOR CALIXTO VARELA DE ALBUQUERQUE
 RN,Monte Alegre,2407807,CENTRO EDUCACIONAL JOSÉ MARIA DE AGUIAR FILHO,10,sim,24046302,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Monte Alegre,2407807,TELECENTRO QUIRAMBU,10,nao,,5 x computadores,,,,50.0,ok
 RN,Mossoró,2408003,CAS-CENTRO ESTADUAL DE CAPACITAÇÃO DE EDUCADORES E ATENDIMENTO AO SURDO,7,nao,,5 x computadores,,,,35.0,ok
-RN,Mossoró,2408003,CE INTEGRADA PROFESSOR ELISEU VIANA,18,nao,,5 x computadores,,,,90.0,ok
+RN,Mossoró,2408003,CE INTEGRADA PROFESSOR ELISEU VIANA,18,sim,24001155,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,Mossoró,2408003,ESCOLA ESTADUAL DR. LAVOISIER MAIA,10,sim,24002208,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Mossoró,2408003,ESCOLA ESTADUAL PROFESSOR ABEL FREIRE COELHO,15,sim,24002330,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Mossoró,2408003,ESCOLA MUNICIPAL ANTÔNIO MENDONÇA,6,sim,24002615,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6573,7 +6573,7 @@ RN,Natal,2408102,SECRETARUA DE ESTADO DA EDUCAÇÃO E CULTURA - RN,77,nao,,5 x c
 RN,Natal,2408102,SERVIÇO SOCIAL DO COMERCIO - SESC -  AR/RN,10,nao,,5 x computadores,,,,50.0,ok
 RN,Nísia Floresta,2408201,ESCOLA MUNICIPAL YAYÁ PAIVA,10,sim,24054062,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Paraú,2408706,ESCOLA ESTADUAL DE LUÍS GONDIM,20,sim,24008532,matricula ainda nao confirmada no QEdu,,,,,pendente
-RN,Parnamirim,2403251,EEFM PROFESSORA MARIA ARAÚJO,10,nao,,5 x computadores,,,,50.0,ok
+RN,Parnamirim,2403251,EEFM PROFESSORA MARIA ARAÚJO,10,sim,24055867,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,Parnamirim,2403251,ESCOLA MUNICIPAL ARIA DO CÉU FERNANDES,10,sim,24084255,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Parnamirim,2403251,ESCOLA MUNICIPAL JOÃO GOMES DA COSTA NETO,10,sim,24294314,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Parnamirim,2403251,ESCOLA MUNICIPAL PROFESSORA JACIRA MEDEIROS DE SOUSA SILVA,10,sim,24084840,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6602,7 +6602,7 @@ RN,Santa Maria,2409332,ESCOLA MUNICIPAL JOÃO MARQUES DE ARAÚJO - EMJMA,10,sim,
 RN,Santana do Matos,2411403,ESCOLA MUNICIPAL LUIZ LIBERALINO DE CARVALHO,20,sim,24030236,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Santana do Matos,2411403,ESCOLA MUNICIPAL PROF. MARIA LETÍCIA DAMASCENO,20,sim,24030430,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Santana do Seridó,2411429,PREFEITURA 7MUNICIPAL DE SANTANA DO SERIDÓ,20,nao,,5 x computadores,,,,100.0,ok
-RN,Serra Caiada,2410306,EMEF ESCOLA MUNICIPAL MANOEL FELIPE DOS ANJOS,15,nao,,5 x computadores,,,,75.0,ok
+RN,Serra Caiada,2410306,EMEF ESCOLA MUNICIPAL MANOEL FELIPE DOS ANJOS,15,sim,24087076,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,Serra Caiada,2410306,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL EUCLIDES LINS DE OLIVEIRA,5,sim,24047759,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Serra Caiada,2410306,ESCOLA MUNICIPAL HERMINIO FERREIRA DE OLIVEIRA,5,sim,24047783,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Serra Negra do Norte,2413409,ESCOLA INTELIGENTE,8,sim,,escola sem codigo INEP na lista,,,,,pendente
@@ -6613,7 +6613,7 @@ RN,Serra Negra do Norte,2413409,ESCOLA MUNICIPAL MANOEL MARIZ (FAZ. SOLIDÃO),4,
 RN,São Bento do Norte,2411601,ASSOCIAÇÃO DO PROJETO DE ASSENTAMENTO 25 DE JULHO DE SÃO BENTO DO NORTE,10,nao,,5 x computadores,,,,50.0,ok
 RN,São Bento do Trairí,2411700,ESCOLA MUNICIPAL FRANCISCO DE ASSIS DOS SANTOS,10,sim,24166200,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,São Gonçalo do Amarante,2412005,CENTRO EDUCACIONAL 1 DE MAIO,10,sim,24054186,matricula ainda nao confirmada no QEdu,,,,,pendente
-RN,São Gonçalo do Amarante,2412005,E.M. FRANCISCO POTIGUAR CAVALCANTI,10,nao,,5 x computadores,,,,50.0,ok
+RN,São Gonçalo do Amarante,2412005,E.M. FRANCISCO POTIGUAR CAVALCANTI,10,sim,24073954,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RN,São Gonçalo do Amarante,2412005,ESCOLA MUNICIPAL JOAQUIM INES DO NASCIMENTO,10,sim,24054470,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,São Gonçalo do Amarante,2412005,ESCOLA MUNICIPAL PROFESSORA JÉSSICA DÉBORA DE MEIO BEZERRA,10,sim,24065340,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,São Gonçalo do Amarante,2412005,ESCOLA MUNICIPAL RUFINA DE LIMA,10,sim,24054763,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6637,19 +6637,19 @@ RN,Touros,2414407,ESCOLA MUNICIPAL LUIZA CIRINO DA SILVA,10,sim,24052019,matricu
 RN,Upanema,2414605,CENTRO DE ENSINO ELISÁRIO MATTA,2,sim,33053910,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Vera Cruz,2414803,ESCOLA MUNICIPAL FILOMENA CURCO CABRAL,10,sim,24050407,matricula ainda nao confirmada no QEdu,,,,,pendente
 RN,Várzea,2414704,ESCOLA MUNICIPAL PLÁCIDO TOMAZ DE LIMA,10,sim,24050164,matricula ainda nao confirmada no QEdu,,,,,pendente
-RO,Alto Alegre dos Parecis,1100379,EMEF DOM JOÃO PAULO,6,nao,,5 x computadores,,,,30.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF EDUCANDÁRIO PAULO FREIRE,20,nao,,5 x computadores,,,,100.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF EUZEBIO DE QUEIROZ,20,nao,,5 x computadores,,,,100.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF FERNANDO SABINO,20,nao,,5 x computadores,,,,100.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF MARCELO GAMA,6,nao,,5 x computadores,,,,30.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF SEVERINO B. DA COSTA,9,nao,,5 x computadores,,,,45.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEF SILVA JARDIM,10,nao,,5 x computadores,,,,50.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEI DALVA P. SILVA,10,nao,,5 x computadores,,,,50.0,ok
-RO,Alto Alegre dos Parecis,1100379,EMEI REINALDO P. DA CRUZ,6,nao,,5 x computadores,,,,30.0,ok
+RO,Alto Alegre dos Parecis,1100379,EMEF DOM JOÃO PAULO,6,sim,11031840,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF EDUCANDÁRIO PAULO FREIRE,20,sim,11040947,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF EUZEBIO DE QUEIROZ,20,sim,11024690,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF FERNANDO SABINO,20,sim,11024712,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF MARCELO GAMA,6,sim,11025050,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF SEVERINO B. DA COSTA,9,sim,11048468,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEF SILVA JARDIM,10,sim,11025492,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEI DALVA P. SILVA,10,sim,11049243,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Alto Alegre dos Parecis,1100379,EMEI REINALDO P. DA CRUZ,6,sim,11049979,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RO,Buritis,1100452,COLONIA DE PESCADORES DO VALE DO URUCUIA Z 11 BURITIS MG,15,nao,,5 x computadores,,,,75.0,ok
 RO,Cacoal,1100049,REDE POVOS DA FLORESTA - ALDEIA LAPETANHA,6,nao,,5 x computadores,,,,30.0,ok
 RO,Cacoal,1100049,REDE POVOS DA FLORESTA - ORGANIZAÇÃO METAREILÁ DO POVO INDÍGENA SURUI,6,nao,,5 x computadores,,,,30.0,ok
-RO,Colorado do Oeste,1100064,EMEF GETÚLIO VARGAS,20,nao,,5 x computadores,,,,100.0,ok
+RO,Colorado do Oeste,1100064,EMEF GETÚLIO VARGAS,20,sim,11035404,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RO,Costa Marques,1100080,ECOTURS,10,nao,,5 x computadores,,,,50.0,ok
 RO,Guajará-Mirim,1100106,ASSOCIAÇÃO DE APOIO E PROMOÇÃO AO ESPORTE DE GUAJARÁ-MIRIM,10,nao,,5 x computadores,,,,50.0,ok
 RO,Guajará-Mirim,1100106,REDE POVOS DA FLORESTA - ASSOCIAÇÃO INDÍGENA RIO GUAPORÉ,6,nao,,5 x computadores,,,,30.0,ok
@@ -6667,19 +6667,19 @@ RO,Porto Velho,1100205,ASSOCIAÇÃO PESTALOZZI DE PORTO VELHO,10,nao,,5 x comput
 RO,Porto Velho,1100205,CEEMEIEF PINGO DE GENTE,10,sim,11002883,matriculas (QEdu),399,2025,https://qedu.org.br/escola/11002883-ceemeief-pingo-de-gente,399.0,ok
 RO,Porto Velho,1100205,CONSELHO ESCOLAR DA ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL NACIONAL,10,nao,,5 x computadores,,,,50.0,ok
 RO,Porto Velho,1100205,E.M.E.I.E.F. BILINGUE PORTO VELHO,10,sim,11049332,matriculas (QEdu),127,2025,https://qedu.org.br/escola/11049332-e-m-e-i-e-f-bilingue-porto-velho,127.0,ok
-RO,Porto Velho,1100205,EMEF RIO PARDO,25,nao,,5 x computadores,,,,125.0,ok
-RO,Porto Velho,1100205,EMEIEF 13 DE MAIO,24,nao,,5 x computadores,,,,120.0,ok
-RO,Porto Velho,1100205,EMEIEF MARIA CASAROTO ABATI,15,nao,,5 x computadores,,,,75.0,ok
+RO,Porto Velho,1100205,EMEF RIO PARDO,25,sim,11043997,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Porto Velho,1100205,EMEIEF 13 DE MAIO,24,sim,11000368,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Porto Velho,1100205,EMEIEF MARIA CASAROTO ABATI,15,sim,11047780,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RO,Porto Velho,1100205,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SANTO ANTONIO I,10,sim,11002182,matriculas (QEdu),47,2025,https://qedu.org.br/escola/11002182-escola-municipal-de-ensino-fundamental-santo-antonio-i,47.0,ok
 RO,Porto Velho,1100205,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL FLOR DE LARANJEIRA,10,sim,11048875,matriculas (QEdu),252,2025,https://qedu.org.br/escola/11048875-escola-municipal-de-ensino-infantil-e-fundamental-flor-de-laranjeira,252.0,ok
 RO,Porto Velho,1100205,INSTITUTO DE PESQUISA DE RONDÔNIA - IPRO,30,nao,,5 x computadores,,,,150.0,ok
 RO,Porto Velho,1100205,SECRETARIA MUNICIPAL DE MEIO AMBIENTE - SEMMA,12,nao,,5 x computadores,,,,60.0,ok
 RO,Rolim de Moura,1100288,COMUNIDADE TERAPEUTICA NOVA ALIANÇA,10,nao,,5 x computadores,,,,50.0,ok
 RO,Urupá,1101708,ASSOCIAÇÃO DE PAIS E AMIGOS DOS EXCEPCIONAIS - APAE,8,nao,,5 x computadores,,,,40.0,ok
-RO,Urupá,1101708,EMEF WALDEMAR HIGINO DE SOUZA,15,nao,,5 x computadores,,,,75.0,ok
-RO,Urupá,1101708,EMEIEF ALPHONSUS GUIMARÃES,15,nao,,5 x computadores,,,,75.0,ok
-RO,Urupá,1101708,EMEIF OLIVEIRA PAIVA,15,nao,,5 x computadores,,,,75.0,ok
-RO,Urupá,1101708,EMF EUCLIDES DA CUNHA,10,nao,,5 x computadores,,,,50.0,ok
+RO,Urupá,1101708,EMEF WALDEMAR HIGINO DE SOUZA,15,sim,11020962,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Urupá,1101708,EMEIEF ALPHONSUS GUIMARÃES,15,sim,11020490,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Urupá,1101708,EMEIF OLIVEIRA PAIVA,15,sim,11020822,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RO,Urupá,1101708,EMF EUCLIDES DA CUNHA,10,sim,11020610,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RO,Vale do Anari,1101757,CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL,8,nao,,5 x computadores,,,,40.0,ok
 RO,Vilhena,1100304,ASSOCIAÇÃO EL SHADDAO EDUCAR,10,nao,,5 x computadores,,,,50.0,ok
 RR,Alto Alegre,1400050,PREFEITURA MUNICIPAL DE ALTO ALEGRE,20,nao,,5 x computadores,,,,100.0,ok
@@ -6867,9 +6867,9 @@ RS,Porto Alegre,4314902,COMUNIDADE TERAPÊUTICA DESAFIO JOVEM GIDEÕES,20,nao,,5
 RS,Porto Alegre,4314902,COMUNIDADE TERREIRA IIE YEMONJA OMIO OLODO E C.E.U CACIQUE TUPINAMBÁ,5,nao,,5 x computadores,,,,25.0,ok
 RS,Porto Alegre,4314902,COOPERATIVA VOZ DA PERIFERIA,5,nao,,5 x computadores,,,,25.0,ok
 RS,Porto Alegre,4314902,COZINHA SOLIDÁRIA DE MATRIZ AFRICANA ILÊ LEMANJÁ E OXALÁ,5,nao,,5 x computadores,,,,25.0,ok
-RS,Porto Alegre,4314902,E.E.E.F FRANCISCO JOSÉ PERREIRA (SEDUC),20,nao,,5 x computadores,,,,100.0,ok
-RS,Porto Alegre,4314902,E.E.E.F GENERAL NETO - ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL GENERAL NETO,20,nao,,5 x computadores,,,,100.0,ok
-RS,Porto Alegre,4314902,E.E.E.F MATIAS DE ALBUQUERQUE,19,nao,,5 x computadores,,,,95.0,ok
+RS,Porto Alegre,4314902,E.E.E.F FRANCISCO JOSÉ PERREIRA (SEDUC),20,sim,43044670,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RS,Porto Alegre,4314902,E.E.E.F GENERAL NETO - ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL GENERAL NETO,20,sim,43106110,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+RS,Porto Alegre,4314902,E.E.E.F MATIAS DE ALBUQUERQUE,19,sim,43106773,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RS,Porto Alegre,4314902,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL BRANCA DIVA PEREIRA DE SOUZA,15,sim,43105971,matricula ainda nao confirmada no QEdu,,,,,pendente
 RS,Porto Alegre,4314902,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL DR. EMÍLIO KEMP,15,sim,43106200,matricula ainda nao confirmada no QEdu,,,,,pendente
 RS,Porto Alegre,4314902,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL FAG NHIN,20,sim,43208428,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -6950,7 +6950,7 @@ RS,São Lourenço do Sul,4318804,PREFEITURA MUNICIPAL DE SÃO LOURENÇO DO SUL,1
 RS,São Sepé,4319604,CTG RONDA CRIOULA,5,nao,,5 x computadores,,,,25.0,ok
 RS,Tapes,4321105,COLÔNIA DE PESCADORES E AQUICULTORES Z43,2,nao,,5 x computadores,,,,10.0,ok
 RS,Tapes,4321105,COMUNIDADE TERAPÊUTICA SENHOR JESUS CENTRO DE REFORMULAÇÃO COMPORTAMENTAL - CTSJ,10,nao,,5 x computadores,,,,50.0,ok
-RS,Tenente Portela,4321402,ESCOLA ESTADUAL INDÍGENA DE ENSINO FUNDAMENTAL BENTO PI GÓG,15,nao,,5 x computadores,,,,75.0,ok
+RS,Tenente Portela,4321402,ESCOLA ESTADUAL INDÍGENA DE ENSINO FUNDAMENTAL BENTO PI GÓG,15,sim,43154174,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 RS,Tramandaí,4321600,ASSOCIAÇÃO BENEFICENTE LEÃO SOCIAL,10,nao,,5 x computadores,,,,50.0,ok
 RS,Tramandaí,4321600,"ASSOCIAÇÃO DE IDOSOS, APOSENTADOS E PENSIONISTAS DO LITORAL NORTE",10,nao,,5 x computadores,,,,50.0,ok
 RS,Tramandaí,4321600,ASSOCIAÇÃO PRÉ-PORTELINHA,10,nao,,5 x computadores,,,,50.0,ok
@@ -7123,8 +7123,8 @@ SP,Aparecida d'Oeste,3502606,PREFEITURA DE APARECIDA D'OESTE,10,nao,,5 x computa
 SP,Arujá,3503901,COMPASSION FOR KIDS ASSISTENCIAL,10,nao,,5 x computadores,,,,50.0,ok
 SP,Aspásia,3503950,PREFEITURA DE ASPÁSIA,10,nao,,5 x computadores,,,,50.0,ok
 SP,Balbinos,3504701,PREFEITURA DO MUNICÍPIO DE BALBINOS,10,nao,,5 x computadores,,,,50.0,ok
-SP,Bariri,3505203,EMEF. PFRº EUCLYDES MOREIRA DA SILVA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Bariri,3505203,EMEF. PREFEITO MODESTO MASSON,10,nao,,5 x computadores,,,,50.0,ok
+SP,Bariri,3505203,EMEF. PFRº EUCLYDES MOREIRA DA SILVA,10,sim,35338667,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Bariri,3505203,EMEF. PREFEITO MODESTO MASSON,10,sim,35044088,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Barra do Turvo,3505401,PREFEITURA BARRA DO TURVO,15,nao,,5 x computadores,,,,75.0,ok
 SP,Barretos,3505500,HOSPITAL DE AMOR DE BARRETOS,102,nao,,5 x computadores,,,,510.0,ok
 SP,Barretos,3505500,PROJETO NOSSO LAR,10,nao,,5 x computadores,,,,50.0,ok
@@ -7133,13 +7133,13 @@ SP,Barueri,3505708,INSTITUTO SORRISO SOLIDÁRIO,7,nao,,5 x computadores,,,,35.0,
 SP,Bauru,3506003,IGREJA BATISTA DO ESTORIL,18,nao,,5 x computadores,,,,90.0,ok
 SP,Bauru,3506003,PREFEITURA MUNICIPAL DE BAURU - CENTRO ESPIRITA AMOR E CARIDADE,10,nao,,5 x computadores,,,,50.0,ok
 SP,Bauru,3506003,PREFEITURA MUNICIPAL DE BAURU - SUBPREFEITURA MARY DOTA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Bebedouro,3506102,EMEB PROF.º STÉLIO MACHADO LOUREIRO,15,nao,,5 x computadores,,,,75.0,ok
+SP,Bebedouro,3506102,EMEB PROF.º STÉLIO MACHADO LOUREIRO,15,sim,35245045,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Bertioga,3506359,ASSOCIAÇÃO DE AMIGOS DA VILA DA MATA - AVIMA,1,nao,,5 x computadores,,,,5.0,ok
-SP,Bertioga,3506359,EM. PROF. CRISTINA DOS SANTOS,20,nao,,5 x computadores,,,,100.0,ok
+SP,Bertioga,3506359,EM. PROF. CRISTINA DOS SANTOS,20,sim,35023224,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Boa Esperança do Sul,3506706,PREFEITURA DE BOA ESPERANÇA DO SUL,200,nao,,5 x computadores,,,,1000.0,ok
-SP,Bocaina,3506805,CEMEI PROFª CONCEIÇÃO DE OLIVEIRA CARIA AFFONSO,10,nao,,5 x computadores,,,,50.0,ok
-SP,Bocaina,3506805,EMEF MARISTELA MARTA MORETTO,12,nao,,5 x computadores,,,,60.0,ok
-SP,Boracéia,3507308,EMEF PROFª SALETE MARÓSTIGA,10,nao,,5 x computadores,,,,50.0,ok
+SP,Bocaina,3506805,CEMEI PROFª CONCEIÇÃO DE OLIVEIRA CARIA AFFONSO,10,sim,35246426,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Bocaina,3506805,EMEF MARISTELA MARTA MORETTO,12,sim,35363984,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Boracéia,3507308,EMEF PROFª SALETE MARÓSTIGA,10,sim,35436860,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Borá,3507209,CENTRO DE CONVIVÊNCIA DO IDOSO MARIA PEREIRA TEXEIRA,10,nao,,5 x computadores,,,,50.0,ok
 SP,Borá,3507209,PREFEITURA 1MUNICIPAL DE BORA - E.E. DR. JOSÉ DE SOUZA,30,nao,,5 x computadores,,,,150.0,ok
 SP,Caiabu,3508900,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL NELSON CIRILO DE SOUZA,10,sim,35244314,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -7167,12 +7167,12 @@ SP,Cananéia,3509908,ASSOCIAÇÃO DA COMUNIDADE CAIÇARA E AMIGOS DO ARIRI- ACAR
 SP,Caraguatatuba,3510500,ASSOCIAÇÃO DOS MORADORES DA COMUNIDADE REMANESCENTE DE QUILOMBO DE CACHOEIRA PORTEIRA - AMOCREQ - CPT,1,nao,,5 x computadores,,,,5.0,ok
 SP,Caraguatatuba,3510500,CASA BEIJA-FLOR,10,sim,53001664,matricula ainda nao confirmada no QEdu,,,,,pendente
 SP,Charqueada,3511706,CRECHE PALMYRA TURCHI,10,sim,35580429,matricula ainda nao confirmada no QEdu,,,,,pendente
-SP,Charqueada,3511706,EMEB  BRAZ GIUSEPPE FEDRIGO,20,nao,,5 x computadores,,,,100.0,ok
-SP,Charqueada,3511706,EMEB  PROFESSOR DEOCLÉCIO SOAVE,10,nao,,5 x computadores,,,,50.0,ok
-SP,Charqueada,3511706,EMEB  PROFESSOR EROTIDES DE CAMPOS,15,nao,,5 x computadores,,,,75.0,ok
-SP,Charqueada,3511706,EMEB  PROFESSORA DANÚZIA DA SILVA FURLAN,10,nao,,5 x computadores,,,,50.0,ok
-SP,Charqueada,3511706,EMEB ANTONIO FURLAN,20,nao,,5 x computadores,,,,100.0,ok
-SP,Charqueada,3511706,EMEB JOSÉ PEDRO MARIOTTI (MUNICÍPIO DE CHARQUEADA),15,nao,,5 x computadores,,,,75.0,ok
+SP,Charqueada,3511706,EMEB  BRAZ GIUSEPPE FEDRIGO,20,sim,35278403,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Charqueada,3511706,EMEB  PROFESSOR DEOCLÉCIO SOAVE,10,sim,35479573,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Charqueada,3511706,EMEB  PROFESSOR EROTIDES DE CAMPOS,15,sim,35282790,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Charqueada,3511706,EMEB  PROFESSORA DANÚZIA DA SILVA FURLAN,10,sim,35068433,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Charqueada,3511706,EMEB ANTONIO FURLAN,20,sim,35278397,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Charqueada,3511706,EMEB JOSÉ PEDRO MARIOTTI (MUNICÍPIO DE CHARQUEADA),15,sim,35435624,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Cotia,3513009,ASSOCIAÇÃO COMUNITÁRIA ALTO DE CAUCAIA – RUMO AO DESENVOLVIMENTO E CIDADANIA,5,nao,,5 x computadores,,,,25.0,ok
 SP,Cubatão,3513504,ASSOCIAÇÃO DA DIVINA MISERICÓRDIA - ADIMI,5,nao,,5 x computadores,,,,25.0,ok
 SP,Diadema,3513801,ASSOCIAÇÃO COMUNITARIA E CULTURAL JD ARCO IRIS E REGIÃO,30,nao,,5 x computadores,,,,150.0,ok
@@ -7223,8 +7223,8 @@ SP,Guarulhos,3518800,TELECENTRO UAB I (SECRETARIA),39,sim,,escola sem codigo INE
 SP,Guarulhos,3518800,TELECENTRO UAB II,30,sim,,escola sem codigo INEP na lista,,,,,pendente
 SP,Guarulhos,3518800,TELECENTRO VILA AUGUSTA,22,nao,,5 x computadores,,,,110.0,ok
 SP,Hortolândia,3519071,ASSOCIAÇÃO ADMULA ILE ASE EXU TY OYA,40,nao,,5 x computadores,,,,200.0,ok
-SP,Iacanga,3519105,EMEF JOAQUIM CALDAS DE SOUZA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Iacanga,3519105,EMEF JOSÉ FERRAZ DE SOUZA,10,nao,,5 x computadores,,,,50.0,ok
+SP,Iacanga,3519105,EMEF JOAQUIM CALDAS DE SOUZA,10,sim,35281785,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Iacanga,3519105,EMEF JOSÉ FERRAZ DE SOUZA,10,sim,35244843,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Iguape,3520301,ASSOCIAÇÃO RECREATIVA E CULTURAL BOI TATA DE IGUAPE,1,nao,,5 x computadores,,,,5.0,ok
 SP,Iguape,3520301,ASSOCIAÇÃO TRADIÇÃO E ARTE CAIÇARA DA REGIÃO DO ICAPARA,7,nao,,5 x computadores,,,,35.0,ok
 SP,Iguape,3520301,FUNDAÇÃO INSTITUTO DE TERRAS DO ESTADO DE SP - ITESP,2,nao,,5 x computadores,,,,10.0,ok
@@ -7236,11 +7236,11 @@ SP,Itaquaquecetuba,3523107,ASSOCIAÇÃO TODOS POR UMA CAUSA JUSTA - UM MUNDO MEL
 SP,Itaquaquecetuba,3523107,CLUBE DE MÃES DE PALMA DE ITAQUÁ,2,nao,,5 x computadores,,,,10.0,ok
 SP,Itaquaquecetuba,3523107,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROF PAULO CESAR COUTINHO RODRIGUES,5,sim,,escola sem codigo INEP na lista,,,,,pendente
 SP,Itaquaquecetuba,3523107,TENDA DE UBANDA MARIA DE COCO EXU MIRIM,5,nao,,5 x computadores,,,,25.0,ok
-SP,Itatiba,3523404,EMEB CEL. FRANCISCO RODRIGUES BARBOSA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Itatiba,3523404,EMEB PROF.ª SÔNIA RITA PENTEADO AGUIAR SANTOS,10,nao,,5 x computadores,,,,50.0,ok
-SP,Itatiba,3523404,EMEB SONIA RITA,10,nao,,5 x computadores,,,,50.0,ok
+SP,Itatiba,3523404,EMEB CEL. FRANCISCO RODRIGUES BARBOSA,10,sim,35207366,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Itatiba,3523404,EMEB PROF.ª SÔNIA RITA PENTEADO AGUIAR SANTOS,10,sim,35228576,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,Itatiba,3523404,EMEB SONIA RITA,10,sim,35228576,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Jacareí,3524402,VIVENCIANDO A INCLUSÃO SOCIAL E O DESENVOLVIMENTO DA AUTONOMIA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Jandira,3525003,EMEB ANTONIO GONÇALVES,10,nao,,5 x computadores,,,,50.0,ok
+SP,Jandira,3525003,EMEB ANTONIO GONÇALVES,10,sim,35217359,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Jarinu,3525201,CENTRO AGROECOLÓGICO PAULO KAGEYAMA,10,nao,,5 x computadores,,,,50.0,ok
 SP,Jundiaí,3525904,ASSOCIAÇÃO AÇÃO MULHERES DO BEM,30,nao,,5 x computadores,,,,150.0,ok
 SP,Juquitiba,3526209,ASSOCIAÇÃO BENEFICENTE LAR DO CAMINHO,20,nao,,5 x computadores,,,,100.0,ok
@@ -7322,7 +7322,7 @@ SP,Pontalinda,3540259,PREFEITURA DE PONTALINDA,10,nao,,5 x computadores,,,,50.0,
 SP,Populina,3540408,PREFEITURA DE POPULINA,10,nao,,5 x computadores,,,,50.0,ok
 SP,Presidente Epitácio,3541307,INST. FED. DE EDUC. TEC DE SP - CAMPUS PRESIDENTE EPITÁCIO,50,sim,35456445,matricula ainda nao confirmada no QEdu,,,,,pendente
 SP,Presidente Prudente,3541406,PROJETO DE INFORMÁTICA INCLUSIVA,10,nao,,5 x computadores,,,,50.0,ok
-SP,Reginópolis,3542503,EMEF PROFª REGINA OLINDA MARTINS FERRO,10,nao,,5 x computadores,,,,50.0,ok
+SP,Reginópolis,3542503,EMEF PROFª REGINA OLINDA MARTINS FERRO,10,sim,35218686,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Ribeirão Pires,3543303,ASSOCIAÇÃO INDIGENA DA REGIÃO DO MUNDO NOVO - AIRMUN,15,nao,,5 x computadores,,,,75.0,ok
 SP,Ribeirão Preto,3543402,APM DA ETEC JOSE MARTIMIANO DA SILVA,100,sim,35024107,matricula ainda nao confirmada no QEdu,,,,,pendente
 SP,Ribeirão Preto,3543402,CENTRO CULTURAL ORUNMILA DE RIBEIRÃO PRETO,11,nao,,5 x computadores,,,,55.0,ok
@@ -7356,13 +7356,13 @@ SP,Suzano,3552502,CENTRAL PRÓ MORADIA SUZANENSE - CEMOS,4,nao,,5 x computadores
 SP,Suzano,3552502,COMUNIDADE KOLPING DO JARDIM SÃO JOSÉ,7,nao,,5 x computadores,,,,35.0,ok
 SP,São Bernardo do Campo,3548708,CENTRO ASS. DE VETERANOS DO JD. CENTRAL JD. IPANEMA E REGIÃO,11,nao,,5 x computadores,,,,55.0,ok
 SP,São Bernardo do Campo,3548708,CENTRO DE FORMAÇÃO POPULAR FREI BETTO,2,nao,,5 x computadores,,,,10.0,ok
-SP,São Bernardo do Campo,3548708,E.E MARIA REGINA DEMARCHI FANANI,10,nao,,5 x computadores,,,,50.0,ok
+SP,São Bernardo do Campo,3548708,E.E MARIA REGINA DEMARCHI FANANI,10,sim,35917515,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,São Bernardo do Campo,3548708,PROJETO MENINOS E MENINAS DE RUA,16,nao,,5 x computadores,,,,80.0,ok
 SP,São Bernardo do Campo,3548708,SOS BILLINGS,2,nao,,5 x computadores,,,,10.0,ok
 SP,São Caetano do Sul,3548807,APM DA EME EMEF OSCAR NIEMEYER,20,nao,,5 x computadores,,,,100.0,ok
 SP,São Caetano do Sul,3548807,APM EMEF ANGELO RAPHAEL PELLEGRINO,10,nao,,5 x computadores,,,,50.0,ok
-SP,São Caetano do Sul,3548807,EM ALCINA DANTAS FEIJÃO,10,nao,,5 x computadores,,,,50.0,ok
-SP,São Caetano do Sul,3548807,EME PROF. ALCINA DANTAS FEIJÃO,5,nao,,5 x computadores,,,,25.0,ok
+SP,São Caetano do Sul,3548807,EM ALCINA DANTAS FEIJÃO,10,sim,35051147,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
+SP,São Caetano do Sul,3548807,EME PROF. ALCINA DANTAS FEIJÃO,5,sim,35051147,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,São Carlos,3548906,APAE DE SÃO CARLOS,10,nao,,5 x computadores,,,,50.0,ok
 SP,São Francisco,3549003,PREFEITURA DE SÃO FRANCISCO,10,nao,,5 x computadores,,,,50.0,ok
 SP,São José dos Campos,3549904,ASSOCIAÇÃO AMEMAIS,15,nao,,5 x computadores,,,,75.0,ok
@@ -7536,7 +7536,7 @@ SP,São Paulo,3550308,CTA - SANTO AMARO (Secretaria do Governo Municipal de São
 SP,São Paulo,3550308,CTA - SÃO MATEUS (Secretaria do Governo Municipal de São Paulo),15,nao,,5 x computadores,,,,75.0,ok
 SP,São Paulo,3550308,CUIDANDO EM AMOR - IGREJA EVANGELICA BATISTA GETSEMANI,5,nao,,5 x computadores,,,,25.0,ok
 SP,São Paulo,3550308,DESENVOLVIMENTO SOCIAL INCLUSIVO - GRUPO DESIN,10,nao,,5 x computadores,,,,50.0,ok
-SP,São Paulo,3550308,E.E.PROFª MARIA VERA LOMBARDI SIQUEIRA,10,nao,,5 x computadores,,,,50.0,ok
+SP,São Paulo,3550308,E.E.PROFª MARIA VERA LOMBARDI SIQUEIRA,10,sim,35910259,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,São Paulo,3550308,ENSINAPREV,10,nao,,5 x computadores,,,,50.0,ok
 SP,São Paulo,3550308,ESCOLA ESTADUAL FILOMENA MATARAZZO,30,sim,35002744,matricula ainda nao confirmada no QEdu,,,,,pendente
 SP,São Paulo,3550308,ESCOLA ESTADUAL INDIGENA DJEKUPE AMBA ARANDY,4,sim,35559210,matricula ainda nao confirmada no QEdu,,,,,pendente
@@ -7647,7 +7647,7 @@ SP,São Vicente,3551009,INSTITUTO SOCIAL ESPORTE E SAÚDE PARA TODOS,5,nao,,5 x 
 SP,Taboão da Serra,3552809,"ASS. BRA. APOIO CULT., ESP. E MEIO AMBIENTE - ABRACEM",5,nao,,5 x computadores,,,,25.0,ok
 SP,Taboão da Serra,3552809,ASSOCIAÇÃO VITORIOSOS D KEBRADA,10,nao,,5 x computadores,,,,50.0,ok
 SP,Taboão da Serra,3552809,INSTITUTO UNIÃO E AÇÃO,16,nao,,5 x computadores,,,,80.0,ok
-SP,Taquarivaí,3553856,E.M.E.F PROF. MANOEL YUKITO KITAMURA,10,nao,,5 x computadores,,,,50.0,ok
+SP,Taquarivaí,3553856,E.M.E.F PROF. MANOEL YUKITO KITAMURA,10,sim,35220152,matricula ainda nao confirmada no QEdu [via planilha de pares],,,,,pendente
 SP,Tarabai,3553906,BIBLIOTECA MUNICIPAL EDVALDO SARAIVA DE CARVALHO,10,nao,,5 x computadores,,,,50.0,ok
 SP,Taubaté,3554102,CENTRAL DE MIDIA PRODUÇÃO E DISTRIBUIÇÃO CULTURAL,10,nao,,5 x computadores,,,,50.0,ok
 SP,Teodoro Sampaio,3554300,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOSE AMADOR,10,sim,35447473,matricula ainda nao confirmada no QEdu,,,,,pendente
