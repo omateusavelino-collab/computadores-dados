@@ -123,15 +123,17 @@
   "impacto_social": {
    "regra": "instituicao de ensino = matriculas no QEdu (codigo INEP, conta uma vez); demais = 5 x computadores",
    "pessoas_total": null,
-   "pessoas_municipios_calculados": 90180,
-   "municipios_calculados": 989,
-   "municipios_pendentes": 695,
-   "pessoas_escolas": 0,
+   "pessoas_municipios_calculados": 142467,
+   "municipios_calculados": 1056,
+   "municipios_pendentes": 628,
+   "pessoas_escolas": 159436,
    "pessoas_demais_5x": 310805,
    "escolas_pontos": 2426,
-   "escolas_com_matricula": 0,
-   "escolas_pendentes": 2426,
-   "anos_censo": []
+   "escolas_com_matricula": 420,
+   "escolas_pendentes": 2006,
+   "anos_censo": [
+    "2025"
+   ]
   }
  },
  "formacao": {

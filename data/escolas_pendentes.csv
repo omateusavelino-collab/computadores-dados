@@ -1,6 +1,5 @@
 uf,municipio,ponto,inep,motivo
 AC,Cruzeiro do Sul,REDE POVOS DA FLORESTA - COMUNIDADE NUKINI DO REPUBLICA - ESCOLA ESTADUAL,,escola sem codigo INEP na lista
-AC,Tarauacá,ESCOLA VALDINA TORQUATO DO NASCIMENTO,12030066,matricula ainda nao confirmada no QEdu
 AL,Atalaia,CENTRO DE CAPACITAÇÃO ZUMBI DOS PALMARES - ZUMBI,,escola sem codigo INEP na lista
 AL,Coité do Nóia,CONSELHO ESCOLAR DA ESCOLA ESTADUAL ALVARO PAES,27017702,matricula ainda nao confirmada no QEdu
 AL,Coqueiro Seco,ESCOLA PAULO SOARES ALBUQUERQUE (EJA),27034186,matricula ainda nao confirmada no QEdu
@@ -12,34 +11,9 @@ AL,Olho d'Água do Casado,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA DOM PEDRO II,27
 AL,Olho d'Água do Casado,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA INFANTIL MANOEL FERNANDES LEITE,27003817,matricula ainda nao confirmada no QEdu
 AL,Olho d'Água do Casado,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA JERÔNIMO VIEIRA DE SOUZA,27003795,matricula ainda nao confirmada no QEdu
 AL,Olho d'Água do Casado,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA RUI BARBOSA,27003868,matricula ainda nao confirmada no QEdu
-AM,Autazes,ESCOLA MUNICIPAL PROF ALVINA CAVALCANTE TUPINAMBA,13070266,matricula ainda nao confirmada no QEdu
-AM,Barreirinha,ESCOLA MUNICIPAL QUILOMBA SANTA TEREZA,13038630,matricula ainda nao confirmada no QEdu
-AM,Careiro da Várzea,ESCOLA ESTADUAL ANTÔNIO FERREIRA GUEDES,13021010,matricula ainda nao confirmada no QEdu
-AM,Itacoatiara,ESCOLA MUNICIPAL DOM PAULO MC HUGH,13034243,matricula ainda nao confirmada no QEdu
-AM,Itacoatiara,ESCOLA MUNICIPAL IVO AMAZONENSE DE MOURA,13033859,matricula ainda nao confirmada no QEdu
-AM,Itacoatiara,ESCOLA MUNICIPAL YEDA DE SOUZA AUZIER,13035100,matricula ainda nao confirmada no QEdu
-AM,Itacoatiara,ESCOLA MUNICIPAL YEDA HENRIQUES DE SOUZA AUZIER,13035100,matricula ainda nao confirmada no QEdu
-AM,Manacapuru,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SÃO LÁZARO,13062948,matricula ainda nao confirmada no QEdu
 AM,Manacapuru,UNIVERSIDADE ABERTA DO BRASIL - UAB,,escola sem codigo INEP na lista
-AM,Manaus,CONSELHO ESCOLAR DA ESCOLA ESTADUAL PROFESSOR OCTAVIO MOURAO,13084232,matricula ainda nao confirmada no QEdu
-AM,Manaus,ESCOLA ESTADUAL ADALBERTO VALE,13030132,matricula ainda nao confirmada no QEdu
-AM,Manaus,ESCOLA ESTADUAL DRA. ZILDA ARNS NEUMANN,13304240,matricula ainda nao confirmada no QEdu
-AM,Manaus,ESCOLA MUNICIPAL PROFESSORA JOANA VIEIRA,13029134,matricula ainda nao confirmada no QEdu
-AM,Nhamundá,CONSELHO ESCOLAR DA ESCOLA MUNICIPAL PROFESSORA NAIR BENTES FERREIRA,13041371,matricula ainda nao confirmada no QEdu
-AM,Nhamundá,ESCOLA MUNICIPAL ANA IODETE REGO DE SENA,13041355,matricula ainda nao confirmada no QEdu
-AM,Nhamundá,ESCOLA MUNICIPAL EM TEMPO INTEGRAL DÍDIMO ROSSY,13041185,matricula ainda nao confirmada no QEdu
-AM,Nhamundá,ESCOLA MUNICIPAL RAIMUNDA COSTA RODRIGUES,13041134,matricula ainda nao confirmada no QEdu
-AM,Nhamundá,ESCOLA MUNICIPAL VEREADOR SEBASTIÃO ANDRADE MACHADO,13041754,matricula ainda nao confirmada no QEdu
-AM,Parintins,COLÉGIO BATISTA DE PARINTINS,13041924,matricula ainda nao confirmada no QEdu
-AM,Parintins,ESCOLA ESTADUAL DOM GINO MALVESTIO,13078054,matricula ainda nao confirmada no QEdu
-AM,Parintins,ESCOLA ESTADUAL TOMASZINHO MEIRELES,13059440,matricula ainda nao confirmada no QEdu
-AM,Parintins,ESCOLA MUNICIPAL SANTA MARIA,13043617,matricula ainda nao confirmada no QEdu
-AP,Amapá,ESCOLA ESTADUAL VEIGA CABRAL,16000641,matricula ainda nao confirmada no QEdu
-AP,Calçoene,ESCOLA ESTADUAL JUVENAL GUIMARÃES TEIXEIRA,16000170,matricula ainda nao confirmada no QEdu
-AP,Calçoene,ESCOLA ESTADUAL PROF. SILVIO ELITO DE LIMA SANTOS,16000064,matricula ainda nao confirmada no QEdu
 AP,Calçoene,ESCOLA MUNICIPAL HARPA DE DAVI,16002569,matricula ainda nao confirmada no QEdu
 AP,Calçoene,ESCOLA MUNICIPAL LOBO D'ALMADA,16002062,matricula ainda nao confirmada no QEdu
-AP,Ferreira Gomes,CRECHE MUNICIPAL SARAH SALOMÃO,16001540,matricula ainda nao confirmada no QEdu
 AP,Ferreira Gomes,E.E. INDEPENDENCIA,16004191,matricula ainda nao confirmada no QEdu
 AP,Ferreira Gomes,ESCOLA ESTADUAL REISALINA FERREIRA TOMAZ,16006631,matricula ainda nao confirmada no QEdu
 AP,Ferreira Gomes,ESCOLA MUNICIPAL JOÃO FREIRE CORDEIRO,16002003,matricula ainda nao confirmada no QEdu
@@ -47,74 +21,20 @@ AP,Ferreira Gomes,ESCOLA MUNICIPAL PASTOR JACI TORQUATO,16002100,matricula ainda
 AP,Itaubal,ESCOLA ESTADUAL WILSON HILL DE ARAUJO,830,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
 AP,Itaubal,ESCOLA MUNICIPAL JOSÉ ALMEIDA,29189130,matricula ainda nao confirmada no QEdu
 AP,Itaubal,ESCOLA MUNICIPAL MIGUEL JORGE HAUAT ELIAS,16002089,matricula ainda nao confirmada no QEdu
-AP,Itaubal,PRÉ ESCOLAR GUILHERME DO ROSÁRIO DE SOUZA,16009070,matricula ainda nao confirmada no QEdu
-AP,Laranjal do Jari,ESCOLA ESTADUAL MARIA DE NAZARÉ RODRIGUES DA SILVA,16004884,matricula ainda nao confirmada no QEdu
-AP,Laranjal do Jari,ESCOLA ESTADUAL MINEKO HAYASHIDA,16004906,matricula ainda nao confirmada no QEdu
-AP,Macapá,CENTRO DE EDUCAÇÃO PROFISSIONAL DE ARTES VISUAIS CANDIDO PORTINARI,16019008,matricula ainda nao confirmada no QEdu
 AP,Macapá,CENTRO DE EDUCAÇÃO PROFISSIONAL DE SANTANA PROF. MARIA SALOMÉ GOMES SARES,16037006,matricula ainda nao confirmada no QEdu
-AP,Macapá,CENTRO DE ENSINO PROFISSIONAL DO AMAPÁ PROF. JOSINETE OLIVEIRA BARROSO,16008952,matricula ainda nao confirmada no QEdu
-AP,Macapá,CENTRO DE ESTUDOS SUPLETIVOS PROF PAULO MELO,16001885,matricula ainda nao confirmada no QEdu
-AP,Macapá,CENTRO EDUCACIONAL PROFISSIONAL DE MÚSICA WALKÍRIA LIMA,16018001,matricula ainda nao confirmada no QEdu
-AP,Macapá,CENTRO EDUCACIONAL PROFISSIONAL GRAZIELA REIS DE SOUZA,16002458,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. ANTONIO FERREIRA LIMA NETO,16007441,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. AZEVEDO COSTA,16002482,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. CASTRO ALVES,16002466,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. CECILIA PINTO,16006780,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. COELHO NETO,16002369,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. COLEGIO AMAPAENSE,16002431,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. DEUSOLINA SALLES FARIAS,16002512,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. DOM ARISTIDES PIROVANO,16002709,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. GONCALVES DIAS,16002326,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. IRINEU DA GAMA PAES,16002610,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. JOSE DE ALENCAR,16002385,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. LUCIMAR AMORAS DEL CASTILLO,16002156,matricula ainda nao confirmada no QEdu
 AP,Macapá,E.E. MARIA DE NAZARE PEREIRA VASCONCELOS,16004400,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. MARIO QUIRINO DA SILVA,16024001,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. MODELO GUANABARA,16001923,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. NILTON BALIEIRO MACHADO,16010370,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. PROF ANTONIO MUNHOZ LOPES,16011830,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. PROF MARLY MARIA E SOUZA DA SILVA,16002318,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. PROFA ESTHER DA SILVA VIRGOLINO,16002725,matricula ainda nao confirmada no QEdu
 AP,Macapá,E.E. RAIMUNDA VIRGOLINO,16004418,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. REINALDO GOLBERT DAMACENO,16002814,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. SANTINA RIOLI,16002440,matricula ainda nao confirmada no QEdu
-AP,Macapá,E.E. SEBASTIANA LENIR DE ALMEIDA,16002334,matricula ainda nao confirmada no QEdu
 AP,Macapá,E.E. SILVIO CAMILO,16001605,matricula ainda nao confirmada no QEdu
 AP,Macapá,ESCOLA ESTADUAL ALBERTO SANTOS DUMONT,53006550,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL ANTÔNIO CORDEIRO PONTES,16002881,matricula ainda nao confirmada no QEdu
 AP,Macapá,ESCOLA ESTADUAL DOM PEDRO I,16005341,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL DR. COARACY NUNES,16002407,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL MARIA CARMELITA DO CARMO,16002733,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL MARIA DO CARMO VIANA DOS ANJOS,16002580,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL MARIA NEUSA CARMO DE SOUSA,16006852,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL PROF MARIA DE NAZARE PEREIRA VASCONCELOS,16006780,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL PROF NANCY NINA DA COSTA,16008456,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL PROF. JACINTA MARIA RODRIGUES DE CARVALHO,16011201,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA ESTADUAL PROF. JOSÉ FIRMO DO NASCIMENTO,16002598,matricula ainda nao confirmada no QEdu
 AP,Macapá,ESCOLA ESTADUAL PROFESSOR PAULO FREIRE,53000986,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOANNA SANTOS DA SILVA,16012135,matricula ainda nao confirmada no QEdu
-AP,Macapá,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MARIA LUZIA BELLO DA SILVA,16042000,matricula ainda nao confirmada no QEdu
-AP,Macapá,FUNDAÇÃO UNIVERSIDADE FEDERAL DO AMAPA (UNIFAP),16010000,matricula ainda nao confirmada no QEdu
 AP,Mazagão,E.E. DOUTOR MURILO BRAGA,16010361,matricula ainda nao confirmada no QEdu
-AP,Mazagão,E.E. MANOEL QUEIROZ BENJAMIM,16005333,matricula ainda nao confirmada no QEdu
-AP,Oiapoque,ESCOLA ESTADUAL JOAQUIM CAETANO DA SILVA,16000307,matricula ainda nao confirmada no QEdu
-AP,Pedra Branca do Amapari,ESCOLA ESTADUAL PROF. MARIA HELENA CORDEIRO,16001320,matricula ainda nao confirmada no QEdu
 AP,Porto Grande,E.E. CAMPO VERDE,16011848,matricula ainda nao confirmada no QEdu
-AP,Porto Grande,E.E. FRANCISCO MANOEL DOS SANTOS,16004132,matricula ainda nao confirmada no QEdu
-AP,Porto Grande,ESCOLA ESTADUAL PROF. Mª CRISTINA B RODRIGUES,16004230,matricula ainda nao confirmada no QEdu
-AP,Pracuúba,ESCOLA ESTADUAL ERNESTO PEREIRA COLARES,16000862,matricula ainda nao confirmada no QEdu
-AP,Pracuúba,ESCOLA ESTADUAL PEDRO MACIEL FILHO,16000854,matricula ainda nao confirmada no QEdu
-AP,Pracuúba,ESCOLA ESTADUAL PEDRO TEIXEIRA,16000870,matricula ainda nao confirmada no QEdu
 AP,Pracuúba,ESCOLA MUNICIPAL AUGUSTO ROCHA DE OLIVEIRA,16001856,matricula ainda nao confirmada no QEdu
 AP,Pracuúba,ESCOLA MUNICIPAL CHAPEUZINHO VERMELHO,,escola sem codigo INEP na lista
 AP,Pracuúba,ESCOLA MUNICIPAL EVANDRO MARTINS RIBEIRO,16001953,matricula ainda nao confirmada no QEdu
-AP,Santana,E.E. AUGUSTO ANTUNES,16004370,matricula ainda nao confirmada no QEdu
 AP,Santana,E.E. JOSE BARROSO TOSTES,16005392,matricula ainda nao confirmada no QEdu
-AP,Santana,ESCOLA MUNICIPAL CLAUDINOR ROCHA FREITAS,16010922,matricula ainda nao confirmada no QEdu
-AP,Serra do Navio,ESCOLA ESTADUAL DR. HERMELINO HERBSTER GUSMÃO,16001192,matricula ainda nao confirmada no QEdu
-AP,Serra do Navio,ESCOLA ESTADUAL SETE DE SETEMBRO,16001222,matricula ainda nao confirmada no QEdu
 AP,Tartarugalzinho,ESCOLA ESTADUAL PROF. MARIA IRACI TAVARES,16001567,matricula ainda nao confirmada no QEdu
-AP,Vitória do Jari,ESCOLA ESTADUAL TEOTONIO BRANDÃO VILELA,16005023,matricula ainda nao confirmada no QEdu
 AP,Vitória do Jari,ESCOLA MUNICIPAL ALVARO MARQUES GOLÇALVES,16001945,matricula ainda nao confirmada no QEdu
 AP,Vitória do Jari,ESCOLA MUNICIPAL FELINTO BATISTA,16001961,matricula ainda nao confirmada no QEdu
 BA,Aiquara,COLÉGIO MUNICIPAL AMÉRICO SOUTO,29222265,matricula ainda nao confirmada no QEdu
@@ -747,9 +667,6 @@ GO,Águas Lindas de Goiás,ESCOLA MUNICIPAL PROFESSORA EDILEUZA DE AZEVEDO,52051
 GO,Águas Lindas de Goiás,ESCOLA MUNICIPAL PROFESSORA ÉRIKA FLÁVIA VIEIRA DE SOUZA,52078540,matricula ainda nao confirmada no QEdu
 MA,Afonso Cunha,CENTRO EDUCA MAIS ANALIZ BACELAR,21151806,matricula ainda nao confirmada no QEdu
 MA,Alcântara,CENTRO DE EDUCAÇÃO QUILOMBOLA PROFESSOR AQUILES BATISTA VIEIRA (OITIUA E RAIMUNDO SU),21358206,matricula ainda nao confirmada no QEdu
-MA,Alcântara,CENTRO EDUCA MAIS PROF AQUILES DATISTA VIEIRA,21000034,matricula ainda nao confirmada no QEdu
-MA,Alcântara,CENTRO EDUCA MAIS PROFº AQUILES BATISTA VIEIRA,21000034,matricula ainda nao confirmada no QEdu
-MA,Alcântara,ESCOLA CAMINHO DAS ESTRELAS,21000492,matricula ainda nao confirmada no QEdu
 MA,Aldeias Altas,CENTRO DE ENSINO TEÓFILO DIAS,21152900,matricula ainda nao confirmada no QEdu
 MA,Altamira do Maranhão,UNIDADE DE ENSINO INTEGRADO CASTELO BRANCO,21071713,matricula ainda nao confirmada no QEdu
 MA,Alto Alegre do Maranhão,CENTRO EDUCA MAIS ALFREDO RODRIGUES LIMA,21289379,matricula ainda nao confirmada no QEdu
@@ -777,10 +694,7 @@ MA,Arame,ESCOLA JOSÉ REINALDO TAVARES,21249067,matricula ainda nao confirmada n
 MA,Arame,ESCOLA MUNICIPAL BOA UNIÃO,21112479,matricula ainda nao confirmada no QEdu
 MA,Arame,ESCOLA MUNICIPAL PROFª MARLENE SOARES DA SILVA,21292876,matricula ainda nao confirmada no QEdu
 MA,Arame,ESCOLA MUNICÍPAL IMPERIAL,,escola sem codigo INEP na lista
-MA,Arari,CENTRO DE ENSINO ARIMATEA CISNE,21037620,matricula ainda nao confirmada no QEdu
-MA,Arari,CENTRO EDUCA MAIS CIDADE,21037604,matricula ainda nao confirmada no QEdu
 MA,Axixá,CENTRO EDUCA MAIS RAIMUNDO JOÃO SALDANHA,21026211,matricula ainda nao confirmada no QEdu
-MA,Axixá,CENTRO EDUCA MAS ESTADO DO ACRE,21022950,matricula ainda nao confirmada no QEdu
 MA,Axixá,IEMA PLENO AXIXÁ,21282137,matricula ainda nao confirmada no QEdu
 MA,Açailândia,CENTRO DE ENSINO DARCY RIBEIRO,21228302,matricula ainda nao confirmada no QEdu
 MA,Açailândia,CENTRO DE ENSINO DOM MARCENTRO DE ENSINOLINO BICENTRO DE ENSINOGO,21088276,matricula ainda nao confirmada no QEdu
@@ -799,7 +713,6 @@ MA,Bacabal,IEMA PLENO BACABAL,21287449,matricula ainda nao confirmada no QEdu
 MA,Bacabal,IEMA PLENO DE BACABAL,21287449,matricula ainda nao confirmada no QEdu
 MA,Bacabeira,CENTRO EDUCA MAIS MONSENHOR LUIS ALVES MADUREIRA,21243280,matricula ainda nao confirmada no QEdu
 MA,Bacabeira,IEMA UNIDADE PLENA BACABEIRA,21280843,matricula ainda nao confirmada no QEdu
-MA,Bacurituba,CENTRO DE ENSINO DR DEUSDETH CORTEZ VIEIRA DA SILVA,21004013,matricula ainda nao confirmada no QEdu
 MA,Balsas,CENTRO DE ENSINO DIDÁCIO SANTOS,21182400,matricula ainda nao confirmada no QEdu
 MA,Balsas,CENTRO DE ENSINO LUÍS RÊGO,21182426,matricula ainda nao confirmada no QEdu
 MA,Balsas,CENTRO EDUCA MAIS MARIA DO SOCORRO COELHO CABRAL,21272000,matricula ainda nao confirmada no QEdu
@@ -824,14 +737,12 @@ MA,Barreirinhas,CENTRO DE ENSINO BARREIRINHAS,21194304,matricula ainda nao confi
 MA,Barreirinhas,CENTRO DE ENSINO JOAQUIM SOEIRO DE CARVALHO - ANEXO I - INACIO LINS,21272697,matricula ainda nao confirmada no QEdu
 MA,Barreirinhas,CENTRO DE ENSINO PLINIO PORTUGAL DA ROCHA,21272689,matricula ainda nao confirmada no QEdu
 MA,Barreirinhas,CENTRO EDUCA MAIS BARREIRINHAS,21194304,matricula ainda nao confirmada no QEdu
-MA,Barreirinhas,UNIDADE INTEGRADA DARCY VARGAS,21028290,matricula ainda nao confirmada no QEdu
 MA,Barão de Grajaú,CENTRO DE ENSINO ARISTIDES LOBÃO,21164940,matricula ainda nao confirmada no QEdu
 MA,Barão de Grajaú,CENTRO DE ENSINO NEY BRAGA,21165858,matricula ainda nao confirmada no QEdu
 MA,Barão de Grajaú,UNIDADE ESCOLAR MONSENHOR JOSÉ ALMEIDA.,2116551,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
 MA,Barão de Grajaú,UNIDADE INTEGRADA DOMINGOS MACHADO,21165734,matricula ainda nao confirmada no QEdu
 MA,Belágua,UNIDADE INTEGRADA ANGELICA COSTA,21232563,matricula ainda nao confirmada no QEdu
 MA,Benedito Leite,CENTRO DE ENSINO LUCAS COELHO,21185590,matricula ainda nao confirmada no QEdu
-MA,Bequimão,CENTRO EDUCA MAIS ANICETO CANTANHEDE,21003130,matricula ainda nao confirmada no QEdu
 MA,Bernardo do Mearim,UNIDADE INTEGRADA SÃO BERNARDO,21103380,matricula ainda nao confirmada no QEdu
 MA,Boa Vista do Gurupi,CENTRO DE ENSINO PROFESSOR ANTONIO LAERCIO ALVES FERNANDES,21248303,matricula ainda nao confirmada no QEdu
 MA,Bom Jardim,CENTRO DE ENSINO PROFª MARIA LUIZA RODRIGUES DE SOUSA,21073805,matricula ainda nao confirmada no QEdu
@@ -858,13 +769,8 @@ MA,Buriti Bravo,UNIDADE INTEGRADA MUNICIPAL PROFº JOÃO HENRIQUE BORGES LEOCÁD
 MA,Buriticupu,CENTRO DE ENSINO DR FERNANDO CASTRO,21081590,matricula ainda nao confirmada no QEdu
 MA,Buriticupu,ESCOLA MUNICIPAL FREI CANECA,21080780,matricula ainda nao confirmada no QEdu
 MA,Buritirana,CENTRO DE ENSINO FLAUDISMAR ALVES DE SOUSA,21266948,matricula ainda nao confirmada no QEdu
-MA,Cachoeira Grande,CENTRO DE ENSINO SOTERO DOS REIS,21025673,matricula ainda nao confirmada no QEdu
-MA,Cajapió,CENTRO DE ENSINO PAULO CORDEIRO FILHO,21003947,matricula ainda nao confirmada no QEdu
 MA,Cajapió,CENTRO EDUCA MAIS MARIA DE JESUS GOMES PADILHA,21241228,matricula ainda nao confirmada no QEdu
-MA,Cajapió,ESCOLA MUNICIPAL DENIZARD ALMEIDA E SILVA,21003262,matricula ainda nao confirmada no QEdu
-MA,Cajari,CENTRO EDUCA MAIS QUINCIO PINTO MUNIZ,21038988,matricula ainda nao confirmada no QEdu
 MA,Campestre do Maranhão,CENTRO DE ENSINO VALENTIM DA SILVA AGUIAR,21177392,matricula ainda nao confirmada no QEdu
-MA,Cantanhede,CENTRO DE ENSINO GETULIO VARGAS,21057338,matricula ainda nao confirmada no QEdu
 MA,Cantanhede,ESCOLA MUNICIPAL FIRMINA DOS SANTOS BARROS,21275750,matricula ainda nao confirmada no QEdu
 MA,Capinzal do Norte,CENTRO DE ENSINO VALNICE BERTOLDO LIMA CORDEIRO,21326606,matricula ainda nao confirmada no QEdu
 MA,Carolina,CENTRO DE ENSINO SERTÃO MARANHENSE,21174202,matricula ainda nao confirmada no QEdu
@@ -974,10 +880,7 @@ MA,Grajaú,CENTRO EDUCA MAIS AMARAL RAPOSO,21122342,matricula ainda nao confirma
 MA,Grajaú,CENTRO EDUCA MAIS PROFESSOR DIMAS SIMAS LIMA,21122334,matricula ainda nao confirmada no QEdu
 MA,Graça Aranha,CENTRO DE ENSINO HUMBERTO DE CAMPOS,21130485,matricula ainda nao confirmada no QEdu
 MA,Graça Aranha,UNIDADE INTEGRADA SILVEIRA ROLINS,21130191,matricula ainda nao confirmada no QEdu
-MA,Guimarães,CENTRO EDUCA MAIS NOSSA SENHORA DA ASSUNÇÃO - ANEXO I - MAÇARICÓ - SALA FORA I - POVOADO GENIPAÚBA.,21006032,matricula ainda nao confirmada no QEdu
 MA,Guimarães,CENTRO EDUCA MAIS QUILOMBOLA ROSALINO DE LIMA MARTINS,21292051,matricula ainda nao confirmada no QEdu
-MA,Humberto de Campos,CENTRO DE ENSINO HUMBERTO DE CAMPOS,21031509,matricula ainda nao confirmada no QEdu
-MA,Humberto de Campos,CENTRO DE ENSINO HUMBERTO DE CAMPOS - ANEXO I - RAMPA,21031509,matricula ainda nao confirmada no QEdu
 MA,Icatu,CENTRO DE ENSINO MATIAS COSTA,21283850,matricula ainda nao confirmada no QEdu
 MA,Igarapé,CENTRO DE ENSINO DRA AGOSTINHA MELO CORREIRA LIMA,21252530,matricula ainda nao confirmada no QEdu
 MA,Igarapé Grande,UNIDADE INTEGRADA MANUEL MATIAS,21286817,matricula ainda nao confirmada no QEdu
@@ -1034,17 +937,7 @@ MA,Mata Roma,CENTRO DE EDUCAÇÃO QUILOMBOLA ELOI FERREIRA DOS REIS,21349401,mat
 MA,Mata Roma,CENTRO DE ENSINO OLIVEIRA ROMA,21143129,matricula ainda nao confirmada no QEdu
 MA,Mata Roma,COLÉGIO ROLINDO GARRETO,21234167,matricula ainda nao confirmada no QEdu
 MA,Matinha,CENTRO DE ENSINO ANICENTO MARIANO COSTA,21359202,matricula ainda nao confirmada no QEdu
-MA,Matinha,CENTRO DE ENSINO PADRE ASTOLFO SERRA,21039810,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL ALBERTO SILVA COSTA,21039801,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL ANTÔNIO GOMES DA SILVA,21039232,matricula ainda nao confirmada no QEdu
 MA,Matinha,ESCOLA MUNICIPAL DR. JOSÉ CONCEIÇÃO AMARAL,21285551,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL DR. PEDRO NEIVA DE SANTANA,21039089,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL JOÃO FRANCISCO GOMES,21039399,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL LUÍS BELTRÃO FURTADO,21039186,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL MARIA DA CONCEIÇÃO BASTOS CUNHA,21039437,matricula ainda nao confirmada no QEdu
-MA,Matinha,ESCOLA MUNICIPAL SÃO FELIPE,21039526,matricula ainda nao confirmada no QEdu
-MA,Matinha,INSTITUTO EDUCACIONAL ALBERTO SILVA COSTA,21039151,matricula ainda nao confirmada no QEdu
-MA,Matinha,UNIDADE MAIS INTEGRADA CLODOMIR TEIXEIRA MULLET,21039283,matricula ainda nao confirmada no QEdu
 MA,Matões,CENTRO DE ENSINO EUGENIO BARROS,21160015,matricula ainda nao confirmada no QEdu
 MA,Matões,CENTRO DE ENSINO JOÃO PAULO I,21161321,matricula ainda nao confirmada no QEdu
 MA,Matões,IEMA UNIDADE PLENA MATÕES,21283893,matricula ainda nao confirmada no QEdu
@@ -1066,30 +959,17 @@ MA,Mirador,UNIDADE DE EDUCAÇÃO BÁSICA JOÃO RODRIGUES DA SILVA,21168490,matri
 MA,Mirador,UNIDADE DE EDUCAÇÃO BÁSICA PROFª ALZIRA CASABONE,21228809,matricula ainda nao confirmada no QEdu
 MA,Mirador,UNIDADE DE EDUCAÇÃO BÁSICA YEDO FLAMARION LOBÃO,21168512,matricula ainda nao confirmada no QEdu
 MA,Miranda do Norte,CENTRO EDUCA MAIS JOSE FURTADO BEZERRA,21198934,matricula ainda nao confirmada no QEdu
-MA,Miranda do Norte,UNIDADE INTEGRADA GUMERCINDO PAIXÃO FERNANDES,21059705,matricula ainda nao confirmada no QEdu
 MA,Montes Altos,CENTRO DE ENSINO PARSONDAS DE CARVALHO (MONTES ALTOS),21099049,matricula ainda nao confirmada no QEdu
-MA,Monção,CENTRO DE ENSINO DRº GETULIO VARGAS,21041504,matricula ainda nao confirmada no QEdu
 MA,Monção,CENTRO DE ENSINO JOSÉ MOTA AMARAL,21335605,matricula ainda nao confirmada no QEdu
-MA,Morros,CENTRO DE ENSINO AMERICA CENTRAL,21025649,matricula ainda nao confirmada no QEdu
-MA,Nina Rodrigues,CENTRO DE ENSINO MAJOR ÉRICO,21060290,matricula ainda nao confirmada no QEdu
-MA,Nina Rodrigues,CENTRO DE ENSINO PROFESSOR JOÃO MARTINS PEREIRA NETO,21059721,matricula ainda nao confirmada no QEdu
 MA,Nina Rodrigues,ESCOLA MUNICIPAL DOMINGOS HILTON DE JESUS COSTA,21552665,matricula ainda nao confirmada no QEdu
 MA,Nina Rodrigues,UNIDADE RAIMUNDO DE OLIVEIRA CORRÊA,21210179,matricula ainda nao confirmada no QEdu
 MA,Nova Colinas,ESCOLA MUNICIPAL PADRE FRANCISCO BONATI,21500630,matricula ainda nao confirmada no QEdu
 MA,Nova Iorque,CENTRO DE ENSINO ANÁLIA NEIVA,21169012,matricula ainda nao confirmada no QEdu
 MA,Nova Olinda do Maranhão,CENTRO DE ENSINO TERESINHA ALVEZ ROCHA,21083762,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,CENTRO DE ENSINO JOSÉ MARIA DE ARAUJO,21050538,matricula ainda nao confirmada no QEdu
 MA,Olinda Nova do Maranhão,CENTRO EDUCA MAIS PROF JOSE RIBAMAR SANTOS DA SILVA,21285268,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE ESCOLAR FILOMENA PENHA DE CASTRO,21049971,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE ESCOLAR PROFª ANITA SANTOS,21050384,matricula ainda nao confirmada no QEdu
 MA,Olinda Nova do Maranhão,UNIDADE ESCOLAR PROFª EULINA CAMPOS SOARES,21219419,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE ESCOLAR PROFª MADALENA ATTA DE CASTRO,21050074,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA CAPITÃO ANTÔNIO SERRA FREIRE,21039267,matricula ainda nao confirmada no QEdu
 MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA CONCEIÇÃO,21083843,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA JOÃO SERRA,21051038,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA POLARES MOREIRA,21050198,matricula ainda nao confirmada no QEdu
 MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA PROFESSOR RAIMUNDO CASTRO NETO,21219923,matricula ainda nao confirmada no QEdu
-MA,Olinda Nova do Maranhão,UNIDADE INTEGRADA VEREADOR PEDRO FONSECA LINDOSO,21050139,matricula ainda nao confirmada no QEdu
 MA,Palmeirândia,CENTRO EDUCAÇÃO JOÃO PAULO II,21266921,matricula ainda nao confirmada no QEdu
 MA,Paraibano,CENTRO DE ENSINO JOÃO FURTADO BRITO,21169632,matricula ainda nao confirmada no QEdu
 MA,Paraibano,CENTRO EDUCACIONAL MAIS EPITACIO PESSOA,21169543,matricula ainda nao confirmada no QEdu
@@ -1102,24 +982,13 @@ MA,Pastos Bons,CENTRO DE ENSINO DR JOSÉ NEIVA,21171726,matricula ainda nao conf
 MA,Pastos Bons,"CENTRO DE ENSINO DR JOSÉ NEIVA, ANEXO SANTA FÉ",21171726,matricula ainda nao confirmada no QEdu
 MA,Pastos Bons,CENTRO EDUCA MAIS PROF. RIBAMAR TORRES,21171750,matricula ainda nao confirmada no QEdu
 MA,Paulino Neves,CENTRO DE ENSINONTRO DE ENSINO ALFREDO DUAILIBE,21198247,matricula ainda nao confirmada no QEdu
-MA,Paulino Neves,ESCOLA MUNICIPAL SÃO CRISÓSTOMO,21035172,matricula ainda nao confirmada no QEdu
 MA,Paulo Ramos,CENTRO DE ENSINO ROBERTO SARNEY,21076839,matricula ainda nao confirmada no QEdu
 MA,Paulo Ramos,UNIDADE INTEGRADA COSTA FERREIRA,21076383,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO DE ENSINO ERASMO DIAS,21007446,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO DE ENSINO PROFESSOR MACHADINHO,21008604,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO DE ENSINO PROFESSOR ROBSON CAMPOS MARTINS,21008396,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO DE ENSINO VITORIO SILVA,21008388,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO EDUCA MAIS DOMINGOS VIEIRA FILHO,21008680,matricula ainda nao confirmada no QEdu
-MA,Paço do Lumiar,CENTRO EDUCA MAIS DRº LUIZ SERGIO CABRAL BARRETO,21007454,matricula ainda nao confirmada no QEdu
 MA,Paço do Lumiar,IEMA PLENO PAÇO DO LUMIAR,21291853,matricula ainda nao confirmada no QEdu
 MA,Pedreiras,CENTRO DE ENSINO OLINDA NUNES FREIRE,21107157,matricula ainda nao confirmada no QEdu
 MA,Pedreiras,UNIDADE DE ENSINO ZECA BRANCO,21107173,matricula ainda nao confirmada no QEdu
 MA,Pedreiras,UNIDADE ESCOLAR PREFEITO REMY SOARES,21107173,matricula ainda nao confirmada no QEdu
 MA,Penalva,CENTRO DE ENSINO ANTERO CAMARA PENHA,21263361,matricula ainda nao confirmada no QEdu
-MA,Penalva,CENTRO DE ENSINO DR. TANCREDO NEVES,21044023,matricula ainda nao confirmada no QEdu
-MA,Penalva,CENTRO DE ENSINO SABINO BARROS,21044015,matricula ainda nao confirmada no QEdu
-MA,Penalva,CENTRO EDUCA MAIS DR. JOSE JOAQUIM MARQUES,21044066,matricula ainda nao confirmada no QEdu
-MA,Penalva,UNIDADE ESCOLAR GONÇALVES DIAS,21043825,matricula ainda nao confirmada no QEdu
 MA,Peritoró,CENTRO DE ENSINO ENGENHEIRO ROBERTO CUNHA,21150320,matricula ainda nao confirmada no QEdu
 MA,Peritoró,CENTRO DE ENSINO JOÃO MOHANA,21150508,matricula ainda nao confirmada no QEdu
 MA,Peritoró,UNIDADE ESCOLAR Mª EURENICE MACHADO DOS SANTOS,21246203,matricula ainda nao confirmada no QEdu
@@ -1127,13 +996,10 @@ MA,Pindaré-Mirim,CENTRO DE ENSINO FRANCISCO DAS CHAGAS VASCONCELOS,21131392,mat
 MA,Pindaré-Mirim,CENTRO DE ENSINO JERUSA DA SILVA RABELO,21077568,matricula ainda nao confirmada no QEdu
 MA,Pindaré-Mirim,CENTRO EDUCA MAIS PROF JOÃO CARDOSO CAMPOS,21077576,matricula ainda nao confirmada no QEdu
 MA,Pindaré-Mirim,IEMA UNIDADE PLENA PINDARÉ MIRIM,21280835,matricula ainda nao confirmada no QEdu
-MA,Pinheiro,CENTRO EDUCA MAIS DOM UNGARELLI,21046662,matricula ainda nao confirmada no QEdu
 MA,Pinheiro,IEMA UNIDADE VOCACIONAL DE PINHEIRO,21284873,matricula ainda nao confirmada no QEdu
 MA,Pio XII,CAIXA ESCOLAR JANSEN VELOSO,21108285,matricula ainda nao confirmada no QEdu
 MA,Pirapemas,CENTRO EDUCA MAIS PIRAPEMAS,21061181,matricula ainda nao confirmada no QEdu
-MA,Pirapemas,UNIDADE INTEGRADA ANTÔNIO TEIXEIRA RIBEIRO,21060363,matricula ainda nao confirmada no QEdu
 MA,Pirapemas,UNIDADE INTEGRADA CONCEIÇÃO DE MARIA CUNHA SOUSA,21061157,matricula ainda nao confirmada no QEdu
-MA,Pirapemas,UNIDADE INTEGRADA LEÔNIDAS RODOLFO PESSOA,21060576,matricula ainda nao confirmada no QEdu
 MA,Porto Franco,CENTRO DE ENSINO FORTUNATO MOREIRA NETO,21199365,matricula ainda nao confirmada no QEdu
 MA,Porto Franco,IEMA UNIDADE PLENA PORTO FRANCO,21291845,matricula ainda nao confirmada no QEdu
 MA,Poção de Pedras,CENTRO EDUCACIONAL PROFESSOR AUGUSTO INACIO PINHEIRO,21108331,matricula ainda nao confirmada no QEdu
@@ -1157,21 +1023,15 @@ MA,Presidente Dutra,UNIDADE INTEGRADA JOANA LIMA MACHADO,21131414,matricula aind
 MA,Presidente Dutra,UNIDADE INTEGRADA MUNICIPAL DR MURILO BRAGA,21131376,matricula ainda nao confirmada no QEdu
 MA,Presidente Dutra,UNIDADE INTEGRADA PROFº JOÃO MARTINS NETO,21131333,matricula ainda nao confirmada no QEdu
 MA,Presidente Dutra,UNIDADE INTEGRADA TEREZA DE OLIVEIRA COLEGIO MUNICIPAL TIRADENTES - MILITAR,21131430,matricula ainda nao confirmada no QEdu
-MA,Presidente Juscelino,CENTRO DE ENSINO SENADOR VITORINO FREIRE,21026203,matricula ainda nao confirmada no QEdu
 MA,Presidente Médici,CENTRO DE ENSINO MARIA ESPÍNDOLA DE ARAUJO SILVA,21083789,matricula ainda nao confirmada no QEdu
 MA,Presidente Vargas,CENTRO DE ENSINO TANCREDO DE ALMEIDA NEVES,21199020,matricula ainda nao confirmada no QEdu
 MA,Presidente Vargas,CENTRO EDUCA MAIS TANCREDO DE ALMEIDA NEVES,21199020,matricula ainda nao confirmada no QEdu
-MA,Primeira Cruz,CENTRO DE ENSINO RURAL DOS LOPES,21033218,matricula ainda nao confirmada no QEdu
-MA,Raposa,CENTRO DE ENSINO JOAQUIM AROSO,21008574,matricula ainda nao confirmada no QEdu
 MA,Raposa,CENTRO EDUCA MAIS PROF JOSÉ FRANÇA DE SOUSA,21491208,matricula ainda nao confirmada no QEdu
 MA,Riachão,CENTRO DE ENSINO LUSO ROCHA,21184259,matricula ainda nao confirmada no QEdu
 MA,Ribamar Fiquene,CENTRO DE ENSINO MANOEL BEZERRA DE OLIVEIRA,21263590,matricula ainda nao confirmada no QEdu
-MA,Rosário,CENTRO DE ENSINO LEOCADIA ALVES DOS SANTOS LIMA,21027200,matricula ainda nao confirmada no QEdu
 MA,Rosário,CENTRO EDUCA MAIS RAIMUNDO JOÃO SALDANHA,21026211,matricula ainda nao confirmada no QEdu
 MA,Sambaíba,CENTRO DE ENSINO DR. PAULO RAMOS,21188335,matricula ainda nao confirmada no QEdu
 MA,Santa Filomena do Maranhão,ESCOLA MUNICIPAL DAVI BARBOSA ROLINS,21124930,matricula ainda nao confirmada no QEdu
-MA,Santa Helena,CENTRO EDUCA MAIS LEDA TARJA,21048223,matricula ainda nao confirmada no QEdu
-MA,Santa Helena,IEMA PLENO SANTA HELENA - NEWTON BELLO,21048231,matricula ainda nao confirmada no QEdu
 MA,Santa Inês,CENTRO DE ENSINO BANDEIRA TRIBUZZI - CAIC,21077762,matricula ainda nao confirmada no QEdu
 MA,Santa Inês,CENTRO DE ENSINO JOSUE DINIZ ALVES,21335419,matricula ainda nao confirmada no QEdu
 MA,Santa Inês,CENTRO DE ENSINO JOSUÉ MONTELLO,21078564,matricula ainda nao confirmada no QEdu
@@ -1188,9 +1048,6 @@ MA,Santa Luzia do Paruá,IEMA SANTA LUZIA,21287457,matricula ainda nao confirmad
 MA,Santa Quitéria do Maranhão,CENTRO DE ENSINO JOSE LOPES DE SOUSA,21370206,matricula ainda nao confirmada no QEdu
 MA,Santa Quitéria do Maranhão,CENTRO EDUCA MAIS CONEGO NESTOR CUNHA,21251355,matricula ainda nao confirmada no QEdu
 MA,Santa Quitéria do Maranhão,UNIDADE ESCOLAR DOM JAIME CAMERA,21135363,matricula ainda nao confirmada no QEdu
-MA,Santa Rita,CENTRO DE ENSINO MONSENHOR DOURADO,21027978,matricula ainda nao confirmada no QEdu
-MA,Santa Rita,CENTRO EDUCA MAIS JOÃO BATISTA DE CARVALHO,21027943,matricula ainda nao confirmada no QEdu
-MA,Santo Amaro do Maranhão,CENTRO DE ENSINO MANOEL DIAS DE SOUSA,21033285,matricula ainda nao confirmada no QEdu
 MA,Santo Antônio dos Lopes,CENTRO EDUCA MAIS REGO,21110069,matricula ainda nao confirmada no QEdu
 MA,Senador La Rocque,CENTRO DE ENSINO SALOMÃO CURY RAD,21096163,matricula ainda nao confirmada no QEdu
 MA,Senador La Rocque,UNIDADE ESCOLAR PROFESSORA LEDA TAJRA,21097739,matricula ainda nao confirmada no QEdu
@@ -1204,10 +1061,6 @@ MA,Sucupira do Riachão,UNIDADE ESCOLAR MUNICIPAL LUIZA DA COSTA RIBEIRO,2117321
 MA,Sucupira do Riachão,UNIDADE ESCOLAR MUNICIPAL PROFESSORA ROSALIA O. DA SILVA,21286744,matricula ainda nao confirmada no QEdu
 MA,Sucupira do Riachão,UNIDADE INTEGRADA HUMBERTO DE CAMPOS,21173419,matricula ainda nao confirmada no QEdu
 MA,São Benedito do Rio Preto,CENTRO DE ENSINO PROF. LUIS PINHO RODRIGUES,21143927,matricula ainda nao confirmada no QEdu
-MA,São Bento,CENTRO DE ENSINO DOM LUIS DE BRITO,21048282,matricula ainda nao confirmada no QEdu
-MA,São Bento,CENTRO EDUCA MAIS DOM FRANCISCO,21049351,matricula ainda nao confirmada no QEdu
-MA,São Bento,CENTRO EDUCA MAIS KIOLA COSTA,21049378,matricula ainda nao confirmada no QEdu
-MA,São Bento,ESCOLA PIAMARTA - CENTRO TECNOLÓGICO,21049106,matricula ainda nao confirmada no QEdu
 MA,São Bernardo,CENTRO DE ENSINO DEBORAH CORREIA LIMA,21136262,matricula ainda nao confirmada no QEdu
 MA,São Bernardo,CENTRO DE ENSINO DR HENRIQUE COUTO,21136289,matricula ainda nao confirmada no QEdu
 MA,São Bernardo,UNIDADE INTEGRADA PROFESSORA CÉLIA CRISTINA PEREIRA DOS REIS,21289689,matricula ainda nao confirmada no QEdu
@@ -1224,28 +1077,19 @@ MA,São Francisco do Maranhão,ESCOLA MUNICIPAL SENADOR BERNARDINO VIANA,2117247
 MA,São Francisco do Maranhão,ESCOLA MUNICIPAL VEREADOR ANTONIO TEIXEIRA,21172692,matricula ainda nao confirmada no QEdu
 MA,São Francisco do Maranhão,UNIDADE INTEGRADA SEBASTIÃO P. DE CARVALHO,21172676,matricula ainda nao confirmada no QEdu
 MA,São Félix de Balsas,CENTRO DE ENSINO HENRIQUE MARTINS,21188750,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,CENTRO DE ENSINO COLEGIO MILITAR 2 DE JULHO - UNIDADE XIII,21009694,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,CENTRO DE ENSINO DR TARQUINIO LOPES FILHO,21009686,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,CENTRO DE ENSINO POETA CUNHA SANTOS,21291373,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,CENTRO DE ENSINO SAO JOSE DE RIBAMAR - ANEXO I - VILA - SALA FORA I - BOM JARDIM,21260290,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,CENTRO DE ENSINO SETE DE SETEMBRO,21009678,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,CENTRO EDUCA MAIS PIRES COLLINS,21008299,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,CENTRO EDUCA MAIS RIBEIRO DO AMARAL,21009716,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,CENTRO EDUCA MAIS SALUSTIANO TRINDADE,21009473,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,CENTRO EDUCA MAIS SÃO JOSE DE RIBAMAR,21249016,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,CENTRO ESCOLAR CARLOS MELO,21277770,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,COMPLEXO EDUCACIONAL CURIAR BILINGUE,,escola sem codigo INEP na lista
 MA,São José de Ribamar,ESCOLA MUNICIPAL GONÇALVES DIAS,21199434,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,ESCOLA MUNICIPAL LÊDA CHAVES TAJRA,21009333,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,ESCOLA MUNICIPAL PARQUE VITÓRIA,21009643,matricula ainda nao confirmada no QEdu
-MA,São José de Ribamar,ESCOLA MUNICIPAL SARNEY FILHO,21009724,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,IEMA PLENO SÃO JOSÉ DO RIBAMAR,21282153,matricula ainda nao confirmada no QEdu
 MA,São José de Ribamar,LICEU RIBAMAREUSE III,21287503,matricula ainda nao confirmada no QEdu
 MA,São José dos Basílios,CENTRO DE ENSINO DARCY VARGAS,21131384,matricula ainda nao confirmada no QEdu
 MA,São José dos Basílios,COMPLEXO EDUCACIONAL PRESIDENTE JOÃO FIGUEIREDO,21131023,matricula ainda nao confirmada no QEdu
 MA,São José dos Basílios,UNIDADE INTEGRADA JOSÉ BONIFACIO,21130930,matricula ainda nao confirmada no QEdu
 MA,São José dos Basílios,UNIDADE INTEGRADA PRESIDENTE CASTELO BRANCO,21131007,matricula ainda nao confirmada no QEdu
-MA,São João Batista,CENTRO DE ENSINO ACRISIO FIGUEIREDO,21050554,matricula ainda nao confirmada no QEdu
 MA,São João Batista,CENTRO DE ENSINO DEPUTADO JOSE RIBAMAR DOMINICI,21355002,matricula ainda nao confirmada no QEdu
 MA,São João do Carú,CENTRO DE ENSINO PROFESSORA CONCEIÇÃO BRENHA RAPOSO,21250537,matricula ainda nao confirmada no QEdu
 MA,São João do Paraíso,CENTRO DE ENSINO DELFINO AGUIAR DE AZEVEDO,21177384,matricula ainda nao confirmada no QEdu
@@ -1255,127 +1099,35 @@ MA,São João do Soter,CENTRO DE ENSINO INACIO ROCHA,21424209,matricula ainda na
 MA,São João do Soter,CENTRO DE ENSINO THALES RIBEIRO GONÇALVES-ANEXO SANTO ANTONIO,21259933,matricula ainda nao confirmada no QEdu
 MA,São João dos Patos,CENTRO DE ENSINO DR. PAULO RAMOS,21173427,matricula ainda nao confirmada no QEdu
 MA,São João dos Patos,CENTRO EDUCA MAIS JOSELIA ALMEIDA RAMOS,21173435,matricula ainda nao confirmada no QEdu
-MA,São Luís,CAIXA ESCOLAR CIDADE OPERARIA II,21010102,matricula ainda nao confirmada no QEdu
 MA,São Luís,CAIXA ESCOLAR EMBAIXADOR ARAUJO CASTRO - ANEXO,21021570,matricula ainda nao confirmada no QEdu
-MA,São Luís,CAIXA ESCOLAR EMESIO ARAUJO,21022364,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRAL ESTUDANTIL  - CES,21193939,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE EDUCAÇÃO ESPECIAL PROFESSORA MARIA DA GLÓRIA COSTA ARCANGELI,21261318,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO ANJO DA GUARDA,21009783,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO ANTONIO RIBEIRO DA SILVA,21020698,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO BARBOSA DE GODOIS,21016925,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO BENEDITO LEITE,21016933,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO BERNARDO COELHO DE ALMEIDA,21009805,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO CIDADE DE SAO LUIS,21021910,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO CIDADE OPERARIA I,21017115,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO COELHO NETO - TURU,21022453,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO CONEGO RIBAMAR CARVALHO,21022330,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO CRUZEIRO DE SANTA BARBARA,21196297,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO CRUZEIRO DO SUL,21021929,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO DR ANTONIO JORGE DINO,21016356,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO DR CLARINDO SANTIAGO,21196283,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO DR FRANCISCO DE ASSIS XIMENES DE ARAGAO FILHO,21020833,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO DR GERALDO MELO,21022356,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO ESTADO DE ALAGOAS,21016631,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO ESTADO DO MATO GROSSO,21021961,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO FERNANDO PERDIGAO,21225672,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO GENERAL ARTUR CARVALHO,21016682,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO GOVERNADOR ARCHER,21021589,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO GOVERNADOR JOSE MURAD,21022496,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO HAYDEE CHAVES,21022399,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO HUMBERTO DE CAMPOS,21016690,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JACKSON LAGO,21016763,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JAPIACU,21016704,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JOAO EVANGELISTA SERRA DOS SANTOS,21021708,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO JOAO PAULO II,21194483,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JOAQUIM GOMES DE SOUSA,21020949,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JOSE GIORCENTRO DE ENSINOLLI COSTA,21016720,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JOSE JUSTINO PEREIRA,21022089,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JOSUÉ MONTELLO,21022100,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO JUVENCIO MATOS,21022135,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO LARA RIBAS,21248451,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO LICENTRO DE ENSINOU MARANHENSE,21009848,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO LUCIA CHAVES,21022526,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO MANOEL BECKMAN,21021015,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO MARIA FIRMINA DOS REIS,21021848,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO NERVAL LEBRE SANTIAGO,21010129,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO ODYLO COSTA FILHO,21017018,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO OSMAR CARVALHO,21104018,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO OZANO GOMES,21104220,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PAULO FREIRE,21017212,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PEDRO ALVARES CABRAL,21022186,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSOR EZELBERTO MARTINS,21020825,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSOR JOAO PEREIRA MARTINS NETO,21021597,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSOR JOSE DO NASCIMENTO MORAES,21021600,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSOR LUIS REGO,21021163,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSOR RUBEM ALMEIDA,21022232,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSORA JANILDE SILVA DE AQUINO,21016631,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO PROFESSORA MARIA DO SOCORRO ALMEIDA - ANEXO I - QUEBRA-POTE,21020981,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO PROFESSORA MARIA HELENA ROCHA,21240744,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO PROFESSORA ROSA CASTRO,21225656,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO RENASCENTRO DE ENSINONCA,21022585,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO RENATO ARCHER,21017239,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO RIO GRANDE DO NORTE,21016070,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SALIM BRAID,21022607,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SANTA BARBARA,21021252,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SANTA TERESA,21021716,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SAO CRISTOVAO,21017123,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO SAO CRISTOVAO - ANEXO III - SAO BERNARDO,21258880,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SAO JOSE OPERARIO,21017140,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO SOTERO DOS REIS,21016887,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO VICENTE MAIA,21017190,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO VICENTRO DE ENSINONTE MAIA,21017190,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO VILA MARANHÃO,21022313,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO DE ENSINO VINICIUS DE MORAES,21225630,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO DE ENSINO VIRIATO CORREA,21022437,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS ALMIRANTE TAMANDARÉ,21017093,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS BARJONAS LOBÃO,21021554,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS CIDADE DE SÃO JOSE DE RIBAMAR,21008728,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS COELHO NETO (IVAR SALDANHA),21009864,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS DAYSE GALVAO DE SOUSA,21228353,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS DESEMBARGADOR EMÉSIO ARAÚJO,21022364,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS DORILENE SILVA CASTRO,21213640,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS ESTADO DO AMAZONAS,21016640,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS ESTADO DO CEARÁ,21099855,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS ESTEFÂNIA ROSA DA SILVA,21017107,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS JOÃO FRANCISCO LISBOA,21011133,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS JULIO DE MESQUITA FILHO,21022127,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS MARIA JOSÉ ARAGÃO,21021058,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS MARIA MONICA VALE,21021872,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS MENINO JESUS DE PRAGO,21021643,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS PADRE JOSÉ BRAULIO SOUSA ALVES,21016283,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS PROF LUIZ ALVES FERREIRA,21016950,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS PROF. INÁCIO RAQUEL,21213593,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCA MAIS PROFESSOR MARIO MARTINS MIRELES,21261563,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS PROFESSORA MARGARIDA PIRES SEAL,21015023,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS PROFESSORA MARIA DO SOCORRO ALMEIDA,21021171,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS PROFESSORA MARIA PINHO,21021198,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCA MAIS Y BACANGA,21022623,matricula ainda nao confirmada no QEdu
 MA,São Luís,CENTRO EDUCACIONAL ASSOCIATIVO WAMBERTO CAMPOS,21253617,matricula ainda nao confirmada no QEdu
-MA,São Luís,CENTRO EDUCACIONAL VICENTE MAIA,21017190,matricula ainda nao confirmada no QEdu
-MA,São Luís,COLEGIO MILITAR 2 DE JULHO,21021678,matricula ainda nao confirmada no QEdu
-MA,São Luís,COLEGIO MILITAR TIRADENTES,21021953,matricula ainda nao confirmada no QEdu
-MA,São Luís,COLÉGIO MILITAR -2 DE JULHO - ANEXO PIO XII,21016798,matricula ainda nao confirmada no QEdu
-MA,São Luís,ESCOLA COMUNITARIA JD DE INFANCIA BRANCA DE NEVE,21015341,matricula ainda nao confirmada no QEdu
 MA,São Luís,ESCOLA MUNICIPAL AFONSO COSTA,21169853,matricula ainda nao confirmada no QEdu
 MA,São Luís,ESCOLA MUNICIPAL DE MÚSICA DE SÃO LUIS - EMMUS,21290946,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA DO CAMPO VILA MARANHÃO,21022313,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO BARJONAS LOBÃO,21011125,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO RIO ANIL,21019649,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO SÃO LUIS - DESEMBARGADOR SARNEY,21022461,matricula ainda nao confirmada no QEdu
 MA,São Luís,IEMA PLENO SÃO LUIS - ITAQUI - BACANGA,21283885,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO SÃO LUIS - ITAQUI - BACELAR PORTELA,21013926,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO SÃO LUIS - ITAQUI - GONÇALVES DIAS,21009872,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO SÃO LUIS - TAMANCÃO - UNIDADE PLENA DE GONCALVES DIAS,21009872,matricula ainda nao confirmada no QEdu
-MA,São Luís,IEMA PLENO SÃO LUÍS SOUSANDRADE,21017042,matricula ainda nao confirmada no QEdu
 MA,São Luís,INSTITUTO EDUCACIONAL NOSSA SENHORA DA CONCEIÇÃO,21240809,matricula ainda nao confirmada no QEdu
 MA,São Luís,"INSTITUTO ESTADUAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA - IEMA",21387206,matricula ainda nao confirmada no QEdu
 MA,São Luís,JARDIM DE INFANCIA VOVO DOLORES,21292256,matricula ainda nao confirmada no QEdu
-MA,São Luís,UNIDADE ESCOLAR BÁSICA ENSINO FUNDAMENTAL MONSENHOR FREDERICO CHAVES,21022410,matricula ainda nao confirmada no QEdu
 MA,São Luís,UNIDADE ESCOLAR DR MURILO BRAGA,21131376,matricula ainda nao confirmada no QEdu
-MA,São Luís,UNIDADE ESCOLAR MUNICIPAL DE ENSINO FUNDAMENTAL PROF RUBEM ALMEIDA,21016810,matricula ainda nao confirmada no QEdu
 MA,São Luís,UNIDADE INTEGRADA ARTUR AZEVEDO,21215545,matricula ainda nao confirmada no QEdu
-MA,São Luís,UNIDADE INTEGRADA ESTADO DE SÃO PAULO,21016615,matricula ainda nao confirmada no QEdu
-MA,São Luís,UNIDADE INTEGRADA FRANCISCO DE ASSIS SOUSA,21021090,matricula ainda nao confirmada no QEdu
 MA,São Luís,UNIVERSIDADE FEDERAL DO MARANHÃO - UFMA,2497,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
 MA,São Mateus do Maranhão,CENTRO DE ENSINO LUÍS AUGUSTO BARROS,21112410,matricula ainda nao confirmada no QEdu
 MA,São Mateus do Maranhão,CENTRO EDUCA MAIS SÃO JOSÉ,21112401,matricula ainda nao confirmada no QEdu
@@ -1393,7 +1145,6 @@ MA,São Raimundo das Mangabeiras,UNIDADE INTEGRADA PADRE FABIO BERTAGNOLLI,21220
 MA,São Raimundo das Mangabeiras,UNIDADE INTEGRADA PROF CECI TEIXEIRA LIMA E SILVA,21189641,matricula ainda nao confirmada no QEdu
 MA,São Raimundo das Mangabeiras,UNIDADE INTEGRADA SÃO LUÍS GONZAGA,21189811,matricula ainda nao confirmada no QEdu
 MA,São Roberto,UNIDADE INTEGRADA REMY SOARES,21230501,matricula ainda nao confirmada no QEdu
-MA,São Vicente Ferrer,CENTRO DE ENSINO DR. JOSÉ AROUCHE,21051763,matricula ainda nao confirmada no QEdu
 MA,São Vicente Ferrer,IEMA PLENO SÃO VICENTE FERRER,21286183,matricula ainda nao confirmada no QEdu
 MA,Sítio Novo,CENTRO DE ENSINO PARSONDAS DE CARVALHO (SÍTIO NOVO),21124639,matricula ainda nao confirmada no QEdu
 MA,Tasso Fragoso,CENTRO DE ENSINO ENEAS MAIA FILHO,21184305,matricula ainda nao confirmada no QEdu
@@ -1426,9 +1177,6 @@ MA,Turiaçu,CENTRO DE ENSINO IEDA VIANA RIBEIRO,21327807,matricula ainda nao con
 MA,Turilândia,COLÉGIO MILITAR 2 DE JULHO UNIDADE XL,21193347,matricula ainda nao confirmada no QEdu
 MA,Turilândia,COLÉGIO MILITAR TIRADENTES XXIV,21229775,matricula ainda nao confirmada no QEdu
 MA,Turilândia,ESCOLA MUNICIPAL PROFESSOR EDMUNDO SILVA,21069956,matricula ainda nao confirmada no QEdu
-MA,Tutóia,CENTRO DE ENSINO HENRIQUE ROCHA,21035032,matricula ainda nao confirmada no QEdu
-MA,Tutóia,CENTRO DE ENSINO OLINDINA DA COSTA NUNES FREIRE,21035067,matricula ainda nao confirmada no QEdu
-MA,Tutóia,IEMA PLENO CASEMIRO DE ABREU,21035113,matricula ainda nao confirmada no QEdu
 MA,Urbano Santos,COLÉGIO DR. MAGNO BACELAR,21143960,matricula ainda nao confirmada no QEdu
 MA,Vargem Grande,CENTRO DE ENSINO PROFESSOR NEWTON NEVES,21063672,matricula ainda nao confirmada no QEdu
 MA,Vargem Grande,CENTRO DE ENSINO RAULINA DE SOUSA SILVA,21063982,matricula ainda nao confirmada no QEdu
@@ -1436,9 +1184,6 @@ MA,Vargem Grande,CENTRO DE ENSINO SANTOS DUMONT VARGEM GRANDE,21064024,matricula
 MA,Vargem Grande,CENTRO EDUCA MAIS SANTOS DUMONT,21064024,matricula ainda nao confirmada no QEdu
 MA,Vargem Grande,IEMA PLENO VARGEM GRANDE,21287465,matricula ainda nao confirmada no QEdu
 MA,Viana,CENTRO DE ENSINO JOÃO LISBOA,21150338,matricula ainda nao confirmada no QEdu
-MA,Viana,CENTRO DE ENSINO NOSSA SENHORA DA CONCENTRO DE ENSINOIÇÃO,21051780,matricula ainda nao confirmada no QEdu
-MA,Viana,CENTRO EDUCA MAIS RAIMUNDO MARCELINO CAMPELO,21053898,matricula ainda nao confirmada no QEdu
-MA,Viana,IEMA PLENO VIANA DOM HAMLETO DE ANGELIS,21053847,matricula ainda nao confirmada no QEdu
 MA,Vila Nova dos Martírios,CENTRO EDUCA MAIS JOSUÉ MONTELLO,21231559,matricula ainda nao confirmada no QEdu
 MA,Vitorino Freire,CENTRO EDUCA MAIS APARICIO BANDEIRA,21085064,matricula ainda nao confirmada no QEdu
 MA,Vitorino Freire,ESCOLA FAMILIA AGRICOLA NOSSA SENHORA DE FATIMA,21084696,matricula ainda nao confirmada no QEdu
@@ -1446,9 +1191,7 @@ MA,Vitorino Freire,UNIDADE INTEGRADA BENJAMIM CONSTANT,21084041,matricula ainda 
 MA,Vitorino Freire,UNIDADE INTEGRADA DUQUE DE CAXIAS,21084106,matricula ainda nao confirmada no QEdu
 MA,Vitorino Freire,UNIDADE INTEGRADA GONÇALVES DIAS,21084297,matricula ainda nao confirmada no QEdu
 MA,Vitorino Freire,UNIDADE INTEGRADA TANCREDO NEVES,21084890,matricula ainda nao confirmada no QEdu
-MA,Vitória do Mearim,CENTRO DE ENSINO DR RAIMUNDO MAGNO ALVES DA SILVA,21055823,matricula ainda nao confirmada no QEdu
 MA,Vitória do Mearim,CENTRO DE ENSINO MARIA GRACINA PINTO COSTA,21358214,matricula ainda nao confirmada no QEdu
-MA,Vitória do Mearim,IEMA PLENO VITÓRIA DO MEARIM,21055831,matricula ainda nao confirmada no QEdu
 MA,Zé Doca,CAIXA ESCOLAR NELSON SEREJO DE CARVALHO - CEMA,21088110,matricula ainda nao confirmada no QEdu
 MA,Zé Doca,UNIDADE ESCOLAR MUNICIPAL JOSÉ MIRANDA BRAZ,21085595,matricula ainda nao confirmada no QEdu
 MA,Água Doce do Maranhão,CENTRO DE ENSINO JOSE VIEIRA DA SILVA,21134227,matricula ainda nao confirmada no QEdu
@@ -1614,178 +1357,34 @@ MT,Novo Horizonte do Norte,ESCOLA MUNICIPAL ULISSES GUIMARÃES,51012332,matricul
 MT,Planalto da Serra,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA PLÍNIO JOSÉ DE SIQUEIRA,51053586,matricula ainda nao confirmada no QEdu
 MT,Várzea Grande,ESCOLA ESTADUAL JOSÉ LEITE DE MORAES,51043378,matricula ainda nao confirmada no QEdu
 MT,Várzea Grande,ESCOLA MUNICIPAL DE EDUCAÇÃO BÁSICA PROFESSORA MARIA BARBOSA MARTINS,51043521,matricula ainda nao confirmada no QEdu
-PA,Abaetetuba,CRECHE MUNICIPAL MANOEL RODRIGUES NEGRÃO,15167720,matricula ainda nao confirmada no QEdu
-PA,Abaetetuba,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL BOM PASTOR,15554023,matricula ainda nao confirmada no QEdu
-PA,Abaetetuba,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROF. LEÔNIDAS MONTE,15065006,matricula ainda nao confirmada no QEdu
-PA,Acará,E.M.DE E.I.F FRANCISCO PINTO,15079210,matricula ainda nao confirmada no QEdu
 PA,Acará,ESCOLA MUNICIPAL BOA VISTA,53005694,matricula ainda nao confirmada no QEdu
-PA,Afuá,ESCOLA MUNICIPAL RAIMUNDA BARAÚNA,15023656,matricula ainda nao confirmada no QEdu
-PA,Ananindeua,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL E MEDIO JOAO CARLOS BATISTA,15034372,matricula ainda nao confirmada no QEdu
-PA,Ananindeua,ESCOLA MUNICIPAL ESTADUAL DE ENSINO FUNDAMENTAL E MÉDIO MINISTRO ALCIDES CARNEIRO,15034186,matricula ainda nao confirmada no QEdu
-PA,Augusto Corrêa,ESCOLA MUNICIPAL PROFESSORA ROSA ATHAYDE,15549836,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL AÇAITUBA,,escola sem codigo INEP na lista
 PA,Aveiro,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL BARROSO,15145174,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL BOM JESUS IV,15523349,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL CRIANÇA FELIZ,15130223,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL DEPUTADO EVERALDO MARTINS,15582647,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL DANIEL DE CARVALHO,15099318,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL DEPUTADO EVERALDO MARTINS,15099458,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL FERNANDO LEÃO GUILHON,15100103,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL INDIGENA BODITIDA EYPOCE EYXI,15167151,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL INDIGENA KURASY KATU,15167321,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL NOSSA SR DO PERPETUO SOCORRO,15572641,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL OSVALDO MELO,15099300,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PRINCESA ISABEL,15099822,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PROF. MARIA DA SILVA NUNES,15571912,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PROF. OLGARICE DA SILVA RODRIGUES,15571904,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PROFESSORA BENEDITA MOTA SA,15099369,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PROFESSORA CORINA FERREIRA PALMEIRA,15099644,matricula ainda nao confirmada no QEdu
 PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL PROFESSORA MARIA DA GLORIA RODRIGUES PAIXÃO,15562867,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SANTA TEREZINHA,15099857,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SÃO FRANCISCO DAS CHAGAS,15099717,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SÃO JOÃO BATISTA,15099334,matricula ainda nao confirmada no QEdu
-PA,Aveiro,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL VISTA ALEGRE,15584976,matricula ainda nao confirmada no QEdu
-PA,Baião,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SINAGOGA,15587690,matricula ainda nao confirmada no QEdu
-PA,Baião,ESCOLA MUNICIPAL LEVINDO ROCHA,15549739,matricula ainda nao confirmada no QEdu
-PA,Baião,ESCOLA SANTO ANTÔNIO,15554503,matricula ainda nao confirmada no QEdu
-PA,Baião,INSTITUTO IMACULADA CONCEIÇÃO,15068099,matricula ainda nao confirmada no QEdu
 PA,Belterra,EMEI SAO JORGE,43210120,matricula ainda nao confirmada no QEdu
 PA,Belterra,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SÃO JORGE,21065306,matricula ainda nao confirmada no QEdu
-PA,Belém,CAMINHOS DO SABER,15172465,matricula ainda nao confirmada no QEdu
 PA,Belém,CENTRO EDUCIONAL VITORIA,,escola sem codigo INEP na lista
-PA,Belém,CONSELHO DA ESCOLA ESTADUAL ALEXANDRE ZACARIAS DE ASSUNCAO,15039480,matricula ainda nao confirmada no QEdu
 PA,Belém,CRECHE FAROL,15174492,matricula ainda nao confirmada no QEdu
-PA,Belém,CRECHE MUNICIPAL MANOEL RODRIGUES NEGRÃO,15167720,matricula ainda nao confirmada no QEdu
-PA,Belém,E.E JARBAS PASSARINHO,15040011,matricula ainda nao confirmada no QEdu
-PA,Belém,EE SANTO AGOSTINHO,15041417,matricula ainda nao confirmada no QEdu
-PA,Belém,EEEFM EDGAR PINHEIRO PORTO,15040356,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA DR MÁRIO CHERMONT,15039927,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL BRIGADEIRO FONTENELLE,15040305,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO DE FUNDAMENTAL BIRA BARBOSA,15149218,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL AMAZONAS DE FIGUEIREDO,15039692,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL BENTO XV,15039170,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL CRUZEIRO DO SUL,15573710,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL DONA ALZIRA TEIXEIRA,15039544,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL DR. ANIBAL DUARTE,15040321,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL E MEDIO ACÁCIO FELÍCIO SOBRAL,15039633,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL GOVERNADOR ALEXANDRE ZACHARIAS DE ASSUMPÇÃO,15039480,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL JARBAS PASSARINHO,15040011,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL LAR DE MARIA,15041328,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL LAURO SODRE,15039650,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL MONSENHOR AZEVEDO,15039765,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL NOSSA SENHORA DA CONCEIÇÃO APARECIDA,15041247,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL NOSSA SENHORA DAS GRAÇAS,15041344,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PAULINO DE BRITO,15039234,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PREVENTÓRIO SANTA TEREZINHA,15041360,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PROF. RUTH ROSITA,15040291,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PROFA MARIA LUIZA VELLA ALVES,15039226,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PROFA. DONATILA SANTANA LOPES,15040496,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PROFESSOR JOÃO RENATO FRANCO,15039749,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL PROF° RUTH ROSITA DE NAZARÉ GONZALES,15040291,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL RUTH PASSARINHO,15040208,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL SANTO AGOSTINHO,15041417,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL VEREADOR GONÇALO DUARTE,15039986,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL VISCONDE DE SOUZA FRANCO,15038700,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTALM AMILCAR ALVES TUPIASSU,15039552,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTALM ANTÔNIA PAES DA SILVA,15039811,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL DE ENSINO FUNDAMENTALM DR MÁRIO CHERMONT,15039927,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL JOSÉ BONIFÁCIO,15040046,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL JOÃO RENATO FRANCO,15039749,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL MONTE SERRAT,15516539,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL NUREMBERG BORJA DE BRITO,15171671,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL PROFESSORA NORMA MORHY,15040151,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA ESTADUAL SANTA MARIA DE BELÉM,15038505,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA HUMBERTO DE CAMPOS,15041310,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL DR. JUSTO CHERMONT,15039676,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL DR.MÁRIO CHERMONT,15039927,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL EDGAR PINHEIRO PORTO,15040356,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL FREI DANIEL,15039951,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MANOEL DE JESUS MORAES,15040437,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MARIA STELLINA VALMONT,15040674,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROF. FRANCISCO DA SILVA NUNES,15040801,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROFA ESTHER BANDEIRA GOMES,15040500,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SALESIANA DO TRABALHO,15041387,matricula ainda nao confirmada no QEdu
 PA,Belém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL UMARIZAL,15029140,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA PROFA CELINA ANGLADA,15040488,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA SALESIANA DO TRABALHO,15041387,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA STELIO MAROJA,15039790,matricula ainda nao confirmada no QEdu
-PA,Belém,ESCOLA VEREADOR GONÇALO DUARTE,15039986,matricula ainda nao confirmada no QEdu
 PA,Belém,INSTITUTO DE CIÊNCIAS MÉDICAS DA UNIVERSIDADE FEDERAL DO PARÁ,569,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
-PA,Belém,UNIDADE DE EDUCAÇÃO ESPECIAL ASTERIO DE CAMPOS,15042073,matricula ainda nao confirmada no QEdu
 PA,Belém,UNIDADE PEDAGÓGICA DO SERINGAL,15052966,matricula ainda nao confirmada no QEdu
-PA,Bom Jesus do Tocantins,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL TERESA SCHIMIT,15155765,matricula ainda nao confirmada no QEdu
-PA,Breves,EMEIEF SANTO AGOSTINHO,15024741,matricula ainda nao confirmada no QEdu
-PA,Bujaru,ESCOLA MUNICIPAL ENSINO FUNDAMENTAL DOM ÂNGELO FROSI,15044890,matricula ainda nao confirmada no QEdu
-PA,Castanhal,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MARIA PIA SANTOS AMARAL,15046567,matricula ainda nao confirmada no QEdu
-PA,Castanhal,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PE SALVADOR TRACCAIOLLI,15045471,matricula ainda nao confirmada no QEdu
-PA,Castanhal,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROF CLOTILDE PERREIRA,15045498,matricula ainda nao confirmada no QEdu
 PA,Castanhal,ESCOLA PÚBLICA ANTÔNIO ARISTÓTELES BEZERA,13116606,matricula ainda nao confirmada no QEdu
-PA,Colares,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL BALÃOZINHO VERMELHO,15048632,matricula ainda nao confirmada no QEdu
-PA,Conceição do Araguaia,ESCOLA MUNICIPAL DE ENSINO PIO XII,15135470,matricula ainda nao confirmada no QEdu
-PA,Curuá,PROJETO CLUBE DE MATEMÁTICA DA ESCOLA ESTADUAL SORAYA MARQUES,15566838,matricula ainda nao confirmada no QEdu
-PA,Eldorado do Carajás,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL BENEVIDIA GOMES,15124886,matricula ainda nao confirmada no QEdu
-PA,Faro,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL SÃO JOSÉ,15000010,matricula ainda nao confirmada no QEdu
-PA,Floresta do Araguaia,ESCOLA MUNICIPAL JOSE PEREIRA BARBOSA,15552420,matricula ainda nao confirmada no QEdu
-PA,Ipixuna do Pará,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL BOM JESUS,15157113,matricula ainda nao confirmada no QEdu
-PA,Itupiranga,E.M.E.F IRMÃ TEREZA ROING,15104320,matricula ainda nao confirmada no QEdu
 PA,Itupiranga,E.M.E.F JARBAS PASSARINHO,15556948,matricula ainda nao confirmada no QEdu
-PA,Magalhães Barata,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MANOEL SABINO DA SILVA,15049736,matricula ainda nao confirmada no QEdu
-PA,Marabá,ESCOLA ESTADUAL PROFESSORA ONEIDE DE SOUZA TAVARES,15127613,matricula ainda nao confirmada no QEdu
-PA,Melgaço,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOSÉ MARIA RODRIGUES VIEGAS JUNIOR,15225003,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E FUNDAMENTAL CONGREGAÇÃO,15082709,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL INDÍGENA AIPÂ ANAMBÉ,15540456,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL QUILOMBOLA DE EDUCAÇÃO INFANTIL E FUNDAMENTAL NOSSA SENHORA DAS GRAÇAS - PREFEITURA MUNICIPAL DE MOJU,15083284,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL QUILOMBOLA DE EDUCAÇÃO INFANTIL E FUNDAMENTAL SANTA LUZIA - PREFEITURA MUNICIAPL DE MOJU,15082296,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL QUILOMBOLA DE EDUCAÇÃO INFANTIL E FUNDAMENTAL SANTA MARIA - PREFEITURA MUNICIPAL DE MOJU,15083683,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL QUILOMBOLA DE EDUCAÇÃO INFANTIL E FUNDAMENTAL SANTO CRISTO,15083241,matricula ainda nao confirmada no QEdu
-PA,Moju,ESCOLA MUNICIPAL QUILOMBOLA DE EDUCAÇÃO INFANTIL E FUNDAMENTAL SÃO SEBASTIÃO - PREFEITURA MUNICIPAL DE MOJU,15083950,matricula ainda nao confirmada no QEdu
-PA,Mojuí dos Campos,ESCOLA MUNICIPAL DE EDUCAÇÕ INFANTIL E ENSINO FUNDAMENTAL FRANCISCO PEREIRA DOS SANTOS,15581683,matricula ainda nao confirmada no QEdu
-PA,Mãe do Rio,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL SANTA MARIA,15546993,matricula ainda nao confirmada no QEdu
-PA,Mãe do Rio,ESCOLA PROFESSORA CECÍLIA DE NAZARÉ,15092976,matricula ainda nao confirmada no QEdu
-PA,Oeiras do Pará,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL MÁRIO ARCANJO DA COSTA,15077667,matricula ainda nao confirmada no QEdu
-PA,Oeiras do Pará,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL NOVO EDEM,15526160,matricula ainda nao confirmada no QEdu
 PA,Oriximiná,ESCOLA ESTADUAL DE ENSINO FUNDAMENTAL SANTO AFONSO,15041409,matricula ainda nao confirmada no QEdu
-PA,Ourém,ESCOLA MUNICIPAL SÃO SEBASTIÃO,15571882,matricula ainda nao confirmada no QEdu
-PA,Palestina do Pará,ESCOLA MUNICIPAL ADELIA VAZ DE AZEVEDO,15129632,matricula ainda nao confirmada no QEdu
 PA,Ponta de Pedras,ESCOLA MUNICIPAL HELENA DA SILVA,15015645,matricula ainda nao confirmada no QEdu
 PA,Ponta de Pedras,ESCOLA MUNICIPAL SÃO SEBASTIÃO,,escola sem codigo INEP na lista
 PA,Portel,ESCOLA M.E.F ANRTONIO BRAGA E CHAVES,15106144,matricula ainda nao confirmada no QEdu
 PA,Portel,PONTO DE INCLUSÃO DIGITAL,,escola sem codigo INEP na lista
 PA,Porto Trombetas,ESCOLA MUNICIPAL PADRE JOSIMO TAVARES,,escola sem codigo INEP na lista
-PA,Rio Maria,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL LUCIA HELENA BARTOLOMEU PIRES,15132196,matricula ainda nao confirmada no QEdu
-PA,Rio Maria,ESCOLA MUNICIPAL FREI GIL DE VILA NOVA,15143511,matricula ainda nao confirmada no QEdu
-PA,Rondon do Pará,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL ELIDIA MARIA,15120023,matricula ainda nao confirmada no QEdu
-PA,Salinópolis,ESCOLA MUNICIPAL DR. MIGUEL DE SANTA BRÍGIDA,15052222,matricula ainda nao confirmada no QEdu
-PA,Salvaterra,ESCOLA ESTADUAL PROF. ADEMAR NUNES VASCONCELOS,15032744,matricula ainda nao confirmada no QEdu
-PA,Salvaterra,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL BAHÁÍ OLAVA,15032990,matricula ainda nao confirmada no QEdu
-PA,Santa Bárbara do Pará,ESCOLA MUNICIPAL NOVO PARAÍSO,15156869,matricula ainda nao confirmada no QEdu
 PA,Santarém,CONSELHO INDÍGENA TAPAJÓS ARAPIUNS ESCOLA INDÍGENA ANAMA JULIETA DOS SANTOS,,escola sem codigo INEP na lista
-PA,Santarém,EMEEF SÃO FRANCISCO,15590100,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA INFANTIL DE ENSINO FUNDAMENTAL DR MARIA AMALIA QUEIROZ DE SOUZA,15012417,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL PROFª DELFINA DE JESUS AMORIM,15012298,matricula ainda nao confirmada no QEdu
 PA,Santarém,ESCOLA MUNICIPAL DE ENSINO BÁSICO NOSSA SENHORA RAINHA DA PAZ,27029018,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOÃO XXIII,15012751,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL FLUMINENSE,15012522,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL NOSSA SENHORA DE NAZARE,15013316,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SAGRADO CORAÇÃO DE JESUS,15162435,matricula ainda nao confirmada no QEdu
-PA,Santarém,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL SÃO TOMÉ,15589404,matricula ainda nao confirmada no QEdu
 PA,Santarém,UNIVERSIDADE FEDERAL DO OESTE DO PARÁ - UFOPA,15059;569,escola com mais de um codigo INEP na lista (conferir)
-PA,Santarém Novo,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL OLÍMPIO CARMO DE ARAÚJO,15063704,matricula ainda nao confirmada no QEdu
-PA,Soure,ESCOLA ESTADUAL PROFESSORA EDDA DE SOUZA GONÇALVES,15033724,matricula ainda nao confirmada no QEdu
-PA,São Caetano de Odivelas,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PROFESSORA LUCIANA SARAIVA MACEDO - (SECRETARIA DE EDUCAÇÃO),15179591,matricula ainda nao confirmada no QEdu
-PA,São Geraldo do Araguaia,EMEF LIMÍRIO RODRIGUES DE AMORIM,15560422,matricula ainda nao confirmada no QEdu
 PA,São Geraldo do Araguaia,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL MARTIM AFONSO DE SOUZA,13059980,matricula ainda nao confirmada no QEdu
-PA,São Geraldo do Araguaia,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL LIMIRIO RODRIGUES DE AMORIM,15560422,matricula ainda nao confirmada no QEdu
-PA,São João de Pirabas,ESCOLA MUNICIPAL GURAJARINA MENEZES SILVA,15053563,matricula ainda nao confirmada no QEdu
-PA,Ulianópolis,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL ALEXANDRE BERGAMIN,15120490,matricula ainda nao confirmada no QEdu
-PA,Viseu,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL DR. ALVARO ADOLFO,15097161,matricula ainda nao confirmada no QEdu
-PA,Xinguara,ESCOLA ESTADUAL DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA JORDAME CORRÊA QUEIROZ FILHO,15175952,matricula ainda nao confirmada no QEdu
-PA,Xinguara,ESCOLA M. DE ENSINO FUNDAMENTAL RAIUNDO HENRIQUE DE MIRANDA,15133737,matricula ainda nao confirmada no QEdu
 PA,Xinguara,ESCOLA MUNICIPAL BETEL,52017702,matricula ainda nao confirmada no QEdu
-PA,Xinguara,ESCOLA MUNICIPAL CLEMENTINA NATAL,15159523,matricula ainda nao confirmada no QEdu
-PA,Xinguara,ESCOLA MUNICIPAL DE EDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL PADRE JOÃO LUIZ PURGUY,15134296,matricula ainda nao confirmada no QEdu
-PA,Xinguara,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOSÉ ANTÃO,15134156,matricula ainda nao confirmada no QEdu
-PA,Óbidos,INSITITUO FEDERAL DO PARÁ - CAMPUS ÓBIDOS,15165574,matricula ainda nao confirmada no QEdu
 PB,Boa Vista,ESCOLA MUNICIPAL FRANCISCO SULPINO DE ARAÚJO,25075934,matricula ainda nao confirmada no QEdu
 PB,Caaporã,EMEF MARIA EMILIA VALENÇA,25100580,matricula ainda nao confirmada no QEdu
 PB,Caaporã,EMEF SEVERINA HELENA DOS SANTOS VELOSO,25100629,matricula ainda nao confirmada no QEdu
@@ -2253,25 +1852,10 @@ RN,Touros,ESCOLA MUNICIPAL LUIZA CIRINO DA SILVA,24052019,matricula ainda nao co
 RN,Upanema,CENTRO DE ENSINO ELISÁRIO MATTA,33053910,matricula ainda nao confirmada no QEdu
 RN,Vera Cruz,ESCOLA MUNICIPAL FILOMENA CURCO CABRAL,24050407,matricula ainda nao confirmada no QEdu
 RN,Várzea,ESCOLA MUNICIPAL PLÁCIDO TOMAZ DE LIMA,24050164,matricula ainda nao confirmada no QEdu
-RO,Porto Velho,CEEMEIEF PINGO DE GENTE,11002883,matricula ainda nao confirmada no QEdu
-RO,Porto Velho,E.M.E.I.E.F. BILINGUE PORTO VELHO,11049332,matricula ainda nao confirmada no QEdu
-RO,Porto Velho,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SANTO ANTONIO I,11002182,matricula ainda nao confirmada no QEdu
-RO,Porto Velho,ESCOLA MUNICIPAL DE ENSINO INFANTIL E FUNDAMENTAL FLOR DE LARANJEIRA,11048875,matricula ainda nao confirmada no QEdu
 RR,Amajari,"INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE RORAIMA - CAMPUS AMAJARI",3184,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
-RR,Boa Vista,COLÉGIO ESTADUAL MILITARIZADO DR.LUIZ RITTLER BRITO DE LUCENA,14322765,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA  ESTADUAL  PROF. CONCEIÇÃO DA COSTA SILVA,14322730,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA  ESTADUAL DE TERMPO INTEG. DR LUIS R. BRITO DE LUCENA,14322765,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA  ESTADUAL OLAVO BRASIL FILHO,14005875,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA DE 1 GRAU VITORIA MOTA CRUZ,14001870,matricula ainda nao confirmada no QEdu
 RR,Boa Vista,ESCOLA ESTADUAL BARÃO DE PARIMA,14000725,matricula ainda nao confirmada no QEdu
 RR,Boa Vista,ESCOLA ESTADUAL CARANA,14000768,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA ESTADUAL CONCEIÇÃO COSTA E SILVA,14322730,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA ESTADUAL DE TEMPO INTEGRAL PROFa. MARIA DAS DORES BRASIL,14000555,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA ESTADUAL DR. RITLER BRITO DE LUCENA,14322765,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,ESCOLA ESTADUAL VITORIA MOTA CRUZ,14001870,matricula ainda nao confirmada no QEdu
 RR,Boa Vista,ESCOLA ESTUDAL CARANÃ,14000768,matricula ainda nao confirmada no QEdu
-RR,Boa Vista,INSTITUTO FEDERAL CAMPUS BOA VISTA ZONA OESTE,14007835,matricula ainda nao confirmada no QEdu
-RR,Bonfim,INSTITUTO FEDERAL DE BONFIM/RR,14007827,matricula ainda nao confirmada no QEdu
 RS,Alto Feliz,ESCOLA ESTADUAL DE ENSINO MÉDIO ASSUNÇÃO,43062652,matricula ainda nao confirmada no QEdu
 RS,Alto Feliz,ESCOLA MUNICIPAL PADRE JOÃO BATISTA RULAND,43062512,matricula ainda nao confirmada no QEdu
 RS,Cachoeirinha,CIRCULO DE PAIS E MESTRES DA ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL ASSUNCAO,43174469,matricula ainda nao confirmada no QEdu
@@ -2415,11 +1999,7 @@ SP,São Paulo,INSTITUTO MONTE MORIÁ,,escola sem codigo INEP na lista
 SP,Teodoro Sampaio,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL JOSE AMADOR,35447473,matricula ainda nao confirmada no QEdu
 SP,Teodoro Sampaio,ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL PREF. PAULO ALVES PIRES - PROJETO EDUCAR,35268665,matricula ainda nao confirmada no QEdu
 TO,Arraias,ESCOLA MUNICIPAL EVENY DE PAULA E SOUZA,17033004,matricula ainda nao confirmada no QEdu
-TO,Arraias,ESCOLA MUNICIPAL GREGÓRIO BARRETO E MELO,17033039,matricula ainda nao confirmada no QEdu
-TO,Arraias,ESCOLA MUNICIPAL JOÃO FRANCISCO DA COSTA,17035473,matricula ainda nao confirmada no QEdu
 TO,Arraias,ESCOLA MUNICIPAL MATAS,17046068,matricula ainda nao confirmada no QEdu
-TO,Chapada da Natividade,ESCOLA MUNICIPAL MARCOLINA PINTO RABELO,17049393,matricula ainda nao confirmada no QEdu
-TO,Conceição do Tocantins,ESCOLA MUNICIPAL IZABEL COSTA,17033713,matricula ainda nao confirmada no QEdu
 TO,Palmas,ASSOCIAÇÃO COMUNIDADE ESCOLA DA ESCOLA MUNICIPAL DE TEMPO INTEGRAL ANÍSIO SPÍNDULA TEIXEIRA,12026948,matricula ainda nao confirmada no QEdu
 TO,Palmas,CENTRO JUVENIL SALESIANO DOM BOSCO,17051070,matricula ainda nao confirmada no QEdu
 TO,Palmas,UNIVERSIDADE ESTADUAL DO TOCANTINS - UNITINS,829,codigo nao e INEP de escola basica (QEdu nao cobre): usar matriculas_manual.csv
