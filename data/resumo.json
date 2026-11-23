@@ -1,9 +1,9 @@
 {
- "gerado_em": "2026-11-22",
+ "gerado_em": "2026-11-23",
  "doacoes": {
   "computadores": 89234,
-  "municipios": 1708,
-  "pontos": 7826,
+  "municipios": 1684,
+  "pontos": 7823,
   "por_ano": {
    "2010": {
     "computadores": 6,
@@ -62,12 +62,12 @@
    },
    "2021": {
     "computadores": 4830,
-    "municipios": 134,
-    "pontos": 352
+    "municipios": 133,
+    "pontos": 350
    },
    "2022": {
     "computadores": 4669,
-    "municipios": 136,
+    "municipios": 135,
     "pontos": 367
    },
    "2023": {
@@ -77,7 +77,7 @@
    },
    "2024": {
     "computadores": 15678,
-    "municipios": 529,
+    "municipios": 523,
     "pontos": 1520
    },
    "2025": {
@@ -119,6 +119,19 @@
    "SE": 885,
    "SP": 7864,
    "TO": 686
+  },
+  "impacto_social": {
+   "regra": "instituicao de ensino = matriculas no QEdu (codigo INEP, conta uma vez); demais = 5 x computadores",
+   "pessoas_total": null,
+   "pessoas_municipios_calculados": 90180,
+   "municipios_calculados": 989,
+   "municipios_pendentes": 695,
+   "pessoas_escolas": 0,
+   "pessoas_demais_5x": 310805,
+   "escolas_pontos": 2426,
+   "escolas_com_matricula": 0,
+   "escolas_pendentes": 2426,
+   "anos_censo": []
   }
  },
  "formacao": {
@@ -126,7 +139,7 @@
   "masculino": 45717,
   "feminino": 53722,
   "cursos_distintos": 392,
-  "municipios": 57,
+  "municipios": 44,
   "por_ano": {
    "2011": {
     "alunos": 958,
@@ -238,7 +251,7 @@
     "masculino": 7441,
     "feminino": 9562,
     "cursos_distintos": 114,
-    "municipios": 48
+    "municipios": 35
    }
   },
   "por_uf": {

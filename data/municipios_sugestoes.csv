@@ -1,0 +1,30 @@
+uf_bi,nome_bi,sugestao_uf,sugestao_nome,motivo
+BA,Cabrobó,PE,Cabrobó,mesmo nome em outra UF (UF do BI pode estar errada)
+BA,Casa Branca,SP,Casa Branca,mesmo nome em outra UF (UF do BI pode estar errada)
+BA,Dom Inocêncio,PI,Dom Inocêncio,mesmo nome em outra UF (UF do BI pode estar errada)
+BA,Petrolina,PE,Petrolina,mesmo nome em outra UF (UF do BI pode estar errada)
+BA,Santa Teresinha,PB,Santa Teresinha,mesmo nome em outra UF (UF do BI pode estar errada)
+BA,Santa Teresinha,BA,Santa Terezinha,grafia parecida na mesma UF
+BA,São Raimundo Nonato,PI,São Raimundo Nonato,mesmo nome em outra UF (UF do BI pode estar errada)
+DF,Luziânia,GO,Luziânia,mesmo nome em outra UF (UF do BI pode estar errada)
+DF,Novo Gama,GO,Novo Gama,mesmo nome em outra UF (UF do BI pode estar errada)
+DF,Valparaíso de Goiás,GO,Valparaíso de Goiás,mesmo nome em outra UF (UF do BI pode estar errada)
+GO,Planaltina de Goiás,GO,Palestina de Goiás,grafia parecida na mesma UF
+GO,São Sebastião,AL,São Sebastião,mesmo nome em outra UF (UF do BI pode estar errada)
+GO,São Sebastião,SP,São Sebastião,mesmo nome em outra UF (UF do BI pode estar errada)
+MA,Governador Edison Lobão,,,sem sugestao (pode ser distrito/localidade: conferir)
+MA,Igarapé,MG,Igarapé,mesmo nome em outra UF (UF do BI pode estar errada)
+MT,Campo Grande,RN,Campo Grande,mesmo nome em outra UF (UF do BI pode estar errada)
+MT,Campo Grande,AL,Campo Grande,mesmo nome em outra UF (UF do BI pode estar errada)
+MT,Campo Grande,MS,Campo Grande,mesmo nome em outra UF (UF do BI pode estar errada)
+MT,Santo Antônio do Leverger,MT,Santo Antônio de Leverger,grafia parecida na mesma UF
+MT,Santo Antônio do Leverger,MT,Santo Antônio do Leste,grafia parecida na mesma UF
+PA,Caeté,MG,Caeté,mesmo nome em outra UF (UF do BI pode estar errada)
+PA,Porto Trombetas,,,sem sugestao (pode ser distrito/localidade: conferir)
+RJ,Jacarezinho,PR,Jacarezinho,mesmo nome em outra UF (UF do BI pode estar errada)
+RN,Açu,,,sem sugestao (pode ser distrito/localidade: conferir)
+RN,João Pessoa,PB,João Pessoa,mesmo nome em outra UF (UF do BI pode estar errada)
+RN,Praia de Muriu,,,sem sugestao (pode ser distrito/localidade: conferir)
+RR,São Luiz,,,sem sugestao (pode ser distrito/localidade: conferir)
+SP,Grajaú,MA,Grajaú,mesmo nome em outra UF (UF do BI pode estar errada)
+SP,Rio Bonito,RJ,Rio Bonito,mesmo nome em outra UF (UF do BI pode estar errada)

@@ -1,0 +1,56 @@
+uf_bi,nome_bi,codigo_ibge,nome_oficial,regra
+AL,BARRA DE SÃO MIGUEL-AL,2700607,Barra de São Miguel,nome com/sem o nome do estado
+AL,OLHOS D'ÁGUA DO CASADO,2705804,Olho d'Água do Casado,tabela de correcoes: grafia errada no BI
+AL,PILAR-AL,2706901,Pilar,nome com/sem o nome do estado
+AM,CAREIRO DA VÁZEA,1301159,Careiro da Várzea,tabela de correcoes: grafia errada no BI
+BA,JANDAÍRA-BA,2917904,Jandaíra,nome com/sem o nome do estado
+DF,CEILÂNDIA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,FERCAL,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,GAMA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,GUARA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,GUARÁ,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,ITAPOÃ,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,NÚCLEO BANDEIRANTE,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,PARANOÁ,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,PLANALTINA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,RECANTO DAS EMAS,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,SAMAMBAIA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,SANTA MARIA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,SOBRADINHO,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,SÃO SEBASTIÃO,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,TAGUATINGA,5300108,Brasília,regiao administrativa do DF -> Brasilia
+DF,VICENTE PIRES,5300108,Brasília,regiao administrativa do DF -> Brasilia
+GO,ALTO PARAÍSO,5200605,Alto Paraíso de Goiás,nome com/sem o nome do estado
+GO,ORIZONA GOIÁS,5215306,Orizona,nome com/sem o nome do estado
+MA,ALTAMIRA,2100402,Altamira do Maranhão,nome com/sem o nome do estado
+MA,CAMPESTRE,2102556,Campestre do Maranhão,nome com/sem o nome do estado
+MA,CAPINZAL,2102754,Capinzal do Norte,tabela de correcoes: nome oficial no MA
+MA,ITINGA,2105427,Itinga do Maranhão,nome com/sem o nome do estado
+MA,SANTA FILOMENA,2109759,Santa Filomena do Maranhão,nome com/sem o nome do estado
+MA,SÃO DOMINGOS DO MA,2110708,São Domingos do Maranhão,nome com/sem o nome do estado
+MG,RIBERÃO DAS NEVES,3154606,Ribeirão das Neves,tabela de correcoes: grafia errada no BI
+MT,CANARANA-MT,5102702,Canarana,nome com/sem o nome do estado
+MT,NOVA OLÍMPIA-MT,5106232,Nova Olímpia,nome com/sem o nome do estado
+MT,POXORÉO,5107008,Poxoréu,tabela de correcoes: nome oficial atual
+PA,CONCÓRDIA,1502756,Concórdia do Pará,nome com/sem o nome do estado
+PA,ELDORADO DOS CARAJÁS,1502954,Eldorado do Carajás,tabela de correcoes: nome oficial
+PA,OEIRAS,1505205,Oeiras do Pará,nome com/sem o nome do estado
+PA,SANTA BÁRBARA,1506351,Santa Bárbara do Pará,nome com/sem o nome do estado
+PA,SANTA ISABEL DO PARÁ,1506500,Santa Izabel do Pará,tabela de correcoes: grafia oficial com Z
+PA,SANTA LUZIA,1506559,Santa Luzia do Pará,nome com/sem o nome do estado
+PB,SÃO JOÃO CARIRI,2514008,São João do Cariri,tabela de correcoes: grafia errada no BI
+PE,BELÉM DE SÃO FRANCISCO,2601607,Belém do São Francisco,tabela de correcoes: nome oficial
+PE,LAGOA DO ITAENGA,2608503,Lagoa de Itaenga,tabela de correcoes: nome oficial
+PI,BETÂNEA DO PIAUÍ,2201739,Betânia do Piauí,tabela de correcoes: grafia errada no BI
+PI,COLÔNIA DO GURGÉIA,2202752,Colônia do Gurguéia,tabela de correcoes: grafia errada no BI
+PR,CASCAVEL-PR,4104808,Cascavel,nome com/sem o nome do estado
+RJ,PARATI,3303807,Paraty,tabela de correcoes: nome oficial atual
+RS,CACHOEIRINHA-RS,4303103,Cachoeirinha,nome com/sem o nome do estado
+RS,HUMAITÁ-RS,4309704,Humaitá,nome com/sem o nome do estado
+RS,SANTA MARIA-RS,4316907,Santa Maria,nome com/sem o nome do estado
+SP,BOCAINA-SP,3506805,Bocaina,nome com/sem o nome do estado
+SP,MOJI MIRIM,3530805,Mogi Mirim,tabela de correcoes: nome oficial atual
+TO,BREJINHO DO NAZARÉ,1703701,Brejinho de Nazaré,tabela de correcoes: grafia errada no BI
+TO,COUTO DE MAGALHÃES,1706001,Couto Magalhães,tabela de correcoes: nome oficial
+TO,SÃO FÉLIX,1720150,São Félix do Tocantins,nome com/sem o nome do estado
+TO,SÃO VALÉRIO DA NATIVIDADE,1720499,São Valério,tabela de correcoes: nome oficial atual
