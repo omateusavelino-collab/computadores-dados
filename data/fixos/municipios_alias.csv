@@ -1,0 +1,30 @@
+uf_bi,nome_bi,uf,nome_oficial,aplicar,motivo
+AL,Olhos d'Água do Casado,AL,Olho d'Água do Casado,sim,grafia errada no BI
+AM,Careiro da Vázea,AM,Careiro da Várzea,sim,grafia errada no BI
+MG,Riberão das Neves,MG,Ribeirão das Neves,sim,grafia errada no BI
+MT,Poxoréo,MT,Poxoréu,sim,nome oficial atual
+RJ,Parati,RJ,Paraty,sim,nome oficial atual
+SP,Moji Mirim,SP,Mogi Mirim,sim,nome oficial atual
+PI,Betânea do Piauí,PI,Betânia do Piauí,sim,grafia errada no BI
+PI,Colônia do Gurgéia,PI,Colônia do Gurguéia,sim,grafia errada no BI
+PB,São João Cariri,PB,São João do Cariri,sim,grafia errada no BI
+TO,Brejinho do Nazaré,TO,Brejinho de Nazaré,sim,grafia errada no BI
+TO,Couto de Magalhães,TO,Couto Magalhães,sim,nome oficial
+TO,São Valério da Natividade,TO,São Valério,sim,nome oficial atual
+PA,Eldorado dos Carajás,PA,Eldorado do Carajás,sim,nome oficial
+PE,Belém de São Francisco,PE,Belém do São Francisco,sim,nome oficial
+MA,Capinzal,MA,Capinzal do Norte,sim,nome oficial no MA
+PA,Santa Isabel do Pará,PA,Santa Izabel do Pará,sim,grafia oficial com Z
+PE,Lagoa do Itaenga,PE,Lagoa de Itaenga,sim,nome oficial
+BA,Cabrobó,PE,Cabrobó,nao,UF do BI parece errada: Cabrobó é de PE (conferir antes de aplicar)
+BA,Petrolina,PE,Petrolina,nao,UF do BI parece errada: Petrolina é de PE (conferir antes de aplicar)
+BA,Dom Inocêncio,PI,Dom Inocêncio,nao,UF do BI parece errada: Dom Inocêncio é do PI (conferir antes de aplicar)
+BA,São Raimundo Nonato,PI,São Raimundo Nonato,nao,UF do BI parece errada: São Raimundo Nonato é do PI (conferir antes de aplicar)
+DF,Luziânia,GO,Luziânia,nao,UF do BI parece errada: Luziânia é de GO (conferir antes de aplicar)
+DF,Novo Gama,GO,Novo Gama,nao,UF do BI parece errada: Novo Gama é de GO (conferir antes de aplicar)
+DF,Valparaíso de Goiás,GO,Valparaíso de Goiás,nao,UF do BI parece errada: Valparaíso de Goiás é de GO (conferir antes de aplicar)
+RN,João Pessoa,PB,João Pessoa,nao,UF do BI parece errada: João Pessoa é da PB (conferir antes de aplicar)
+MT,Campo Grande,MS,Campo Grande,nao,UF do BI parece errada: Campo Grande é de MS (conferir antes de aplicar)
+PA,Porto Trombetas,PA,Oriximiná,nao,Porto Trombetas é distrito de Oriximiná (conferir antes de aplicar)
+RN,Praia de Muriu,RN,Ceará-Mirim,nao,Praia de Muriú fica em Ceará-Mirim (conferir antes de aplicar)
+SP,Grajaú,SP,São Paulo,nao,Grajaú é distrito da capital paulista (conferir antes de aplicar)

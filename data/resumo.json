@@ -1,0 +1,270 @@
+{
+ "gerado_em": "2026-11-22",
+ "doacoes": {
+  "computadores": 89234,
+  "municipios": 1708,
+  "pontos": 7826,
+  "por_ano": {
+   "2010": {
+    "computadores": 6,
+    "municipios": 1,
+    "pontos": 1
+   },
+   "2011": {
+    "computadores": 1382,
+    "municipios": 107,
+    "pontos": 163
+   },
+   "2012": {
+    "computadores": 1332,
+    "municipios": 85,
+    "pontos": 124
+   },
+   "2013": {
+    "computadores": 224,
+    "municipios": 16,
+    "pontos": 23
+   },
+   "2014": {
+    "computadores": 1125,
+    "municipios": 27,
+    "pontos": 142
+   },
+   "2015": {
+    "computadores": 1286,
+    "municipios": 41,
+    "pontos": 93
+   },
+   "2016": {
+    "computadores": 632,
+    "municipios": 32,
+    "pontos": 47
+   },
+   "2017": {
+    "computadores": 4577,
+    "municipios": 106,
+    "pontos": 275
+   },
+   "2018": {
+    "computadores": 5309,
+    "municipios": 101,
+    "pontos": 350
+   },
+   "2019": {
+    "computadores": 5133,
+    "municipios": 118,
+    "pontos": 361
+   },
+   "2020": {
+    "computadores": 1942,
+    "municipios": 49,
+    "pontos": 132
+   },
+   "2021": {
+    "computadores": 4830,
+    "municipios": 134,
+    "pontos": 352
+   },
+   "2022": {
+    "computadores": 4669,
+    "municipios": 136,
+    "pontos": 367
+   },
+   "2023": {
+    "computadores": 7789,
+    "municipios": 165,
+    "pontos": 489
+   },
+   "2024": {
+    "computadores": 15678,
+    "municipios": 529,
+    "pontos": 1520
+   },
+   "2025": {
+    "computadores": 17323,
+    "municipios": 573,
+    "pontos": 1688
+   },
+   "2026": {
+    "computadores": 15997,
+    "municipios": 554,
+    "pontos": 1892
+   }
+  },
+  "por_uf": {
+   "AC": 304,
+   "AL": 744,
+   "AM": 1593,
+   "AP": 2735,
+   "BA": 4220,
+   "CE": 4511,
+   "DF": 6752,
+   "ES": 237,
+   "GO": 5531,
+   "MA": 12011,
+   "MG": 9780,
+   "MS": 1627,
+   "MT": 2042,
+   "PA": 5824,
+   "PB": 1773,
+   "PE": 4156,
+   "PI": 885,
+   "PR": 3901,
+   "RJ": 4348,
+   "RN": 2144,
+   "RO": 540,
+   "RR": 428,
+   "RS": 3165,
+   "SC": 548,
+   "SE": 885,
+   "SP": 7864,
+   "TO": 686
+  }
+ },
+ "formacao": {
+  "alunos": 99439,
+  "masculino": 45717,
+  "feminino": 53722,
+  "cursos_distintos": 392,
+  "municipios": 57,
+  "por_ano": {
+   "2011": {
+    "alunos": 958,
+    "masculino": 592,
+    "feminino": 366,
+    "cursos_distintos": 9,
+    "municipios": 4
+   },
+   "2012": {
+    "alunos": 1779,
+    "masculino": 1076,
+    "feminino": 703,
+    "cursos_distintos": 18,
+    "municipios": 6
+   },
+   "2013": {
+    "alunos": 70,
+    "masculino": 38,
+    "feminino": 32,
+    "cursos_distintos": 1,
+    "municipios": 1
+   },
+   "2014": {
+    "alunos": 869,
+    "masculino": 523,
+    "feminino": 346,
+    "cursos_distintos": 18,
+    "municipios": 4
+   },
+   "2015": {
+    "alunos": 1229,
+    "masculino": 797,
+    "feminino": 432,
+    "cursos_distintos": 19,
+    "municipios": 4
+   },
+   "2016": {
+    "alunos": 1619,
+    "masculino": 968,
+    "feminino": 651,
+    "cursos_distintos": 26,
+    "municipios": 8
+   },
+   "2017": {
+    "alunos": 2999,
+    "masculino": 1664,
+    "feminino": 1335,
+    "cursos_distintos": 33,
+    "municipios": 8
+   },
+   "2018": {
+    "alunos": 2601,
+    "masculino": 1595,
+    "feminino": 1006,
+    "cursos_distintos": 26,
+    "municipios": 7
+   },
+   "2019": {
+    "alunos": 1700,
+    "masculino": 863,
+    "feminino": 837,
+    "cursos_distintos": 22,
+    "municipios": 7
+   },
+   "2020": {
+    "alunos": 1035,
+    "masculino": 527,
+    "feminino": 508,
+    "cursos_distintos": 10,
+    "municipios": 5
+   },
+   "2021": {
+    "alunos": 2315,
+    "masculino": 1066,
+    "feminino": 1249,
+    "cursos_distintos": 18,
+    "municipios": 6
+   },
+   "2022": {
+    "alunos": 5326,
+    "masculino": 2449,
+    "feminino": 2877,
+    "cursos_distintos": 54,
+    "municipios": 11
+   },
+   "2023": {
+    "alunos": 17291,
+    "masculino": 7991,
+    "feminino": 9300,
+    "cursos_distintos": 85,
+    "municipios": 14
+   },
+   "2024": {
+    "alunos": 17760,
+    "masculino": 7745,
+    "feminino": 10015,
+    "cursos_distintos": 105,
+    "municipios": 18
+   },
+   "2025": {
+    "alunos": 24885,
+    "masculino": 10382,
+    "feminino": 14503,
+    "cursos_distintos": 89,
+    "municipios": 22
+   },
+   "2026": {
+    "alunos": 17003,
+    "masculino": 7441,
+    "feminino": 9562,
+    "cursos_distintos": 114,
+    "municipios": 48
+   }
+  },
+  "por_uf": {
+   "AL": 63,
+   "AM": 3747,
+   "AP": 4534,
+   "BA": 902,
+   "CE": 5718,
+   "DF": 10558,
+   "GO": 1970,
+   "MA": 2831,
+   "MG": 21878,
+   "MS": 4867,
+   "MT": 1068,
+   "PA": 7200,
+   "PB": 1473,
+   "PE": 11055,
+   "PI": 1398,
+   "PR": 1957,
+   "RJ": 1218,
+   "RO": 34,
+   "RR": 766,
+   "RS": 4043,
+   "SE": 3404,
+   "SP": 8587,
+   "TO": 168
+  }
+ }
+}
