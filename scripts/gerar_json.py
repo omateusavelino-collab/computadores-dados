@@ -7,39 +7,37 @@ SAIDAS
   data/muns.json     -> por municipio: [chave, UF, nome, computadores, IMPACTO SOCIAL] e alunos (mapa)
   data/meta.json     -> data de referencia e conferencias
   Auditoria (para conferir, nao vao para a pagina):
-  data/impacto_pontos.csv          -> como CADA ponto foi contado no impacto social
-  data/escolas_para_consulta.csv   -> escolas (codigo INEP) que o robo do QEdu precisa consultar
-  data/escolas_pendentes.csv       -> escolas sem matricula confirmada na fonte
-  data/escolas_lista_sem_doacao.csv-> escolas da lista da area que nao aparecem no BI
-  data/municipios_corrigidos.csv   -> nomes de municipio corrigidos por regra automatica
-  data/municipios_sugestoes.csv    -> municipios sem codigo IBGE, com sugestao (NAO aplicada)
-  data/sem_ibge.csv                -> municipios sem codigo IBGE
+  data/impacto_pontos.csv                  -> como CADA ponto foi contado no impacto social
+  data/escolas_para_consulta.csv           -> escolas (codigo INEP) que o robo do QEdu precisa consultar
+  data/escolas_pendentes.csv               -> escolas sem matricula confirmada na fonte
+  data/escolas_lista_sem_doacao.csv        -> escolas da lista da area que nao aparecem no BI
+  data/possiveis_escolas_fora_da_lista.csv -> pontos do BI com nome de escola que NAO estao na lista da area (contados 5x)
+  data/pares_nao_aplicados.csv             -> pares confirmados na planilha que nao foram encontrados (conferir)
+  data/municipios_corrigidos.csv / municipios_sugestoes.csv / sem_ibge.csv
 
-=================== IMPACTO SOCIAL (regra da area gestora - CGID/DEPIN) ===================
-Texto da planilha da area (aba "Dados dos Projetos"): "Considera-se que 1 computador atende 5 pessoas
-e para instituicoes de ensino consideramos o numero de matriculas pelo site do QEdu.br".
+IMPACTO SOCIAL (regra da area gestora - CGID/DEPIN, planilha "Dados dos Projetos"):
+  "1 computador atende 5 pessoas e, para instituicoes de ensino, o numero de matriculas pelo QEdu.br"
   - Ponto que NAO e instituicao de ensino -> 5 x computadores doados ao ponto
-  - Instituicao de ensino                  -> numero de MATRICULAS no QEdu, pelo codigo INEP
-Quem e instituicao de ensino: data/fixos/LISTA_ESCOLAS.xlsx (lista da area; TIPO = INST. DE ENSINO).
-Matriculas: data/fixos/matriculas_qedu.csv (preenchido pelo robo scripts/buscar_matriculas_qedu.py).
-            Excecao com fonte documentada: data/fixos/matriculas_manual.csv (exige fonte e link).
-Cada escola conta UMA vez (pelo codigo INEP), mesmo que tenha recebido doacoes em varios anos.
-Escola sem matricula confirmada -> o municipio fica PENDENTE (impacto = null) e a pagina mantem o
-valor que ja tinha. Nenhum numero de matricula e estimado.
-==========================================================================================
+  - Instituicao de ensino (data/fixos/LISTA_ESCOLAS.xlsx, TIPO = INST. DE ENSINO) -> MATRICULAS no QEdu, pelo codigo INEP
+    (data/fixos/matriculas_qedu.csv, preenchido por scripts/buscar_matriculas_qedu.py; excecao documentada em matriculas_manual.csv)
+  - Escola da lista com nome diferente no BI: ligada ao ponto do BI pela planilha de pares confirmados
+    (data/fixos/pares_escolas*.xlsx, aba "Pares para confirmar"; vale so DECISAO = SIM, ALT2, ALT3 ou MANUAL)
+  - Cada escola conta UMA vez (pelo INEP), mesmo com doacoes em varios anos.
+  - Escola sem matricula confirmada -> municipio PENDENTE (impacto = null); a pagina mantem o valor anterior.
+  - Nenhuma matricula e estimada.
 """
-import csv, datetime as dt, difflib, json, os, re, sys, unicodedata
+import csv, datetime as dt, difflib, glob, json, os, re, sys, unicodedata
 import pandas as pd
 
 HOJE = os.environ.get("HOJE") or dt.date.today().isoformat()
-MIN_DOACOES, MIN_ALUNOS = 1000, 1000          # protecao: abaixo disso nao grava nada
-PESSOAS_POR_COMPUTADOR = 5                    # regra da area para pontos que nao sao escola
+MIN_DOACOES, MIN_ALUNOS = 1000, 1000
+PESSOAS_POR_COMPUTADOR = 5
 FIXOS = "data/fixos"
 LISTA_ESCOLAS = f"{FIXOS}/LISTA_ESCOLAS.xlsx"
 MATRICULAS_QEDU = f"{FIXOS}/matriculas_qedu.csv"
 MATRICULAS_MANUAL = f"{FIXOS}/matriculas_manual.csv"
-IBGE_OFICIAL = f"{FIXOS}/ibge_municipios.csv"  # lista oficial completa (baixada da API do IBGE)
-IBGE_RESERVA = f"{FIXOS}/ibge.csv"             # reserva: municipios que ja estavam na pagina
+IBGE_OFICIAL = f"{FIXOS}/ibge_municipios.csv"
+IBGE_RESERVA = f"{FIXOS}/ibge.csv"
 ALIAS = f"{FIXOS}/municipios_alias.csv"
 
 UF_POR_CODIGO = {"11": "RO", "12": "AC", "13": "AM", "14": "RR", "15": "PA", "16": "AP", "17": "TO", "21": "MA",
@@ -52,7 +50,6 @@ UF_NOME = {"AC": "Acre", "AL": "Alagoas", "AM": "Amazonas", "AP": "Amapa", "BA":
            "PI": "Piaui", "PR": "Parana", "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte", "RO": "Rondonia",
            "RR": "Roraima", "RS": "Rio Grande do Sul", "SC": "Santa Catarina", "SE": "Sergipe", "SP": "Sao Paulo",
            "TO": "Tocantins"}
-# Regioes administrativas do DF: o DF tem um unico municipio (Brasilia, 5300108)
 DF_RAS = """Plano Piloto|Brasilia|Asa Norte|Asa Sul|Gama|Taguatinga|Brazlandia|Sobradinho|Sobradinho II|Planaltina|
 Paranoa|Nucleo Bandeirante|Ceilandia|Guara|Cruzeiro|Samambaia|Santa Maria|Sao Sebastiao|Recanto das Emas|Lago Sul|
 Riacho Fundo|Riacho Fundo II|Lago Norte|Candangolandia|Aguas Claras|Sudoeste|Octogonal|Sudoeste/Octogonal|Varjao|
@@ -102,8 +99,6 @@ def gravar_csv(caminho, cabecalho, linhas):
 
 # =============================== MUNICIPIOS ===============================
 def baixar_ibge_oficial():
-    """Baixa a lista oficial de municipios (API do IBGE) uma vez e guarda em data/fixos/ibge_municipios.csv.
-    Para atualizar, basta apagar o arquivo: o robo baixa de novo."""
     try:
         import requests
         r = requests.get("https://servicodados.ibge.gov.br/api/v1/localidades/municipios", timeout=60)
@@ -118,10 +113,8 @@ def baixar_ibge_oficial():
             raise ValueError(f"lista incompleta ({len(linhas)} municipios)")
         gravar_csv(IBGE_OFICIAL, ["codigo", "uf", "nome"], sorted(linhas))
         print(f"Lista oficial do IBGE baixada: {len(linhas)} municipios")
-        return True
     except Exception as e:
         print(f"Aviso: nao consegui baixar a lista oficial do IBGE ({e}). Usando {IBGE_RESERVA}.")
-        return False
 
 
 def carregar_municipios():
@@ -129,6 +122,9 @@ def carregar_municipios():
         baixar_ibge_oficial()
     caminho = IBGE_OFICIAL if os.path.exists(IBGE_OFICIAL) else IBGE_RESERVA
     idx, por_uf, por_nome = {}, {}, {}
+    if not os.path.exists(caminho):
+        print("Aviso: nenhuma tabela de municipios encontrada.")
+        return idx, por_uf, por_nome
     with open(caminho, encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
             k = (r["uf"], compacto(r["nome"]))
@@ -142,7 +138,6 @@ def carregar_municipios():
 
 
 def carregar_alias():
-    """data/fixos/municipios_alias.csv: grafias do BI -> nome oficial. So vale a linha com aplicar = sim."""
     out = {}
     if os.path.exists(ALIAS):
         with open(ALIAS, encoding="utf-8-sig") as fh:
@@ -159,7 +154,6 @@ sem_ibge, corrigidos, _cache_mun = {}, {}, {}
 
 
 def resolver(uf, nome_bi):
-    """Devolve ((codigo, nome_oficial), regra_aplicada) ou (None, None)."""
     uf = (uf or "").strip().upper()
     c = compacto(nome_bi)
     a = ALIASES.get((uf, c))
@@ -171,11 +165,11 @@ def resolver(uf, nome_bi):
         return OF[("DF", "BRASILIA")], "regiao administrativa do DF -> Brasilia"
     estado = compacto(UF_NOME.get(uf, ""))
     cand = []
-    if uf and c.endswith(uf):                      # "Cascavel-PR", "Barra de Sao Miguel-AL"
-        cand += [c[:-2], c[:-2] + estado]          # "Sao Domingos do MA" -> "...do Maranhao"
-    if estado and c.endswith(estado):              # "Orizona Goias"
+    if uf and c.endswith(uf):
+        cand += [c[:-2], c[:-2] + estado]
+    if estado and c.endswith(estado):
         cand.append(c[:-len(estado)])
-    if estado:                                     # "Alto Paraiso" -> "Alto Paraiso de Goias"
+    if estado:
         cand += [c + p + estado for p in ("DO", "DE", "DA")]
     achados = {OF[(uf, x)] for x in cand if x and (uf, x) in OF}
     if len(achados) == 1:
@@ -183,19 +177,21 @@ def resolver(uf, nome_bi):
     return None, None
 
 
-def chave(uf, mun):
+def chave(uf, mun, registrar=True):
     k0 = ((uf or "").strip().upper(), str(mun))
     if k0 in _cache_mun:
         return _cache_mun[k0]
     hit, regra = resolver(uf, mun)
     if hit:
         res = (hit[0], hit[1])
-        if regra:
+        if regra and registrar:
             corrigidos[(k0[0], str(mun))] = (hit[0], hit[1], regra)
     else:
         k = f"B|{k0[0]}|{norm(mun)}"
-        sem_ibge[k] = (k0[0], titulo(mun))
         res = (k, titulo(mun))
+        if not registrar:
+            return res
+        sem_ibge[k] = (k0[0], titulo(mun))
     _cache_mun[k0] = res
     return res
 
@@ -216,6 +212,15 @@ def sugestoes():
 
 
 # =============================== ESCOLAS ===============================
+ESCOLA_PALAVRAS = {"ESCOLA", "ESCOLAS", "ESC", "COLEGIO", "EMEF", "EMEI", "EMEB", "EMEIF", "EEEF", "EEEM", "EEEFM", "EEF", "EEM",
+                   "CEEP", "CEI", "CMEI", "CEMEI", "CRECHE", "CETI", "CAIC", "CEF", "CED", "GINASIO", "ESCOLINHA"}
+
+
+def parece_escola(nome):
+    n = norm(nome)
+    return bool(set(n.split()) & ESCOLA_PALAVRAS) or n.startswith(("E M ", "E E ", "C E ", "CENTRO EDUCACIONAL", "CENTRO DE ENSINO"))
+
+
 def so_digitos(v):
     s = str(v if v is not None else "").strip()
     if re.fullmatch(r"\d+\.0+", s):
@@ -224,13 +229,15 @@ def so_digitos(v):
 
 
 def carregar_escolas():
-    """Le a lista da area. Devolve dict (UF, municipio, ponto) -> info, ou None se o arquivo nao existir."""
     if not os.path.exists(LISTA_ESCOLAS):
-        print(f"Aviso: {LISTA_ESCOLAS} nao encontrado. Sem a lista da area o impacto social NAO e calculado.")
+        print(f"AVISO: {LISTA_ESCOLAS} nao encontrado. Sem a lista da area o impacto social NAO e calculado "
+              f"(todos os municipios ficam pendentes e a pagina mantem os valores anteriores).")
         return None
     abas = pd.read_excel(LISTA_ESCOLAS, sheet_name=None, dtype=str)
+    ordem = sorted(abas, key=lambda n: (norm(n) != "ESCOLAS",))
     escolhida = None
-    for nome_aba, df in abas.items():
+    for nome_aba in ordem:
+        df = abas[nome_aba]
         cols = {compacto(c): c for c in df.columns}
         if any("INEP" in c for c in cols) and any("NOME" in c for c in cols):
             escolhida = (nome_aba, df, cols)
@@ -251,7 +258,7 @@ def carregar_escolas():
 
     c_nome, c_uf = col("NOMEPID", contem="NOME"), col("UFPID", "UF")
     c_mun, c_inep = col("MUNICIPIOPID", contem="MUNICIPIO"), col(contem="INEP")
-    c_tipo, c_ibge = col("TIPO"), col("CDIBGE", contem="IBGE")
+    c_tipo = col("TIPO")
     if not all([c_nome, c_uf, c_mun, c_inep]):
         sys.exit(f"{LISTA_ESCOLAS} (aba {nome_aba}): faltam colunas. Encontradas: {list(df.columns)}")
     if c_tipo:
@@ -260,32 +267,88 @@ def carregar_escolas():
     for _, r in df.iterrows():
         uf = str(r[c_uf] or "").strip().upper()
         k = (uf, compacto(r[c_mun]), compacto(r[c_nome]))
+        e = escolas.setdefault(k, {"uf": uf, "municipio": str(r[c_mun]).strip(), "ponto": str(r[c_nome]).strip(), "ineps": set()})
         inep = so_digitos(r[c_inep])
-        e = escolas.setdefault(k, {"uf": uf, "municipio": str(r[c_mun]).strip(), "ponto": str(r[c_nome]).strip(),
-                                   "ineps": set(), "ibge": so_digitos(r[c_ibge]) if c_ibge else ""})
         if inep:
             e["ineps"].add(inep)
     print(f"Lista de escolas: {len(escolas)} escolas distintas (aba '{nome_aba}')")
     return escolas
 
 
+def carregar_pares():
+    """Planilha de pares confirmados (escola da lista x ponto do BI com nome diferente)."""
+    arquivos = sorted(glob.glob(f"{FIXOS}/pares_escolas*.xlsx"))
+    if not arquivos:
+        print("Sem planilha de pares (data/fixos/pares_escolas*.xlsx): so vale o nome exato da lista.")
+        return []
+    caminho = arquivos[-1]
+    abas = pd.read_excel(caminho, sheet_name=None, dtype=str)
+    aba = next((n for n in abas if "PARES" in compacto(n)), None)
+    if aba is None:
+        print(f"Aviso: {caminho} sem aba 'Pares para confirmar'. Ignorado.")
+        return []
+    df = abas[aba].fillna("")
+    cols = {compacto(c): c for c in df.columns}
+
+    def col(teste):
+        return next((orig for c, orig in cols.items() if teste(c)), None)
+
+    c_n = col(lambda c: c in ("N", "NO", "NUMERO"))
+    c_uf = col(lambda c: c == "UF")
+    c_mun_l = col(lambda c: c.startswith("MUNICIPIO") and "LISTA" in c)
+    c_esc_l = col(lambda c: c.startswith("ESCOLA") and "LISTA" in c)
+    c_s1 = col(lambda c: "SUGESTAO1" in c)
+    c_mun_bi = col(lambda c: c == "MUNICIPIOBI")
+    c_a2 = col(lambda c: c.startswith("ALTERNATIVA2"))
+    c_a3 = col(lambda c: c.startswith("ALTERNATIVA3"))
+    c_dec = col(lambda c: c.startswith("DECISAO"))
+    c_obs = col(lambda c: c == "OBSERVACAO")
+    c_man = col(lambda c: c.startswith("ESCOLACORRETA"))
+    c_man_uf = col(lambda c: c.startswith("UFDOPONTO"))
+    c_man_mun = col(lambda c: c.startswith("MUNICIPIODOPONTO"))
+    if not all([c_uf, c_mun_l, c_esc_l, c_s1, c_dec]):
+        sys.exit(f"{caminho}: colunas da planilha de pares nao reconhecidas: {list(df.columns)}")
+    pares = []
+    for _, r in df.iterrows():
+        dec = norm(r[c_dec])
+        uf_l = str(r[c_uf]).strip().upper()
+        mun_bi = (str(r[c_mun_bi]).strip() if c_mun_bi else "") or str(r[c_mun_l]).strip()
+        uf_bi = uf_l
+        m = re.search(r"NA UF ([A-Z]{2})", norm(r[c_obs]) if c_obs else "")
+        if m:
+            uf_bi = m.group(1)
+        if dec == "SIM":
+            ponto = r[c_s1]
+        elif dec in ("ALT2", "ALT3"):
+            ponto = str(r[c_a2 if dec == "ALT2" else c_a3]).split("  [")[0]
+        elif dec == "MANUAL":
+            ponto = r[c_man] if c_man else ""
+            uf_bi = (str(r[c_man_uf]).strip().upper() if c_man_uf else "") or uf_bi
+            mun_bi = (str(r[c_man_mun]).strip() if c_man_mun else "") or mun_bi
+        else:
+            continue
+        if not str(ponto).strip():
+            continue
+        pares.append({"linha": r[c_n] if c_n else "", "uf_bi": uf_bi, "mun_bi": mun_bi, "ponto_bi": str(ponto).strip(),
+                      "chave_lista": (uf_l, compacto(r[c_mun_l]), compacto(r[c_esc_l])), "escola_lista": r[c_esc_l]})
+    print(f"Planilha de pares: {len(pares)} pares confirmados ({os.path.basename(caminho)})")
+    return pares
+
+
 def carregar_matriculas():
-    """Codigo INEP -> {matriculas, ano, fonte, url}. So entra o que tem status ok (QEdu) ou fonte+link (manual)."""
-    out = {}
+    out, manual = {}, {}
     if os.path.exists(MATRICULAS_QEDU):
         with open(MATRICULAS_QEDU, encoding="utf-8-sig") as fh:
             for r in csv.DictReader(fh):
                 m = so_digitos(r.get("matriculas"))
                 if r.get("status") == "ok" and m:
-                    out[so_digitos(r["inep"])] = {"matriculas": int(m), "ano": r.get("ano_censo", ""),
-                                                  "fonte": "QEdu", "url": r.get("url", "")}
-    manual = {}
+                    out[so_digitos(r["inep"])] = {"matriculas": int(m), "ano": r.get("ano_censo", ""), "fonte": "QEdu", "url": r.get("url", "")}
     if os.path.exists(MATRICULAS_MANUAL):
         with open(MATRICULAS_MANUAL, encoding="utf-8-sig") as fh:
             for r in csv.DictReader(fh):
                 m = so_digitos(r.get("matriculas"))
                 if not (m and (r.get("fonte") or "").strip() and (r.get("url") or "").strip()):
-                    continue                     # sem fonte e link, nao vale
+                    continue
                 info = {"matriculas": int(m), "ano": r.get("ano", ""), "fonte": r["fonte"].strip(), "url": r["url"].strip()}
                 if so_digitos(r.get("inep")):
                     out[so_digitos(r["inep"])] = info
@@ -313,18 +376,35 @@ d["pid"] = d["key"] + "|" + d["NOME_PID"]
 # =============================== IMPACTO SOCIAL ===============================
 ESCOLAS = carregar_escolas()
 MATR, MATR_MANUAL = carregar_matriculas()
+PARES = carregar_pares() if ESCOLAS is not None else []
 
 pontos = (d.assign(uf=d.UF_PID.str.strip().str.upper(), mun_c=d.MUNICIPIO_PID.map(compacto), pt_c=d.NOME_PID.map(compacto))
            .groupby(["key", "uf", "mun_c", "pt_c"], as_index=False)
            .agg(computadores=("q", "sum"), ponto=("NOME_PID", "first"), municipio=("nome", "first")))
 
-# indice auxiliar: escola por (UF, nome) quando o municipio vier escrito diferente (so se for unico na UF)
 por_uf_nome = {}
 if ESCOLAS:
-    for (uf, mc, pc), e in ESCOLAS.items():
+    for (uf, mc, pc) in ESCOLAS:
         por_uf_nome.setdefault((uf, pc), []).append((uf, mc, pc))
 
-linhas_imp, contados, usadas = [], set(), set()
+par_por_mun, par_por_uf, pares_problema = {}, {}, []
+for p in PARES:
+    if p["chave_lista"] not in ESCOLAS:
+        pares_problema.append([p["linha"], p["escola_lista"], p["ponto_bi"], p["uf_bi"], p["mun_bi"], "escola nao encontrada na LISTA_ESCOLAS"])
+        continue
+    cod = chave(p["uf_bi"], p["mun_bi"], registrar=False)[0]
+    par_por_mun.setdefault((cod, compacto(p["ponto_bi"])), []).append(p)
+    par_por_uf.setdefault((p["uf_bi"], compacto(p["ponto_bi"])), []).append(p)
+
+
+def buscar_par(r):
+    for cand in (par_por_mun.get((r.key, r.pt_c)), par_por_uf.get((r.uf, r.pt_c))):
+        if cand and len({id(x) for x in cand}) == 1:
+            return cand[0]
+    return None
+
+
+linhas_imp, contados, usadas, fora_da_lista = [], set(), set(), []
 for r in pontos.sort_values(["uf", "municipio", "ponto"]).itertuples(index=False):
     comp = int(r.computadores)
     base = [r.uf, r.municipio, r.key, r.ponto, comp]
@@ -332,11 +412,17 @@ for r in pontos.sort_values(["uf", "municipio", "ponto"]).itertuples(index=False
         linhas_imp.append(base + ["", "", "sem lista de escolas", "", "", "", None, "pendente"])
         continue
     k = (r.uf, r.mun_c, r.pt_c)
+    via_par = False
     if k not in ESCOLAS and len(por_uf_nome.get((r.uf, r.pt_c), [])) == 1:
         k = por_uf_nome[(r.uf, r.pt_c)][0]
-    if k not in ESCOLAS:                                   # nao e escola -> 5 x computadores
-        linhas_imp.append(base + ["nao", "", f"{PESSOAS_POR_COMPUTADOR} x computadores", "", "", "",
-                                  PESSOAS_POR_COMPUTADOR * comp, "ok"])
+    if k not in ESCOLAS:
+        p = buscar_par(r)
+        if p:
+            k, via_par = p["chave_lista"], True
+    if k not in ESCOLAS:
+        linhas_imp.append(base + ["nao", "", f"{PESSOAS_POR_COMPUTADOR} x computadores", "", "", "", PESSOAS_POR_COMPUTADOR * comp, "ok"])
+        if parece_escola(r.ponto):
+            fora_da_lista.append([r.uf, r.municipio, r.ponto, comp])
         continue
     usadas.add(k)
     e = ESCOLAS[k]
@@ -345,6 +431,7 @@ for r in pontos.sort_values(["uf", "municipio", "ponto"]).itertuples(index=False
     inep = ineps[0] if len(ineps) == 1 else ""
     if not info and len(ineps) == 1:
         info = MATR.get(inep)
+    sufixo = " [via planilha de pares]" if via_par else ""
     if len(ineps) > 1:
         st, regra, imp = "pendente", "escola com mais de um codigo INEP na lista (conferir)", None
     elif not info:
@@ -358,14 +445,20 @@ for r in pontos.sort_values(["uf", "municipio", "ponto"]).itertuples(index=False
     else:
         contados.add(inep or k)
         st, regra, imp = "ok", f"matriculas ({info['fonte']})", info["matriculas"]
-    linhas_imp.append(base + ["sim", ";".join(ineps), regra, info["matriculas"] if info else "",
+    linhas_imp.append(base + ["sim", ";".join(ineps), regra + sufixo, info["matriculas"] if info else "",
                               info["ano"] if info else "", info["url"] if info else "", imp, st])
+
+for p in PARES:
+    if p["chave_lista"] in ESCOLAS and p["chave_lista"] not in usadas:
+        pares_problema.append([p["linha"], p["escola_lista"], p["ponto_bi"], p["uf_bi"], p["mun_bi"],
+                               "ponto nao encontrado no BI de hoje (nome/municipio mudou?)"])
 
 COLS_IMP = ["uf", "municipio", "codigo_ibge", "ponto", "computadores", "escola", "inep", "regra",
             "matriculas", "ano_censo", "url_fonte", "impacto", "status"]
 imp = pd.DataFrame(linhas_imp, columns=COLS_IMP)
 pend_mun = set(imp.loc[imp.status == "pendente", "codigo_ibge"])
 imp_mun = {k: (None if k in pend_mun else int(pd.to_numeric(g.impacto).sum())) for k, g in imp.groupby("codigo_ibge")}
+
 
 # =============================== RESUMO ===============================
 def por_uf(df, col, uf):
@@ -397,10 +490,10 @@ def lista_mun(df, ufcol, com_impacto=False):
     g = g[g["q"] > 0]
     out = []
     for r in g.itertuples(index=False):
-        uf = r.key and (UF_POR_CODIGO.get(str(r.key)[:2]) if str(r.key).isdigit() else ufs[r.key])
+        uf = UF_POR_CODIGO.get(str(r.key)[:2]) if str(r.key).isdigit() else ufs[r.key]
         linha = [r.key, uf, r.nome, int(r.q)]
         if com_impacto:
-            linha.append(imp_mun.get(r.key))   # impacto social (null = pendente)
+            linha.append(imp_mun.get(r.key))
         out.append(linha)
     return sorted(out, key=lambda x: (x[1], x[2]))
 
@@ -418,15 +511,18 @@ esc = imp[imp.escola == "sim"]
 calc = [x[4] for x in muns["doados"] if x[4] is not None]
 resumo["doacoes"]["impacto_social"] = {
     "regra": muns["regra_impacto"],
-    "pessoas_total": int(sum(calc)) if len(calc) == len(muns["doados"]) else None,   # so quando nao ha pendencia
+    "pessoas_total": int(sum(calc)) if len(calc) == len(muns["doados"]) else None,
     "pessoas_municipios_calculados": int(sum(calc)),
     "municipios_calculados": len(calc),
     "municipios_pendentes": len(muns["doados"]) - len(calc),
     "pessoas_escolas": int(pd.to_numeric(esc.impacto).fillna(0).sum()),
     "pessoas_demais_5x": int(pd.to_numeric(imp[imp.escola == "nao"].impacto).fillna(0).sum()),
     "escolas_pontos": int(len(esc)),
+    "escolas_via_pares": int(esc.regra.str.contains("via planilha de pares").sum()),
     "escolas_com_matricula": int((esc.status == "ok").sum()),
     "escolas_pendentes": int((esc.status == "pendente").sum()),
+    "possiveis_escolas_fora_da_lista": len(fora_da_lista),
+    "pares_nao_aplicados": len(pares_problema),
     "anos_censo": sorted({str(a) for a in esc.ano_censo if str(a).strip()}),
 }
 
@@ -442,24 +538,30 @@ gravar_csv("data/escolas_pendentes.csv", ["uf", "municipio", "ponto", "inep", "m
 consulta = sorted({(so_digitos(i), r.ponto, r.uf, r.municipio) for r in esc.itertuples(index=False)
                    for i in str(r.inep).split(";") if len(so_digitos(i)) == 8})
 gravar_csv("data/escolas_para_consulta.csv", ["inep", "nome", "uf", "municipio"], consulta)
+gravar_csv("data/possiveis_escolas_fora_da_lista.csv", ["uf", "municipio", "ponto", "computadores"], sorted(fora_da_lista))
+gravar_csv("data/pares_nao_aplicados.csv", ["linha_planilha", "escola_lista", "ponto_bi", "uf_bi", "municipio_bi", "motivo"], pares_problema)
 if ESCOLAS:
     gravar_csv("data/escolas_lista_sem_doacao.csv", ["uf", "municipio", "ponto", "inep"],
-               sorted([[e["uf"], e["municipio"], e["ponto"], ";".join(sorted(e["ineps"]))]
-                       for k, e in ESCOLAS.items() if k not in usadas]))
+               sorted([[e["uf"], e["municipio"], e["ponto"], ";".join(sorted(e["ineps"]))] for k, e in ESCOLAS.items() if k not in usadas]))
 gravar_csv("data/municipios_corrigidos.csv", ["uf_bi", "nome_bi", "codigo_ibge", "nome_oficial", "regra"],
            sorted([[k[0], k[1], v[0], v[1], v[2]] for k, v in corrigidos.items()]))
 gravar_csv("data/municipios_sugestoes.csv", ["uf_bi", "nome_bi", "sugestao_uf", "sugestao_nome", "motivo"], sugestoes())
 gravar_csv("data/sem_ibge.csv", ["chave", "uf", "nome"], muns["sem_ibge"])
+si = resumo["doacoes"]["impacto_social"]
 meta = {"data_referencia": HOJE, "gerado_em": HOJE, "linhas_doacoes": int(len(d)), "linhas_formacao": int(len(f)),
         "municipios_doacoes": len(muns["doados"]), "municipios_formacao": len(muns["formacao"]),
         "sem_ibge": len(sem_ibge), "municipios_corrigidos": len(corrigidos),
-        "escolas_com_matricula": resumo["doacoes"]["impacto_social"]["escolas_com_matricula"],
-        "escolas_pendentes": resumo["doacoes"]["impacto_social"]["escolas_pendentes"],
-        "municipios_impacto_pendente": resumo["doacoes"]["impacto_social"]["municipios_pendentes"]}
+        "escolas_com_matricula": si["escolas_com_matricula"], "escolas_pendentes": si["escolas_pendentes"],
+        "escolas_via_pares": si["escolas_via_pares"], "pares_nao_aplicados": si["pares_nao_aplicados"],
+        "municipios_impacto_pendente": si["municipios_pendentes"], "possiveis_escolas_fora_da_lista": si["possiveis_escolas_fora_da_lista"]}
 with open("data/meta.json", "w", encoding="utf-8") as fh:
     json.dump(meta, fh, ensure_ascii=False)
 print("OK", {"doados": resumo["doacoes"]["computadores"], "alunos": resumo["formacao"]["alunos"]})
-print("Impacto social:", json.dumps(resumo["doacoes"]["impacto_social"], ensure_ascii=False))
+print("Impacto social:", json.dumps(si, ensure_ascii=False))
 print("Meta:", meta)
+if pares_problema:
+    print(f"Aviso: {len(pares_problema)} pares da planilha nao foram aplicados (data/pares_nao_aplicados.csv).")
+if fora_da_lista:
+    print(f"Aviso: {len(fora_da_lista)} pontos com nome de escola NAO estao na LISTA_ESCOLAS e foram contados 5x (data/possiveis_escolas_fora_da_lista.csv).")
 if sem_ibge:
     print(f"Aviso: {len(sem_ibge)} municipios sem codigo IBGE (data/sem_ibge.csv e data/municipios_sugestoes.csv)")
