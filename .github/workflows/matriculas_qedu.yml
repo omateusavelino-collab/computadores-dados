@@ -1,0 +1,66 @@
+name: Matriculas QEdu
+
+# Consulta no QEdu as matriculas das escolas da LISTA_ESCOLAS (fonte definida pela area gestora).
+# Cada escola e consultada uma vez e revisada 1x por ano. Quando nao ha escola na fila, nao faz nada.
+on:
+  schedule:
+    - cron: '17 5 * * *'     # 2h17 em Brasilia: so trabalha se houver escola na fila
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: 'Quantas escolas consultar nesta execucao'
+        default: '900'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-dados     # mesmo grupo do robo diario: nunca rodam ao mesmo tempo
+  cancel-in-progress: false
+
+jobs:
+  matriculas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Instalar bibliotecas
+        run: pip install -r requirements.txt playwright
+
+      - name: Atualizar lista de escolas a consultar
+        run: python scripts/gerar_json.py
+
+      - name: Ha escola na fila?
+        id: fila
+        run: python scripts/buscar_matriculas_qedu.py --contar
+
+      - name: Instalar navegador
+        if: steps.fila.outputs.pendentes != '0'
+        run: python -m playwright install --with-deps chromium
+
+      - name: Consultar QEdu
+        if: steps.fila.outputs.pendentes != '0'
+        env:
+          LIMITE: ${{ github.event.inputs.limite || '900' }}
+          TEMPO_MAX_MIN: '140'
+        run: python scripts/buscar_matriculas_qedu.py
+
+      - name: Recalcular impacto social
+        if: always() && steps.fila.outputs.pendentes != '0'
+        run: python scripts/gerar_json.py
+
+      - name: Salvar no repositorio
+        if: always() && steps.fila.outputs.pendentes != '0'
+        run: |
+          git config user.name "bot-dados"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet || git commit -m "Matriculas QEdu $(date -u +%F)"
+          git pull --rebase origin main
+          git push
