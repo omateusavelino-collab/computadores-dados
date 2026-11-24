@@ -1,23 +1,25 @@
 inep,status,matriculas,ano_censo,nome_qedu,municipio_qedu,url,consultado_em,obs
-11000368,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
+11000368,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11002182,ok,47,2025,EMEF SANTO ANTONIO I,Porto Velho,https://qedu.org.br/escola/11002182-escola-municipal-de-ensino-fundamental-santo-antonio-i,2026-11-23,
 11002883,ok,399,2025,EMEIEF PINGO DE GENTE,Porto Velho,https://qedu.org.br/escola/11002883-ceemeief-pingo-de-gente,2026-11-23,
-11020490,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11020610,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11020822,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11020962,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11024690,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11024712,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11025050,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11025492,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11031840,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11035404,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11040947,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11043997,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11047780,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
-11048468,erro_acesso,,,,,,2026-11-23,HTTP 403 (possivel bloqueio)
+11020490,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11020610,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11020822,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11020962,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11024690,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11024712,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11025050,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11025492,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11031840,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11035404,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11040947,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11043997,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11047780,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
+11048468,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11048875,ok,252,2025,EMEIEF FLOR DE LARANJEIRA,Porto Velho,https://qedu.org.br/escola/11048875-escola-municipal-de-ensino-infantil-e-fundamental-flor-de-laranjeira,2026-11-23,
+11049243,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11049332,ok,127,2025,EMEIEF BILINGUE PORTO VELHO,Porto Velho,https://qedu.org.br/escola/11049332-e-m-e-i-e-f-bilingue-porto-velho,2026-11-23,
+11049979,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 12026948,municipio_diferente,,2025,ESC VALERIA BISPO SABALA,Brasiléia,https://qedu.org.br/escola/12026948-associacao-comunidade-escola-da-escola-municipal-de-tempo-integral-anisio-spindu,2026-11-23,lista diz Palmas; QEdu diz Brasiléia
 12030066,ok,503,2025,ESC VALDINA TORQUATO DO NASCIMENTO,Tarauacá,https://qedu.org.br/escola/12030066-escola-valdina-torquato-do-nascimento,2026-11-23,
 13021010,ok,136,2025,ESCOLA ESTADUAL ANTONIO FERREIRA GUEDES,Careiro da Várzea,https://qedu.org.br/escola/13021010-escola-estadual-antonio-ferreira-guedes,2026-11-23,
