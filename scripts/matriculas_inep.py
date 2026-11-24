@@ -1,0 +1,241 @@
+"""
+Matriculas por escola a partir dos MICRODADOS OFICIAIS do Censo Escolar (INEP) -- fonte da qual o QEdu tambem se alimenta.
+
+Por que existe: o QEdu passou a bloquear (HTTP 403) as consultas feitas pelo GitHub Actions, ja na primeira escola.
+Em vez de abrir milhares de paginas, este script baixa UMA vez o arquivo oficial do Censo e le a matricula de cada escola
+pelo codigo INEP (CO_ENTIDADE).
+
+Entrada : data/escolas_para_consulta.csv      (gerada por scripts/gerar_json.py)
+          data/fixos/matriculas_qedu.csv      (matriculas ja conferidas no QEdu: NUNCA sao alteradas)
+Saida   : data/fixos/matriculas_inep.csv      (matriculas vindas do INEP, so para escolas SEM matricula do QEdu)
+          data/relatorio_equivalencia_inep.csv (teste de equivalencia INEP x QEdu, para auditoria)
+
+SEGURANCA (nao grava numero que nao seja comprovado):
+  1. Descobre qual coluna/soma do INEP reproduz o numero do QEdu comparando com as escolas JA conferidas no QEdu.
+  2. So usa essa coluna se bater exatamente em pelo menos EQUIV_MIN (95%) das escolas comparadas (minimo de 50 escolas).
+     Se nao bater, NAO grava nada e termina com erro, mostrando o ranking de candidatos.
+  3. Codigo INEP precisa existir no arquivo oficial; matricula zero ou ausente nao e gravada (a escola continua pendente).
+  4. Guarda ano do Censo, coluna usada e link da fonte em cada linha.
+
+Variaveis: ANO_CENSO (2025), INEP_ZIP_URL (opcional: link direto do .zip), INEP_ZIP_ARQUIVO (opcional: caminho de um .zip local),
+           EQUIV_MIN (0.95)
+"""
+import csv, datetime as dt, io, os, re, sys, zipfile
+import requests
+import pandas as pd
+
+ENTRADA = "data/escolas_para_consulta.csv"
+CACHE_QEDU = "data/fixos/matriculas_qedu.csv"
+SAIDA = "data/fixos/matriculas_inep.csv"
+RELATORIO = "data/relatorio_equivalencia_inep.csv"
+CAMPOS = ["inep", "status", "matriculas", "ano_censo", "fonte", "coluna_usada", "url", "consultado_em", "obs"]
+ANO = int(os.environ.get("ANO_CENSO") or 2025)
+EQUIV_MIN = float(os.environ.get("EQUIV_MIN") or 0.95)
+MIN_COMPARADAS = 50
+HOJE = dt.date.today()
+PAGINA_INEP = "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar"
+UA = {"User-Agent": "Mozilla/5.0 (compatible; dados-abertos-mcom/1.0)"}
+
+
+def ler_csv(caminho):
+    if not os.path.exists(caminho):
+        return []
+    with open(caminho, encoding="utf-8-sig") as fh:
+        return list(csv.DictReader(fh))
+
+
+# ------------------------------------------------------------------ download
+def urls_candidatas():
+    urls = []
+    if os.environ.get("INEP_ZIP_URL"):
+        urls.append(os.environ["INEP_ZIP_URL"].strip())
+    try:  # tenta achar o link oficial na pagina do INEP
+        html = requests.get(PAGINA_INEP, headers=UA, timeout=60).text
+        for u in re.findall(r'https?://download\.inep\.gov\.br/[^\s"\'<>]+\.zip', html, flags=re.I):
+            if str(ANO) in u and "censo_escolar" in u.lower():
+                urls.append(u)
+    except Exception as ex:
+        print(f"Aviso: nao consegui ler a pagina do INEP ({ex!r}); uso os enderecos padrao.")
+    urls += [f"https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_{ANO}.zip",
+             f"https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_{ANO}_v2.zip"]
+    vistos, out = set(), []
+    for u in urls:
+        if u not in vistos:
+            vistos.add(u)
+            out.append(u)
+    return out
+
+
+def baixar():
+    local = os.environ.get("INEP_ZIP_ARQUIVO")
+    if local:
+        print(f"Usando arquivo local: {local}")
+        return local, "arquivo local"
+    os.makedirs("work", exist_ok=True)
+    destino = f"work/censo_escolar_{ANO}.zip"
+    for url in urls_candidatas():
+        try:
+            print(f"Baixando {url} ...", flush=True)
+            with requests.get(url, headers=UA, stream=True, timeout=(30, 120)) as r:
+                if r.status_code != 200:
+                    print(f"  HTTP {r.status_code}; proximo endereco.")
+                    continue
+                total = 0
+                with open(destino, "wb") as fh:
+                    for bloco in r.iter_content(1 << 20):
+                        fh.write(bloco)
+                        total += len(bloco)
+                if total < 1_000_000 or not zipfile.is_zipfile(destino):
+                    print("  arquivo recebido nao parece um ZIP valido; proximo endereco.")
+                    continue
+                print(f"  OK: {total/1e6:.0f} MB")
+                return destino, url
+        except Exception as ex:
+            print(f"  falhou: {ex!r}")
+    sys.exit("ERRO: nao consegui baixar os microdados do INEP. Rode o workflow informando o link direto do .zip "
+             "no campo 'url_zip' (copie o link do botao de download em " + PAGINA_INEP + ").")
+
+
+# ------------------------------------------------------------------ leitura
+def abrir_tabela(zf, nome, colunas_pred):
+    """Le so as colunas pedidas. Detecta separador e codificacao."""
+    for enc in ("utf-8-sig", "latin-1"):
+        for sep in (";", ","):
+            with zf.open(nome) as fh:
+                cab = pd.read_csv(fh, sep=sep, encoding=enc, nrows=0, dtype=str)
+            cols = [c.strip().upper() for c in cab.columns]
+            if "CO_ENTIDADE" in cols or len(cols) > 3:
+                usar = [c for c in cab.columns if colunas_pred(c.strip().upper())]
+                with zf.open(nome) as fh:
+                    df = pd.read_csv(fh, sep=sep, encoding=enc, usecols=usar, dtype=str, low_memory=False)
+                df.columns = [c.strip().upper() for c in df.columns]
+                return df, cols
+    raise RuntimeError(f"nao consegui ler {nome}")
+
+
+def tabela_escola(zf):
+    nomes = [n for n in zf.namelist() if n.lower().endswith(".csv")]
+    alvo = [n for n in nomes if re.search(r"tabela_escola|microdados_ed_basica", n, re.I)
+            and not re.search(r"gestor|docente|turma|matricula|curso", n, re.I)]
+    if not alvo:
+        sys.exit("ERRO: nao achei a tabela de escolas no ZIP. Arquivos: " + ", ".join(nomes[:20]))
+    nome = sorted(alvo, key=len)[0]
+    print(f"Tabela de escolas: {nome}")
+    df, cols = abrir_tabela(zf, nome, lambda c: c == "CO_ENTIDADE" or c.startswith("QT_MAT"))
+    return df, cols, nome, nomes
+
+
+def candidatas_de_escola(df):
+    num = {c: pd.to_numeric(df[c], errors="coerce") for c in df.columns if c.startswith("QT_MAT")}
+    cand = dict(num)
+
+    def soma(nome, partes, menos=()):
+        if all(p in num for p in list(partes) + list(menos)):
+            s = sum(num[p].fillna(0) for p in partes) - sum(num[m].fillna(0) for m in menos)
+            cand[nome] = s
+
+    soma("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED", ["QT_MAT_INF", "QT_MAT_FUND", "QT_MAT_MED"])
+    soma("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED+QT_MAT_EJA", ["QT_MAT_INF", "QT_MAT_FUND", "QT_MAT_MED", "QT_MAT_EJA"])
+    soma("QT_MAT_BAS-QT_MAT_EJA", ["QT_MAT_BAS"], ["QT_MAT_EJA"])
+    soma("QT_MAT_BAS-QT_MAT_ESP", ["QT_MAT_BAS"], ["QT_MAT_ESP"])
+    soma("QT_MAT_BAS-QT_MAT_PROF", ["QT_MAT_BAS"], ["QT_MAT_PROF"])
+    soma("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED+QT_MAT_EJA+QT_MAT_PROF", ["QT_MAT_INF", "QT_MAT_FUND", "QT_MAT_MED", "QT_MAT_EJA", "QT_MAT_PROF"])
+    return cand
+
+
+def candidata_tabela_matricula(zf, nomes):
+    """Plano B (layout novo com tabela de matriculas separada): conta linhas por escola ou soma coluna de quantidade."""
+    alvo = [n for n in nomes if re.search(r"tabela_matricula", n, re.I)]
+    if not alvo:
+        return {}
+    nome = alvo[0]
+    print(f"Tabela de matriculas (plano B): {nome}")
+    df, cols = abrir_tabela(zf, nome, lambda c: c == "CO_ENTIDADE" or c.startswith("QT_"))
+    if "CO_ENTIDADE" not in df.columns:
+        return {}
+    out = {"LINHAS(Tabela_Matricula)": df.groupby("CO_ENTIDADE").size()}
+    for c in df.columns:
+        if c.startswith("QT_"):
+            out[f"SOMA({c})"] = pd.to_numeric(df[c], errors="coerce").fillna(0).groupby(df["CO_ENTIDADE"]).sum()
+    return out
+
+
+# ------------------------------------------------------------------ principal
+def main():
+    escolas = [e for e in ler_csv(ENTRADA) if re.fullmatch(r"\d{8}", e.get("inep", ""))]
+    ineps_lista = sorted({e["inep"] for e in escolas})
+    qedu = {r["inep"]: r for r in ler_csv(CACHE_QEDU) if r.get("status") == "ok" and (r.get("matriculas") or "").isdigit()}
+    ja_inep = {r["inep"]: r for r in ler_csv(SAIDA) if r.get("status") == "ok"}
+    pend = [i for i in ineps_lista if i not in qedu and i not in ja_inep]
+    print(f"Escolas na lista: {len(ineps_lista)} | com matricula do QEdu: {len(qedu)} | com matricula do INEP: {len(ja_inep)} | pendentes: {len(pend)}")
+    if not pend:
+        print("Nada a fazer: todas as escolas ja tem matricula.")
+        return
+
+    caminho, origem = baixar()
+    with zipfile.ZipFile(caminho) as zf:
+        df, cols, nome_tab, nomes = tabela_escola(zf)
+        if "CO_ENTIDADE" not in df.columns:
+            sys.exit(f"ERRO: a tabela {nome_tab} nao tem CO_ENTIDADE. Colunas: {cols[:40]}")
+        df["CO_ENTIDADE"] = df["CO_ENTIDADE"].str.strip().str.zfill(8)
+        df = df.drop_duplicates("CO_ENTIDADE").set_index("CO_ENTIDADE")
+        cand = {k: v for k, v in candidatas_de_escola(df).items() if len(v)}
+        if not cand:
+            print("Tabela de escolas sem colunas QT_MAT*; tentando a tabela de matriculas.")
+        cand.update(candidata_tabela_matricula(zf, nomes))
+    if not cand:
+        sys.exit("ERRO: nao encontrei nenhuma coluna de matriculas no ZIP do INEP. Colunas da tabela de escolas: " + ", ".join(cols[:60]))
+
+    # ---------- teste de equivalencia com as escolas ja conferidas no QEdu
+    base = {i: int(r["matriculas"]) for i, r in qedu.items() if str(r.get("ano_censo")) == str(ANO)}
+    ranking = []
+    for nome, serie in cand.items():
+        serie = serie.copy()
+        serie.index = serie.index.astype(str).str.strip().str.zfill(8)
+        comparadas = iguais = 0
+        for i, v in base.items():
+            if i in serie.index and pd.notna(serie[i]):
+                comparadas += 1
+                iguais += int(round(float(serie[i]))) == v
+        ranking.append((iguais / comparadas if comparadas else 0.0, iguais, comparadas, nome, serie))
+    ranking.sort(key=lambda x: (-x[0], -x[2]))
+    with open(RELATORIO, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["candidato", "escolas_comparadas", "valores_iguais_ao_qedu", "percentual_igual", "gerado_em", "ano_censo"])
+        for pct, ig, comp, nome, _ in ranking:
+            w.writerow([nome, comp, ig, f"{pct:.4f}", HOJE.isoformat(), ANO])
+    print("\nTeste de equivalencia INEP x QEdu (melhores candidatos):")
+    for pct, ig, comp, nome, _ in ranking[:8]:
+        print(f"  {pct*100:6.2f}%  ({ig}/{comp})  {nome}")
+
+    pct, ig, comp, melhor, serie = ranking[0]
+    if comp < MIN_COMPARADAS or pct < EQUIV_MIN:
+        sys.exit(f"\nERRO: nenhum candidato reproduz o numero do QEdu (melhor: {melhor} = {pct*100:.1f}% em {comp} escolas; "
+                 f"minimo exigido {EQUIV_MIN*100:.0f}% em >= {MIN_COMPARADAS}). NADA FOI GRAVADO. Veja {RELATORIO}.")
+    print(f"\nCandidato escolhido: {melhor} ({pct*100:.2f}% igual ao QEdu em {comp} escolas)")
+
+    # ---------- grava so escolas sem matricula do QEdu
+    novos, sem_dado = [], 0
+    for i in pend:
+        v = serie[i] if i in serie.index else None
+        if v is None or pd.isna(v) or int(round(float(v))) <= 0:
+            sem_dado += 1
+            continue
+        novos.append({"inep": i, "status": "ok", "matriculas": int(round(float(v))), "ano_censo": ANO,
+                      "fonte": "INEP - Censo Escolar (microdados)", "coluna_usada": melhor,
+                      "url": origem, "consultado_em": HOJE.isoformat(),
+                      "obs": f"equivalencia com QEdu: {pct*100:.1f}% ({ig}/{comp})"})
+    todos = dict(ja_inep)
+    for n in novos:
+        todos[n["inep"]] = n
+    os.makedirs(os.path.dirname(SAIDA), exist_ok=True)
+    with open(SAIDA, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=CAMPOS)
+        w.writeheader()
+        for k in sorted(todos):
+            w.writerow({c: todos[k].get(c, "") for c in CAMPOS})
+    print(f"Gravadas {len(novos)} escolas novas | sem matricula no INEP (continuam pendentes): {sem_dado}")
+
+
+if __name__ == "__main__":
+    main()

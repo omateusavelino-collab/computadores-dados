@@ -36,6 +36,7 @@ FIXOS = "data/fixos"
 LISTA_ESCOLAS = f"{FIXOS}/LISTA_ESCOLAS.xlsx"
 MATRICULAS_QEDU = f"{FIXOS}/matriculas_qedu.csv"
 MATRICULAS_MANUAL = f"{FIXOS}/matriculas_manual.csv"
+MATRICULAS_INEP = f"{FIXOS}/matriculas_inep.csv"
 IBGE_OFICIAL = f"{FIXOS}/ibge_municipios.csv"
 IBGE_RESERVA = f"{FIXOS}/ibge.csv"
 ALIAS = f"{FIXOS}/municipios_alias.csv"
@@ -337,6 +338,13 @@ def carregar_pares():
 
 def carregar_matriculas():
     out, manual = {}, {}
+    # INEP (Censo Escolar) entra primeiro; matricula conferida no QEdu, quando existe, tem prioridade e a substitui.
+    if os.path.exists(MATRICULAS_INEP):
+        with open(MATRICULAS_INEP, encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                m = so_digitos(r.get("matriculas"))
+                if r.get("status") == "ok" and m:
+                    out[so_digitos(r["inep"])] = {"matriculas": int(m), "ano": r.get("ano_censo", ""), "fonte": "INEP/Censo Escolar", "url": r.get("url", "")}
     if os.path.exists(MATRICULAS_QEDU):
         with open(MATRICULAS_QEDU, encoding="utf-8-sig") as fh:
             for r in csv.DictReader(fh):
