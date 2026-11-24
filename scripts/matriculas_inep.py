@@ -17,12 +17,20 @@ SEGURANCA (nao grava numero que nao seja comprovado):
   3. Codigo INEP precisa existir no arquivo oficial; matricula zero ou ausente nao e gravada (a escola continua pendente).
   4. Guarda ano do Censo, coluna usada e link da fonte em cada linha.
 
+DOWNLOAD: o servidor do INEP (download.inep.gov.br) usa um certificado que o GitHub Actions nao reconhece
+("unable to get local issuer certificate"). O script tenta primeiro com verificacao normal; se falhar por SSL, repete
+sem verificar o certificado, SOMENTE para este download de dado publico. A integridade e garantida pelo ZIP valido +
+teste de equivalencia com o QEdu.
+
 Variaveis: ANO_CENSO (2025), INEP_ZIP_URL (opcional: link direto do .zip), INEP_ZIP_ARQUIVO (opcional: caminho de um .zip local),
            EQUIV_MIN (0.95)
 """
-import csv, datetime as dt, io, os, re, sys, zipfile
+import csv, datetime as dt, os, re, sys, time, zipfile
 import requests
+import urllib3
 import pandas as pd
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ENTRADA = "data/escolas_para_consulta.csv"
 CACHE_QEDU = "data/fixos/matriculas_qedu.csv"
@@ -34,7 +42,7 @@ EQUIV_MIN = float(os.environ.get("EQUIV_MIN") or 0.95)
 MIN_COMPARADAS = 50
 HOJE = dt.date.today()
 PAGINA_INEP = "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar"
-UA = {"User-Agent": "Mozilla/5.0 (compatible; dados-abertos-mcom/1.0)"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
 
 def ler_csv(caminho):
@@ -47,7 +55,7 @@ def ler_csv(caminho):
 # ------------------------------------------------------------------ download
 def urls_candidatas():
     urls = []
-    if os.environ.get("INEP_ZIP_URL"):
+    if os.environ.get("INEP_ZIP_URL", "").strip():
         urls.append(os.environ["INEP_ZIP_URL"].strip())
     try:  # tenta achar o link oficial na pagina do INEP
         html = requests.get(PAGINA_INEP, headers=UA, timeout=60).text
@@ -55,7 +63,7 @@ def urls_candidatas():
             if str(ANO) in u and "censo_escolar" in u.lower():
                 urls.append(u)
     except Exception as ex:
-        print(f"Aviso: nao consegui ler a pagina do INEP ({ex!r}); uso os enderecos padrao.")
+        print(f"Aviso: nao consegui ler a pagina do INEP ({str(ex)[:100]}); uso os enderecos padrao.")
     urls += [f"https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_{ANO}.zip",
              f"https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_{ANO}_v2.zip"]
     vistos, out = set(), []
@@ -66,6 +74,22 @@ def urls_candidatas():
     return out
 
 
+def _baixar_uma(url, destino, verificar_ssl):
+    """Devolve None se baixou um ZIP valido; senao, texto do problema."""
+    with requests.get(url, headers=UA, stream=True, timeout=(30, 180), verify=verificar_ssl) as r:
+        if r.status_code != 200:
+            return f"HTTP {r.status_code}"
+        total = 0
+        with open(destino, "wb") as fh:
+            for bloco in r.iter_content(1 << 20):
+                fh.write(bloco)
+                total += len(bloco)
+    if total < 1_000_000 or not zipfile.is_zipfile(destino):
+        return "arquivo recebido nao e um ZIP valido"
+    print(f"  OK: {total/1e6:.0f} MB", flush=True)
+    return None
+
+
 def baixar():
     local = os.environ.get("INEP_ZIP_ARQUIVO")
     if local:
@@ -74,26 +98,29 @@ def baixar():
     os.makedirs("work", exist_ok=True)
     destino = f"work/censo_escolar_{ANO}.zip"
     for url in urls_candidatas():
-        try:
-            print(f"Baixando {url} ...", flush=True)
-            with requests.get(url, headers=UA, stream=True, timeout=(30, 120)) as r:
-                if r.status_code != 200:
-                    print(f"  HTTP {r.status_code}; proximo endereco.")
+        verificar = True
+        tentativa = 0
+        while tentativa < 4:
+            tentativa += 1
+            modo = "" if verificar else " [SSL sem verificacao]"
+            print(f"Baixando {url}{modo} (tentativa {tentativa}) ...", flush=True)
+            try:
+                erro = _baixar_uma(url, destino, verificar)
+                if erro is None:
+                    return destino, url
+                print(f"  {erro}")
+                break                                  # servidor respondeu algo ruim (404...): proximo endereco
+            except requests.exceptions.SSLError as ex:
+                print(f"  certificado SSL nao reconhecido: {str(ex)[:90]}")
+                if verificar:
+                    verificar = False                   # repete sem verificar, so para este dado publico
                     continue
-                total = 0
-                with open(destino, "wb") as fh:
-                    for bloco in r.iter_content(1 << 20):
-                        fh.write(bloco)
-                        total += len(bloco)
-                if total < 1_000_000 or not zipfile.is_zipfile(destino):
-                    print("  arquivo recebido nao parece um ZIP valido; proximo endereco.")
-                    continue
-                print(f"  OK: {total/1e6:.0f} MB")
-                return destino, url
-        except Exception as ex:
-            print(f"  falhou: {ex!r}")
-    sys.exit("ERRO: nao consegui baixar os microdados do INEP. Rode o workflow informando o link direto do .zip "
-             "no campo 'url_zip' (copie o link do botao de download em " + PAGINA_INEP + ").")
+                break
+            except Exception as ex:
+                print(f"  conexao falhou: {str(ex)[:110]}")
+                time.sleep(5 * tentativa)               # conexao cortada: espera e tenta de novo
+    sys.exit("ERRO: nao consegui baixar os microdados do INEP pelo GitHub Actions. Baixe o ZIP no seu computador, "
+             "publique-o em uma Release do repositorio e informe o link no campo 'url_zip'.")
 
 
 # ------------------------------------------------------------------ leitura
@@ -131,8 +158,7 @@ def candidatas_de_escola(df):
 
     def soma(nome, partes, menos=()):
         if all(p in num for p in list(partes) + list(menos)):
-            s = sum(num[p].fillna(0) for p in partes) - sum(num[m].fillna(0) for m in menos)
-            cand[nome] = s
+            cand[nome] = sum(num[p].fillna(0) for p in partes) - sum(num[m].fillna(0) for m in menos)
 
     soma("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED", ["QT_MAT_INF", "QT_MAT_FUND", "QT_MAT_MED"])
     soma("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED+QT_MAT_EJA", ["QT_MAT_INF", "QT_MAT_FUND", "QT_MAT_MED", "QT_MAT_EJA"])
@@ -153,6 +179,7 @@ def candidata_tabela_matricula(zf, nomes):
     df, cols = abrir_tabela(zf, nome, lambda c: c == "CO_ENTIDADE" or c.startswith("QT_"))
     if "CO_ENTIDADE" not in df.columns:
         return {}
+    df["CO_ENTIDADE"] = df["CO_ENTIDADE"].str.strip().str.zfill(8)
     out = {"LINHAS(Tabela_Matricula)": df.groupby("CO_ENTIDADE").size()}
     for c in df.columns:
         if c.startswith("QT_"):
