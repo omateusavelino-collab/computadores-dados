@@ -1,19 +1,19 @@
-name: Matriculas QEdu
+name: Matriculas (INEP + QEdu)
 
-# Consulta no QEdu (fonte definida pela area gestora) as matriculas das escolas da LISTA_ESCOLAS.
-# VERSAO CONSERVADORA: 1 escola por vez. Em bloqueio temporario, para sem perder a fila.
-# Cada escola e consultada uma vez e revisada 1x por ano. Sem escola na fila, termina em segundos e nao faz commit.
+# Matricula por escola. Fonte principal agora: microdados oficiais do Censo Escolar (INEP), pois o QEdu bloqueia o GitHub Actions (HTTP 403).
+# Matriculas ja conferidas no QEdu NAO sao alteradas. O script so grava se a coluna do INEP reproduzir o numero do QEdu (teste de equivalencia).
+# Sem escola pendente, termina em segundos e nao faz commit.
 on:
   schedule:
     - cron: '17 5 * * *'     # 2h17 em Brasilia
   workflow_dispatch:
     inputs:
-      limite:
-        description: 'Quantas escolas consultar nesta execucao'
-        default: '250'
-      paralelo:
-        description: 'Quantas escolas ao mesmo tempo. Recomendado: 1.'
-        default: '1'
+      url_zip:
+        description: 'OPCIONAL: link direto do .zip dos microdados do Censo Escolar (so se o download automatico falhar)'
+        default: ''
+      ano_censo:
+        description: 'Ano do Censo Escolar'
+        default: '2025'
 
 permissions:
   contents: write
@@ -26,7 +26,7 @@ concurrency:
 jobs:
   matriculas:
     runs-on: ubuntu-latest
-    timeout-minutes: 170
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
 
@@ -36,38 +36,27 @@ jobs:
           cache: pip
 
       - name: Instalar bibliotecas
-        run: pip install -r requirements.txt playwright
+        run: pip install -r requirements.txt
 
-      - name: Atualizar lista de escolas a consultar
+      - name: Atualizar lista de escolas
         run: python scripts/gerar_json.py
 
-      - name: Ha escola na fila?
-        id: fila
-        run: python scripts/buscar_matriculas_qedu.py --contar
-
-      - name: Instalar navegador
-        if: steps.fila.outputs.pendentes != '0'
-        run: python -m playwright install --with-deps chromium
-
-      - name: Consultar QEdu
-        if: steps.fila.outputs.pendentes != '0'
+      - name: Buscar matriculas no INEP (Censo Escolar)
         env:
-          LIMITE: ${{ github.event.inputs.limite || '250' }}
-          PARALELO: ${{ github.event.inputs.paralelo || '1' }}
-          ESPERA_MAX: '10'
-          TEMPO_MAX_MIN: '140'
-        run: python scripts/buscar_matriculas_qedu.py
+          INEP_ZIP_URL: ${{ github.event.inputs.url_zip }}
+          ANO_CENSO: ${{ github.event.inputs.ano_censo || '2025' }}
+        run: python scripts/matriculas_inep.py
 
       - name: Recalcular impacto social
-        if: ${{ always() && steps.fila.outcome == 'success' && steps.fila.outputs.pendentes != '0' }}
+        if: always()
         run: python scripts/gerar_json.py
 
       - name: Salvar no repositorio
-        if: ${{ always() && steps.fila.outcome == 'success' && steps.fila.outputs.pendentes != '0' }}
+        if: always()
         run: |
           git config user.name "bot-dados"
           git config user.email "bot@users.noreply.github.com"
           git add data
-          git diff --staged --quiet || git commit -m "Matriculas QEdu $(date -u +%F)"
+          git diff --staged --quiet || git commit -m "Matriculas INEP $(date -u +%F)"
           git pull --rebase origin main
           git push
