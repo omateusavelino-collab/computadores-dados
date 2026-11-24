@@ -28,10 +28,10 @@ CACHE = "data/fixos/matriculas_qedu.csv"
 CAMPOS = ["inep", "status", "matriculas", "ano_censo", "nome_qedu", "municipio_qedu", "url", "consultado_em", "obs"]
 LIMITE = int(os.environ.get("LIMITE") or 2000)
 TEMPO_MAX_MIN = float(os.environ.get("TEMPO_MAX_MIN") or 140)
-PARALELO = max(1, min(6, int(os.environ.get("PARALELO") or 3)))
+PARALELO = max(1, min(3, int(os.environ.get("PARALELO") or 1)))
 ESPERA_MAX = float(os.environ.get("ESPERA_MAX") or 10)
 REVISAR_OK_DIAS = 330         # escola com matricula: revisa 1x por ano (novo Censo)
-REVISAR_ERRO_DIAS = 1         # erro de acesso (rede/bloqueio): tenta de novo no dia seguinte
+REVISAR_ERRO_DIAS = 0         # erro de acesso nao vira cache: volta para a fila na proxima execucao
 REVISAR_DUVIDA_DIAS = 7       # QEdu nao achou / INEP nao confere / municipio diferente: tenta de novo em 7 dias
 HOJE = dt.date.today()
 BLOQUEAR_TIPOS = {"image", "media", "font", "stylesheet"}
@@ -155,47 +155,51 @@ async def ler_quando_pronto(page, inep):
 
 
 async def consultar(page, e):
+    """Consulta uma escola sem tentar contornar bloqueios do site.
+
+    Em 403/429/503 devolve erro_acesso para a execucao aplicar backoff global.
+    O resultado nunca recebe matricula se pagina/INEP/municipio nao forem validados.
+    """
     ultimo = None
-    # 1o tenta o endereco curto; se o QEdu nao reconhecer, tenta o endereco com o nome da escola
-    for url in (f"https://qedu.org.br/escola/{e['inep']}", f"https://qedu.org.br/escola/{e['inep']}-{slug(e['nome'])}"):
-        for tentativa in range(3):
+    urls = (f"https://qedu.org.br/escola/{e['inep']}",
+            f"https://qedu.org.br/escola/{e['inep']}-{slug(e['nome'])}")
+    for url in urls:
+        try:
+            resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            status_http = resp.status if resp is not None else None
+            if status_http == 404:
+                return {"status": "nao_encontrado", "obs": "QEdu respondeu 404", "url": page.url}
+            if status_http in (403, 429, 503):
+                return {"status": "erro_acesso", "obs": f"HTTP {status_http} (bloqueio/limite temporario)",
+                        "url": page.url, "http_status": str(status_http)}
+
+            texto = await ler_quando_pronto(page, e["inep"])
+            res = analisar(e["inep"], texto, e.get("municipio", ""))
+            if res["status"] != "ok":
+                diagnostico(e["inep"], page.url, status_http, texto)
+            res["url"] = page.url
             try:
-                resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                if resp is not None and resp.status == 404:
-                    ultimo = {"status": "nao_encontrado", "obs": "QEdu respondeu 404", "url": page.url}
-                    break
-                if resp is not None and resp.status in (403, 429, 503):
-                    ultimo = {"status": "erro_acesso", "obs": f"HTTP {resp.status} (possivel bloqueio)"}
-                    await asyncio.sleep(5 * (tentativa + 1))
-                    continue
-                texto = await ler_quando_pronto(page, e["inep"])
-                res = analisar(e["inep"], texto, e.get("municipio", ""))
-                if res["status"] != "ok":
-                    diagnostico(e["inep"], page.url, resp.status if resp is not None else None, texto)
-                res["url"] = page.url
-                try:
-                    res["nome_qedu"] = (await page.title()).split(" | ")[0].strip()[:120]
-                except Exception:
-                    pass
-                if "/escola/" not in page.url and res["status"] != "ok":
-                    ultimo = {"status": "nao_encontrado", "obs": f"QEdu redirecionou para {page.url[:80]}", "url": page.url}
-                    break
-                if res["status"] == "inep_nao_confere":
-                    ultimo = res
-                    break
+                res["nome_qedu"] = (await page.title()).split(" | ")[0].strip()[:120]
+            except Exception:
+                pass
+            if "/escola/" not in page.url and res["status"] != "ok":
+                return {"status": "nao_encontrado", "obs": f"QEdu redirecionou para {page.url[:80]}", "url": page.url}
+            if res["status"] == "inep_nao_confere":
                 return res
-            except Exception as ex:
-                ultimo = {"status": "erro_acesso", "obs": repr(ex)[:200]}
-                await asyncio.sleep(3 * (tentativa + 1))
-        if ultimo and ultimo.get("status") == "erro_acesso":
-            break                                          # erro de rede: nao adianta trocar o endereco
+            if res["status"] == "erro_acesso":
+                ultimo = res
+                break
+            return res
+        except Exception as ex:
+            ultimo = {"status": "erro_acesso", "obs": repr(ex)[:200], "url": url}
+            break
     return ultimo or {"status": "erro_acesso", "obs": "sem resposta"}
 
 
 async def rodar(pend, cache):
     from playwright.async_api import async_playwright
     inicio = time.time()
-    estado = {"feitos": 0, "erros_seguidos": 0, "parar": False}
+    estado = {"feitos": 0, "bloqueios_seguidos": 0, "parar": False}
     fila_q = asyncio.Queue()
     for e in pend[:LIMITE]:
         fila_q.put_nowait(e)
@@ -204,7 +208,6 @@ async def rodar(pend, cache):
     async def trabalhador(ctx, n):
         page = await ctx.new_page()
         await page.route("**/*", bloquear)
-        await asyncio.sleep(n * 0.7)                      # nao comeca todos no mesmo instante
         while not estado["parar"]:
             try:
                 e = fila_q.get_nowait()
@@ -214,25 +217,36 @@ async def rodar(pend, cache):
                 estado["parar"] = True
                 print("Tempo maximo atingido: salvando e parando (o resto fica para a proxima execucao).", flush=True)
                 break
+
             res = await consultar(page, e)
+            bloqueado = res.get("status") == "erro_acesso" and any(x in res.get("obs", "") for x in ("HTTP 403", "HTTP 429", "HTTP 503"))
             res.update({"inep": e["inep"], "consultado_em": HOJE.isoformat()})
             if res.get("status") != "ok":
-                res["matriculas"] = ""                    # nunca grava numero sem conferencia completa
+                res["matriculas"] = ""
+
             async with trava:
-                cache[e["inep"]] = res
                 estado["feitos"] += 1
-                estado["erros_seguidos"] = 0 if res["status"] == "ok" else estado["erros_seguidos"] + 1
+                if bloqueado:
+                    estado["bloqueios_seguidos"] += 1
+                    # Nao grava bloqueio temporario no cache. Assim a escola continua na fila.
+                    cache.pop(e["inep"], None)
+                else:
+                    cache[e["inep"]] = {k: v for k, v in res.items() if k in CAMPOS}
+                    estado["bloqueios_seguidos"] = 0
+
                 f = estado["feitos"]
                 ritmo = f / max(1e-6, (time.time() - inicio) / 60)
                 print(f"  {f:>4} {e['inep']} {res['status']:<22} {res.get('matriculas', ''):>6} {res.get('ano_censo', '')} "
                       f"{e['nome'][:45]}  [{ritmo:.1f}/min]", flush=True)
                 if f % 25 == 0:
                     salvar_cache(cache)
-                if estado["erros_seguidos"] >= 15:
+                if estado["bloqueios_seguidos"] >= 3:
                     estado["parar"] = True
-                    print("15 falhas seguidas sem nenhuma matricula: o QEdu provavelmente esta bloqueando ou mudou a pagina. "
-                          "Parando. Veja as linhas [diagnostico] acima.", flush=True)
-            await asyncio.sleep(random.uniform(0.4, 1.0))  # pausa educada por aba
+                    print("3 respostas consecutivas de bloqueio/limite do QEdu. Parando cedo para nao insistir; "
+                          "as escolas permanecem na fila para a proxima execucao.", flush=True)
+
+            # Uma unica aba por padrao e pausa maior reduzem rajadas no servidor.
+            await asyncio.sleep(random.uniform(3.0, 6.0) if not bloqueado else random.uniform(20.0, 35.0))
         await page.close()
 
     async with async_playwright() as p:
