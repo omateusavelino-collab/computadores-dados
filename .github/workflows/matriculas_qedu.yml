@@ -1,7 +1,7 @@
 name: Matriculas QEdu
 
 # Consulta no QEdu (fonte definida pela area gestora) as matriculas das escolas da LISTA_ESCOLAS.
-# VERSAO RAPIDA: 3 escolas ao mesmo tempo, sem baixar imagens/fontes, sem espera fixa.
+# VERSAO CONSERVADORA: 1 escola por vez. Em bloqueio temporario, para sem perder a fila.
 # Cada escola e consultada uma vez e revisada 1x por ano. Sem escola na fila, termina em segundos e nao faz commit.
 on:
   schedule:
@@ -10,10 +10,10 @@ on:
     inputs:
       limite:
         description: 'Quantas escolas consultar nesta execucao'
-        default: '2000'
+        default: '250'
       paralelo:
-        description: 'Quantas escolas ao mesmo tempo (1 a 6). Se o QEdu bloquear, use 1 ou 2.'
-        default: '3'
+        description: 'Quantas escolas ao mesmo tempo. Recomendado: 1.'
+        default: '1'
 
 permissions:
   contents: write
@@ -52,8 +52,8 @@ jobs:
       - name: Consultar QEdu
         if: steps.fila.outputs.pendentes != '0'
         env:
-          LIMITE: ${{ github.event.inputs.limite || '2000' }}
-          PARALELO: ${{ github.event.inputs.paralelo || '3' }}
+          LIMITE: ${{ github.event.inputs.limite || '250' }}
+          PARALELO: ${{ github.event.inputs.paralelo || '1' }}
           ESPERA_MAX: '10'
           TEMPO_MAX_MIN: '140'
         run: python scripts/buscar_matriculas_qedu.py
