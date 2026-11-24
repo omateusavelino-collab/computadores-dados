@@ -1,9 +1,6 @@
 inep,status,matriculas,ano_censo,nome_qedu,municipio_qedu,url,consultado_em,obs
-11000368,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11002182,ok,47,2025,EMEF SANTO ANTONIO I,Porto Velho,https://qedu.org.br/escola/11002182-escola-municipal-de-ensino-fundamental-santo-antonio-i,2026-11-23,
 11002883,ok,399,2025,EMEIEF PINGO DE GENTE,Porto Velho,https://qedu.org.br/escola/11002883-ceemeief-pingo-de-gente,2026-11-23,
-11020490,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
-11020610,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11020822,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11020962,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
 11024690,erro_acesso,,,,,,2026-11-24,HTTP 403 (possivel bloqueio)
