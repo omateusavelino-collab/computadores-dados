@@ -124,20 +124,33 @@ def baixar():
 
 
 # ------------------------------------------------------------------ leitura
+def detectar_formato(zf, nome):
+    """Descobre codificacao (utf-8 ou latin-1) e separador (; ou ,) olhando o comeco do arquivo."""
+    with zf.open(nome) as fh:
+        topo = fh.read(4_000_000)
+    enc = "utf-8-sig"
+    try:
+        topo.decode("utf-8")
+    except UnicodeDecodeError as ex:
+        if ex.start < len(topo) - 4:                 # erro no meio do texto (nao e so o corte do bloco)
+            enc = "latin-1"
+    linha = topo.split(b"\n", 1)[0].decode("latin-1")
+    sep = ";" if linha.count(";") >= linha.count(",") else ","
+    cols = [c.strip().strip('"').upper() for c in linha.split(sep)]
+    return enc, sep, cols
+
+
 def abrir_tabela(zf, nome, colunas_pred):
-    """Le so as colunas pedidas. Detecta separador e codificacao."""
-    for enc in ("utf-8-sig", "latin-1"):
-        for sep in (";", ","):
-            with zf.open(nome) as fh:
-                cab = pd.read_csv(fh, sep=sep, encoding=enc, nrows=0, dtype=str)
-            cols = [c.strip().upper() for c in cab.columns]
-            if "CO_ENTIDADE" in cols or len(cols) > 3:
-                usar = [c for c in cab.columns if colunas_pred(c.strip().upper())]
-                with zf.open(nome) as fh:
-                    df = pd.read_csv(fh, sep=sep, encoding=enc, usecols=usar, dtype=str, low_memory=False)
-                df.columns = [c.strip().upper() for c in df.columns]
-                return df, cols
-    raise RuntimeError(f"nao consegui ler {nome}")
+    """Le so as colunas pedidas (arquivo inteiro)."""
+    enc, sep, cols = detectar_formato(zf, nome)
+    print(f"  formato: codificacao={enc}, separador='{sep}', {len(cols)} colunas")
+    with zf.open(nome) as fh:
+        cab = pd.read_csv(fh, sep=sep, encoding=enc, encoding_errors="replace", nrows=0, dtype=str)
+    usar = [c for c in cab.columns if colunas_pred(c.strip().upper())]
+    with zf.open(nome) as fh:
+        df = pd.read_csv(fh, sep=sep, encoding=enc, encoding_errors="replace", usecols=usar, dtype=str, low_memory=False)
+    df.columns = [c.strip().upper() for c in df.columns]
+    return df, cols
 
 
 def tabela_escola(zf):
@@ -170,20 +183,32 @@ def candidatas_de_escola(df):
 
 
 def candidata_tabela_matricula(zf, nomes):
-    """Plano B (layout novo com tabela de matriculas separada): conta linhas por escola ou soma coluna de quantidade."""
+    """Plano B (layout novo com tabela de matriculas separada): le em BLOCOS (arquivo grande) e conta linhas / soma colunas QT_."""
     alvo = [n for n in nomes if re.search(r"tabela_matricula", n, re.I)]
     if not alvo:
         return {}
     nome = alvo[0]
     print(f"Tabela de matriculas (plano B): {nome}")
-    df, cols = abrir_tabela(zf, nome, lambda c: c == "CO_ENTIDADE" or c.startswith("QT_"))
-    if "CO_ENTIDADE" not in df.columns:
+    enc, sep, cols = detectar_formato(zf, nome)
+    print(f"  formato: codificacao={enc}, separador='{sep}', {len(cols)} colunas: {', '.join(cols[:40])}")
+    if "CO_ENTIDADE" not in cols:
         return {}
-    df["CO_ENTIDADE"] = df["CO_ENTIDADE"].str.strip().str.zfill(8)
-    out = {"LINHAS(Tabela_Matricula)": df.groupby("CO_ENTIDADE").size()}
-    for c in df.columns:
-        if c.startswith("QT_"):
-            out[f"SOMA({c})"] = pd.to_numeric(df[c], errors="coerce").fillna(0).groupby(df["CO_ENTIDADE"]).sum()
+    qt = [c for c in cols if c.startswith("QT_")]
+    usar = ["CO_ENTIDADE"] + qt
+    linhas, somas = None, {c: None for c in qt}
+    with zf.open(nome) as fh:
+        for bloco in pd.read_csv(fh, sep=sep, encoding=enc, encoding_errors="replace", dtype=str,
+                                 usecols=lambda c: c.strip().upper() in usar, chunksize=500_000):
+            bloco.columns = [c.strip().upper() for c in bloco.columns]
+            chave = bloco["CO_ENTIDADE"].str.strip().str.zfill(8)
+            n = chave.value_counts()
+            linhas = n if linhas is None else linhas.add(n, fill_value=0)
+            for c in qt:
+                v = pd.to_numeric(bloco[c], errors="coerce").fillna(0).groupby(chave).sum()
+                somas[c] = v if somas[c] is None else somas[c].add(v, fill_value=0)
+    out = {"LINHAS(Tabela_Matricula)": linhas}
+    for c in qt:
+        out[f"SOMA({c})"] = somas[c]
     return out
 
 
@@ -200,32 +225,42 @@ def main():
         return
 
     caminho, origem = baixar()
+    base = {i: int(r["matriculas"]) for i, r in qedu.items() if str(r.get("ano_censo")) == str(ANO)}
+
+    def avaliar(cand):
+        ranking = []
+        for nome, serie in cand.items():
+            serie = serie.copy()
+            serie.index = serie.index.astype(str).str.strip().str.zfill(8)
+            comparadas = iguais = 0
+            for i, v in base.items():
+                if i in serie.index and pd.notna(serie[i]):
+                    comparadas += 1
+                    iguais += int(round(float(serie[i]))) == v
+            ranking.append((iguais / comparadas if comparadas else 0.0, iguais, comparadas, nome, serie))
+        ranking.sort(key=lambda x: (-x[0], -x[2]))
+        return ranking
+
+    def aprovado(r):
+        return bool(r) and r[0][2] >= MIN_COMPARADAS and r[0][0] >= EQUIV_MIN
+
+    ranking = []
     with zipfile.ZipFile(caminho) as zf:
         df, cols, nome_tab, nomes = tabela_escola(zf)
         if "CO_ENTIDADE" not in df.columns:
             sys.exit(f"ERRO: a tabela {nome_tab} nao tem CO_ENTIDADE. Colunas: {cols[:40]}")
+        print(f"  colunas de matricula na tabela de escolas: {[c for c in cols if c.startswith('QT_MAT')] or 'nenhuma'}")
         df["CO_ENTIDADE"] = df["CO_ENTIDADE"].str.strip().str.zfill(8)
         df = df.drop_duplicates("CO_ENTIDADE").set_index("CO_ENTIDADE")
         cand = {k: v for k, v in candidatas_de_escola(df).items() if len(v)}
-        if not cand:
-            print("Tabela de escolas sem colunas QT_MAT*; tentando a tabela de matriculas.")
-        cand.update(candidata_tabela_matricula(zf, nomes))
-    if not cand:
-        sys.exit("ERRO: nao encontrei nenhuma coluna de matriculas no ZIP do INEP. Colunas da tabela de escolas: " + ", ".join(cols[:60]))
-
-    # ---------- teste de equivalencia com as escolas ja conferidas no QEdu
-    base = {i: int(r["matriculas"]) for i, r in qedu.items() if str(r.get("ano_censo")) == str(ANO)}
-    ranking = []
-    for nome, serie in cand.items():
-        serie = serie.copy()
-        serie.index = serie.index.astype(str).str.strip().str.zfill(8)
-        comparadas = iguais = 0
-        for i, v in base.items():
-            if i in serie.index and pd.notna(serie[i]):
-                comparadas += 1
-                iguais += int(round(float(serie[i]))) == v
-        ranking.append((iguais / comparadas if comparadas else 0.0, iguais, comparadas, nome, serie))
-    ranking.sort(key=lambda x: (-x[0], -x[2]))
+        ranking = avaliar(cand) if cand else []
+        if not aprovado(ranking):
+            print("Tabela de escolas nao reproduz o QEdu (ou nao tem colunas QT_MAT*); tentando a tabela de matriculas...", flush=True)
+            extra = candidata_tabela_matricula(zf, nomes)
+            if extra:
+                ranking = sorted(ranking + avaliar(extra), key=lambda x: (-x[0], -x[2]))
+    if not ranking:
+        sys.exit("ERRO: nao encontrei nenhuma coluna de matriculas no ZIP do INEP. Colunas da tabela de escolas: " + ", ".join(cols[:80]))
     with open(RELATORIO, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["candidato", "escolas_comparadas", "valores_iguais_ao_qedu", "percentual_igual", "gerado_em", "ano_censo"])
