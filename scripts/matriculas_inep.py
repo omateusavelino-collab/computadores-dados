@@ -25,9 +25,10 @@ teste de equivalencia com o QEdu.
 Variaveis: ANO_CENSO (2025), INEP_ZIP_URL (opcional: link direto do .zip), INEP_ZIP_ARQUIVO (opcional: caminho de um .zip local),
            EQUIV_MIN (0.95)
 """
-import csv, datetime as dt, os, re, sys, time, zipfile
+import csv, datetime as dt, itertools, os, re, sys, time, zipfile
 import requests
 import urllib3
+import numpy as np
 import pandas as pd
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -36,6 +37,7 @@ ENTRADA = "data/escolas_para_consulta.csv"
 CACHE_QEDU = "data/fixos/matriculas_qedu.csv"
 SAIDA = "data/fixos/matriculas_inep.csv"
 RELATORIO = "data/relatorio_equivalencia_inep.csv"
+DIAGNOSTICO = "data/diagnostico_equivalencia.csv"
 CAMPOS = ["inep", "status", "matriculas", "ano_censo", "fonte", "coluna_usada", "url", "consultado_em", "obs"]
 ANO = int(os.environ.get("ANO_CENSO") or 2025)
 EQUIV_MIN = float(os.environ.get("EQUIV_MIN") or 0.95)
@@ -182,7 +184,7 @@ def candidatas_de_escola(df):
     return cand
 
 
-def candidata_tabela_matricula(zf, nomes):
+def candidata_tabela_matricula(zf, nomes, ineps_lista):
     """Plano B (layout novo com tabela de matriculas separada): le em BLOCOS (arquivo grande) e conta linhas / soma colunas QT_."""
     alvo = [n for n in nomes if re.search(r"tabela_matricula", n, re.I)]
     if not alvo:
@@ -201,6 +203,10 @@ def candidata_tabela_matricula(zf, nomes):
                                  usecols=lambda c: c.strip().upper() in usar, chunksize=500_000):
             bloco.columns = [c.strip().upper() for c in bloco.columns]
             chave = bloco["CO_ENTIDADE"].str.strip().str.zfill(8)
+            filtro = chave.isin(ineps_lista)          # so as escolas da nossa lista
+            bloco, chave = bloco[filtro], chave[filtro]
+            if bloco.empty:
+                continue
             n = chave.value_counts()
             linhas = n if linhas is None else linhas.add(n, fill_value=0)
             for c in qt:
@@ -210,6 +216,64 @@ def candidata_tabela_matricula(zf, nomes):
     for c in qt:
         out[f"SOMA({c})"] = somas[c]
     return out
+
+
+def _fmt_formula(nomes, sinais):
+    return " ".join(("+" if sg > 0 else "-") + n.replace("SOMA(", "").rstrip(")") for n, sg in zip(nomes, sinais)).lstrip("+")
+
+
+def buscar_formula(cand, base, topo=28):
+    """Procura soma/subtracao de ate 4 colunas QT_MAT* que reproduza o numero do QEdu nas escolas ja conferidas."""
+    nomes_cols = [n for n in cand if n.startswith("SOMA(QT_MAT")]
+    if not nomes_cols:
+        return {}
+    W = pd.DataFrame({n: cand[n] for n in nomes_cols}).fillna(0)
+    W.index = W.index.astype(str).str.strip().str.zfill(8)
+    ks = [i for i in base if i in W.index]
+    if len(ks) < MIN_COMPARADAS:
+        return {}
+    y = np.array([base[i] for i in ks], dtype=float)
+    X = W.loc[ks].to_numpy(dtype=float)
+    corr = np.array([abs(np.corrcoef(X[:, j], y)[0, 1]) if X[:, j].std() > 0 else 0.0 for j in range(X.shape[1])])
+    idx = list(np.argsort(-corr)[:topo])
+    achados = []
+    for k in (1, 2, 3, 4):
+        pool = idx if k <= 3 else idx[:18]
+        for comb in itertools.combinations(pool, k):
+            sub = X[:, comb]
+            for sinais in itertools.product((1, -1), repeat=k):
+                if sinais[0] == -1:
+                    continue
+                v = sub @ np.array(sinais, dtype=float)
+                ig = int((v == y).sum())
+                achados.append((ig, comb, sinais))
+    achados.sort(key=lambda t: -t[0])
+    out = {}
+    for ig, comb, sinais in achados[:10]:
+        nome = "FORMULA: " + _fmt_formula([nomes_cols[j] for j in comb], sinais)
+        out[nome] = sum(sg * W[nomes_cols[j]] for j, sg in zip(comb, sinais))
+    return out
+
+
+def gravar_diagnostico(cand, base):
+    """Tabela lado a lado (QEdu x colunas principais do INEP) para as escolas ja conferidas, para conferir a olho."""
+    chaves = ["BAS", "BAS_D", "BAS_N", "BAS_EAD", "INF", "FUND", "MED", "EJA", "PROF", "ESP"]
+    cols = [(c, cand.get(f"SOMA(QT_MAT_{c})")) for c in chaves]
+    cols = [(c, sr) for c, sr in cols if sr is not None]
+    if not cols:
+        return
+    os.makedirs(os.path.dirname(DIAGNOSTICO), exist_ok=True)
+    with open(DIAGNOSTICO, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["inep", "matriculas_qedu"] + [f"INEP_{c}" for c, _ in cols] + ["qedu_menos_BAS_D"])
+        for i in sorted(base)[:150]:
+            linha = []
+            for _, sr in cols:
+                sr.index = sr.index.astype(str).str.strip().str.zfill(8)
+                linha.append(int(sr[i]) if i in sr.index and pd.notna(sr[i]) else "")
+            bd = dict((c, v) for (c, _), v in zip(cols, linha)).get("BAS_D", "")
+            w.writerow([i, base[i]] + linha + [base[i] - bd if bd != "" else ""])
+    print(f"  diagnostico gravado em {DIAGNOSTICO}")
 
 
 # ------------------------------------------------------------------ principal
@@ -256,24 +320,30 @@ def main():
         ranking = avaliar(cand) if cand else []
         if not aprovado(ranking):
             print("Tabela de escolas nao reproduz o QEdu (ou nao tem colunas QT_MAT*); tentando a tabela de matriculas...", flush=True)
-            extra = candidata_tabela_matricula(zf, nomes)
+            extra = candidata_tabela_matricula(zf, nomes, set(ineps_lista))
             if extra:
                 ranking = sorted(ranking + avaliar(extra), key=lambda x: (-x[0], -x[2]))
+                gravar_diagnostico(extra, base)
+                if not aprovado(ranking):
+                    print("Nenhuma coluna isolada reproduz o QEdu; procurando combinacoes (soma/subtracao de ate 4 colunas)...", flush=True)
+                    formulas = buscar_formula(extra, base)
+                    if formulas:
+                        ranking = sorted(ranking + avaliar(formulas), key=lambda x: (-x[0], -x[2]))
     if not ranking:
         sys.exit("ERRO: nao encontrei nenhuma coluna de matriculas no ZIP do INEP. Colunas da tabela de escolas: " + ", ".join(cols[:80]))
     with open(RELATORIO, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["candidato", "escolas_comparadas", "valores_iguais_ao_qedu", "percentual_igual", "gerado_em", "ano_censo"])
-        for pct, ig, comp, nome, _ in ranking:
+        for pct, ig, comp, nome, _ in ranking[:60]:
             w.writerow([nome, comp, ig, f"{pct:.4f}", HOJE.isoformat(), ANO])
     print("\nTeste de equivalencia INEP x QEdu (melhores candidatos):")
-    for pct, ig, comp, nome, _ in ranking[:8]:
+    for pct, ig, comp, nome, _ in ranking[:10]:
         print(f"  {pct*100:6.2f}%  ({ig}/{comp})  {nome}")
 
     pct, ig, comp, melhor, serie = ranking[0]
     if comp < MIN_COMPARADAS or pct < EQUIV_MIN:
         sys.exit(f"\nERRO: nenhum candidato reproduz o numero do QEdu (melhor: {melhor} = {pct*100:.1f}% em {comp} escolas; "
-                 f"minimo exigido {EQUIV_MIN*100:.0f}% em >= {MIN_COMPARADAS}). NADA FOI GRAVADO. Veja {RELATORIO}.")
+                 f"minimo exigido {EQUIV_MIN*100:.0f}% em >= {MIN_COMPARADAS}). NADA FOI GRAVADO. Veja {RELATORIO} e {DIAGNOSTICO}.")
     print(f"\nCandidato escolhido: {melhor} ({pct*100:.2f}% igual ao QEdu em {comp} escolas)")
 
     # ---------- grava so escolas sem matricula do QEdu
