@@ -215,6 +215,14 @@ def candidata_tabela_matricula(zf, nomes, ineps_lista):
     out = {"LINHAS(Tabela_Matricula)": linhas}
     for c in qt:
         out[f"SOMA({c})"] = somas[c]
+
+    def comb(nome, partes):
+        if all(f"SOMA(QT_MAT_{x})" in out for x in partes):
+            out[nome] = sum(out[f"SOMA(QT_MAT_{x})"].fillna(0) for x in partes)
+    # Regra que reproduziu o QEdu no diagnostico: Ensino Fundamental + Ensino Medio (sem infantil, EJA, etc.)
+    comb("QT_MAT_FUND+QT_MAT_MED", ["FUND", "MED"])
+    comb("QT_MAT_INF+QT_MAT_FUND+QT_MAT_MED", ["INF", "FUND", "MED"])
+    comb("QT_MAT_FUND+QT_MAT_MED+QT_MAT_EJA", ["FUND", "MED", "EJA"])
     return out
 
 
@@ -236,9 +244,13 @@ def buscar_formula(cand, base, topo=28):
     X = W.loc[ks].to_numpy(dtype=float)
     corr = np.array([abs(np.corrcoef(X[:, j], y)[0, 1]) if X[:, j].std() > 0 else 0.0 for j in range(X.shape[1])])
     idx = list(np.argsort(-corr)[:topo])
+    for c in ("BAS", "BAS_D", "INF", "FUND", "MED", "EJA", "PROF", "ESP"):   # colunas principais sempre entram
+        n = f"SOMA(QT_MAT_{c})"
+        if n in nomes_cols and nomes_cols.index(n) not in idx:
+            idx.append(nomes_cols.index(n))
     achados = []
     for k in (1, 2, 3, 4):
-        pool = idx if k <= 3 else idx[:18]
+        pool = idx if k <= 3 else idx[:14] + [j for j in idx[14:] if nomes_cols[j] in ('SOMA(QT_MAT_FUND)','SOMA(QT_MAT_MED)','SOMA(QT_MAT_INF)','SOMA(QT_MAT_EJA)','SOMA(QT_MAT_PROF)')]
         for comb in itertools.combinations(pool, k):
             sub = X[:, comb]
             for sinais in itertools.product((1, -1), repeat=k):
